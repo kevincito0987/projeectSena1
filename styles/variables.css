@@ -1,6 +1,13 @@
 :root {
-    --color-primary: #007bff;
-    --color-secondary: #6c757d;
+    --color-1: #F5CB58;
+    --color-2: #FF642F;
+    --color-3: #F8F8F8;
+    --color-4: #E95322;
+    --color-5: #F3E9B5;
+    --color-6: #391713;
+    --color-7: #FFFFFF;
+    --color-8: #252525;
+    --color-9: #FFDECF;
 }
 
 @font-face {
