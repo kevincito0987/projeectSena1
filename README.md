@@ -7,8 +7,10 @@ Este es un **UI Kit y prototipo funcional** para una **aplicación de delivery d
 El objetivo de este proyecto es proporcionar una interfaz lista para usar, fácil de personalizar y desplegar en **GitHub Pages**. Utilizamos **GitHub Projects** para la gestión del proyecto y seguimos buenas prácticas con **Conventional Commits** y **Prettier** para mantener un código limpio y estructurado.
 
 Además, este proyecto hace referencia a las siguientes **evidencias del SENA**:
- 📌 **GA6-220501096-AA3-EV02** → "Crear el diseño del sitio web y/o móviles utilizando sus componentes y tecnologías respectivas"
- 📌 **GA6-220501096-AA3-EV03** → "Interfaces gráficas según requerimientos del proyecto"
+
+ 📌 **GA6-220501096-AA3-EV02** → "Crear el diseño del sitio web y/o móviles utilizando sus componentes y tecnologías respectivas".
+ 
+ 📌 **GA6-220501096-AA3-EV03** → "Interfaces gráficas según requerimientos del proyecto".
 
 ------
 
