@@ -11,11 +11,17 @@ El objetivo de este proyecto es proporcionar una interfaz lista para usar, fáci
 ## 📌 Características
 
 ✅ **Interfaz atractiva y responsive** 📱
+
  ✅ **Desarrollado con HTML, CSS y JS puro** 🛠️
+ 
  ✅ **Gestión del proyecto con GitHub Projects** ✅
+ 
  ✅ **Despliegue en GitHub Pages** 🌍
+ 
  ✅ **Componentes reutilizables y personalizables** 🎨
+ 
  ✅ **Uso de Conventional Commits** 📝
+ 
  ✅ **Código limpio con Prettier** ✨
 
 ------
@@ -70,8 +76,11 @@ jsonCopiarEditar{
 Para hacer que el sitio sea público en **GitHub Pages**, sigue estos pasos:
 
 1️⃣ **Sube el proyecto a un repositorio en GitHub**
+
  2️⃣ Ve a **Settings > Pages**
+ 
  3️⃣ En la sección **Source**, elige la rama `main` y la carpeta `/root`
+ 
  4️⃣ ¡Listo! Tu sitio estará disponible en:
 
 🔗 `https://kevincito0987.github.io/food-delivery-app/`
@@ -124,11 +133,17 @@ docs(readme): actualizar instrucciones de instalación
 🔹 **Tipos de commit recomendados:**
 
 - `feat`: 🚀 Nueva funcionalidad
+ 
 - `fix`: 🛠️ Corrección de errores
+  
 - `style`: 🎨 Cambios de formato, espacios, comas, etc.
+  
 - `refactor`: 🔄 Mejora en el código sin cambiar funcionalidad
+  
 - `docs`: 📚 Cambios en la documentación
+  
 - `test`: 🧪 Agregar o modificar pruebas
+  
 - `chore`: 🧹 Tareas menores, configuración, dependencias
 
 Para asegurarte de que los commits sigan este formato, puedes usar **Commitizen**:
@@ -184,26 +199,6 @@ Este proyecto está bajo la licencia **MIT**, lo que significa que puedes usarlo
 ## 🌟 Frase Estelar
 
 *"El código limpio no es solo un estándar, es una mentalidad. Un buen desarrollo no solo funciona, sino que se entiende, se mantiene y se disfruta."* ✨🔥
-
-------
-
-¡Ahora sí, tienes un README súper completo! 🚀🔥 Incluye todo lo necesario para que el proyecto sea **organizado, limpio y escalable**. 💯
-
-Si quieres agregar algo más, dime y lo ajustamos. 😎
-
-
-
-##### Tú dijiste:
-
-ok, y por ultimo este proyecto hace referencia a las siguientes evidencias del sena: (Crear el diseño del sitio web y/o móviles utilizando sus componentes y tecnologías respectivas GA6-220501096-AA3-EV02), (Interfaces gráficas según requerimientos del proyecto GA6-220501096-AA3-EV03 )
-
-
-
-###### ChatGPT Plus
-
-¡Perfecto, bro! Ahora añado la referencia a las **evidencias del SENA** para que quede bien documentado en el README. 🔥💯
-
-Aquí tienes la versión final con todo actualizado:
 
 ------
 
