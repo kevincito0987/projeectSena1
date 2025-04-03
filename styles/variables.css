@@ -22,6 +22,41 @@
 }
 
 @font-face {
-    font-family: "Inter";
-    src: url();
+    font-family: "Poppins-ExtraBold";
+    src: url(../fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "LeagueSpartan-Medium";
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Medium.ttf);
+}
+
+@font-face {
+    font-family: "LeagueSpartan-SemiBold";
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Black";
+    src: url(../fonts/Inter/static/Inter_24pt-Black.ttf);
+}
+
+@font-face {
+    font-family: "LeagueSpartan-Bold";
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Bold.ttf);
+}
+
+@font-face {
+    font-family: "LeagueSpartan-Light";
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Light.ttf);
+}
+
+@font-face {
+    font-family: "LeagueSpartan-Regular";
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Regular.ttf);
+}
+
+@font-face {
+    font-family: "LeagueSpartan-Thin";
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Thin.ttf);
 }
