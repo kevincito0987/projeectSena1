@@ -1,0 +1,136 @@
+/* 🔗 Importación de variables */
+@import url(./variables.css);
+
+/* 🌐 Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🎨 Fondo de la página */
+body {
+    background-image: url(../imgs/image1Page3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 🔝 Sección superior */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 43px;
+    height: 14px;
+    margin: 28px 35px 477px 305px;
+    gap: 8px;
+
+    /* 📱 Ajuste universal para que "Skip" se vea bien en cualquier celular */
+    margin-left: 75vw;
+}
+
+/* 📝 Texto de "Skip" */
+.top p {
+    font-family: "LeagueSpartan-SemiBold", sans-serif;
+    font-size: 15px;
+    color: var(--color-4);
+}
+
+/* 🔽 Sección inferior ajustada */
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-3);
+    border-radius: 20px;
+    width: 100%; /* 📏 Ahora ocupa todo el ancho */
+    max-width: 500px; /* 🔄 Limita el tamaño máximo para que no se expanda demasiado */
+    height: auto;
+    padding: 25px;
+    margin: auto;
+}
+
+
+/* 🏗️ Contenedor de elementos */
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* 🖼️ Ajuste de imagen */
+.items img {
+    margin-top: -20px;
+    width: 60px;
+}
+
+/* 🏆 Estilos del título */
+.items h2 {
+    font-family: "Inter-Black", sans-serif;
+    font-size: 22px;
+    color: var(--color-4);
+    margin-top: 15px;
+}
+
+/* 📝 Estilos del texto */
+.items p {
+    font-family: "LeagueSpartan-Medium", sans-serif;
+    text-align: center;
+    font-size: 13px;
+    color: var(--color-6);
+    margin-top: 14px;
+    width: 80%;
+}
+
+/* 🔘 Indicadores de progreso */
+.sliders {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-top: 25px;
+    gap: 5px;
+}
+
+/* 🎯 Estilos de los indicadores */
+.sliders div {
+    width: 18px;
+    height: 4px;
+    background: var(--color-5);
+    border-radius: 12px;
+}
+
+/* 🎨 Color destacado del primer indicador */
+.sliders div:first-child {
+    background: var(--color-4);
+}
+
+/* 🚀 Botón de navegación */
+a {
+    font-family: "LeagueSpartan-Medium", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--color-7);
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 38px;
+    margin-top: 30px;
+    background-color: var(--color-4);
+}
+/* 🔽 Ajuste para pantallas grandes (tablets y PCs) */
+@media (min-width: 768px) {
+    .bottom {
+        width: 100vw; /* 📏 Ocupar todo el ancho */
+        height: 50vh; /* 🔄 Ocupar todo el alto de la pantalla */
+        max-width: none; /* 🔄 Sin límites en pantallas grandes */
+        padding: 40px; /* 📌 Espacio adicional */
+        border-radius: 20px; /* 🔄 Sin esquinas redondeadas */
+    }
+}
