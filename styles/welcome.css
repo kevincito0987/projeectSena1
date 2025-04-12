@@ -5,3 +5,84 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--color-2);
+    font-family: "Poppins-ExtraBold", sans-serif;
+    color: var(--color-7);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 90px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 26.66px;
+}
+
+.title h1 {
+    font-family: "Poppins-ExtraBold", sans-serif;
+    font-size: 34.85px;
+}
+
+h1:nth-child(1) {
+    color: var(--color-1);
+} 
+
+p {
+    font-family: "LeagueSpartan-Medium", sans-serif;
+    font-size: 14px;
+    margin-top: 30.04px;
+    width: 295px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    gap: 4px;
+}
+
+a {
+    font-family: "LeagueSpartan-Medium", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--color-4);
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 207px;
+    height: 45px;
+}
+
+a:nth-child(1) {
+    background-color: var(--color-1);
+}
+
+a:nth-child(2) {
+    background-color: var(--color-5);
+}
