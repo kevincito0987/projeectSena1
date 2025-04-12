@@ -1,11 +1,14 @@
-@import url(/styles/variables.css);
+/* 🔗 Importación de variables */
+@import url("/styles/variables.css");
 
+/* 🌐 Reset de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* 🎨 Estilos generales */
 body {
     background-color: var(--color-1);
 }
@@ -17,6 +20,7 @@ main {
     height: 100vh;
 }
 
+/* 🏗️ Estilos de la sección */
 section {
     display: flex;
     flex-direction: column;
@@ -26,25 +30,27 @@ section {
     width: 204.31px;
 }
 
+/* 🏆 Diseño del título */
 .title {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 197px;
 }
 
+/* ✍️ Estilos de los encabezados */
 h1 {
     font-size: 34.85px;
     margin-top: 26px;
     font-family: "Poppins-ExtraBold";
 }
 
-h1:nth-child(1) {
+/* 🎨 Colores de los encabezados */
+h1:first-child {
     color: var(--color-2);
 }
 
-h1:nth-child(2) {
+h1:last-child {
     color: var(--color-3);
 }
