@@ -14,8 +14,8 @@ body {
     background-size: cover; /* ✨ Ajuste para cubrir toda la pantalla */
     background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
     background-position: center; /* 📌 Centra la imagen */
-    width: 100dvh; /* 📏 Ocupa el ancho completo */
-    height: 100dvh; /* 📏 Ocupa el alto completo */
+    width: 20vw !important; /* 📏 Ocupa el ancho completo */
+    height: 100vh; /* 📏 Ocupa el alto completo */
 }
 
 /* 🏗️ Configuración del encabezado */
@@ -24,7 +24,7 @@ header {
     justify-content: flex-end; /* 📏 Alineación a la derecha */
     align-items: center; /* 🎯 Centrado vertical */
     padding: 20px; /* 🖊️ Espaciado interno */
-    width: 197.3dvh !important; /* 📏 Ajuste de ancho */
+    width: 99vw !important; /* 📏 Ajuste de ancho */
 }
 
 /* 🔗 Estilos del botón superior */
@@ -60,7 +60,7 @@ main {
     justify-content: center; /* 🎯 Centra el contenido */
     align-items: center; /* 📌 Alineación adecuada */
     height: 338px; /* 📏 Ajuste de altura */
-    width: 197.3dvh !important; /* 📏 Ajuste de ancho */
+    width: 99.2vw !important; /* 📏 Ajuste de ancho */
     background: var(--color-3); /* 🎨 Aplicación del color */
     margin-top: 500px; /* 🔝 Margen superior */
     border-radius: 20px; /* 🏅 Bordes redondeados */
@@ -129,38 +129,8 @@ main {
     cursor: pointer; /* 👆 Cambio de cursor */
     transform: scale(1.1) translateY(-5px) translateX(5px); /* 🔄 Animación fluida */
 }
-
-/* 📱 Media query para smartwatches con ancho máximo de 162px */
-@media screen and (max-width: 162px) {
-    
-    /* 🏗️ Configuración del encabezado en dispositivos pequeños */
-    header {
-        display: flex;
-        align-items: center; /* 🎯 Centra verticalmente los elementos */
-        justify-content: center; /* 📌 Alineación centrada horizontalmente */
-        padding: 20px; /* 🖊️ Espaciado interno */
-        width: 100% !important; /* 📏 Ajuste de ancho */
-        margin-left: 40px; /* ↔️ Margen izquierdo */
-    }
-
-    /* 🔗 Ajuste del botón superior */
-    .top a {
-        margin-right: 0px; /* 🚫 Elimina el margen derecho */
-        padding: 0; /* 🚫 Elimina padding extra */
-        width: 80px; /* 📏 Reduce el ancho del botón */
-    }
-    
-    /* 🖼️ Ajuste del icono dentro del botón */
-    .top a img {
-        width: 8px; /* 📏 Reducción de tamaño de icono */
-    }
-
-    /* 🔤 Ajuste del texto dentro del botón */
-    .top a p {
-        font-size: 16px; /* 🔤 Ajuste del tamaño de fuente */
-    }
-
-    /* 🎨 Ajuste del fondo en smartwatches */
+@media screen and (max-width: 320px) {
+    /* 🎨 Ajuste del fondo en dispositivos móviles */
     body {
         background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
         background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
@@ -168,73 +138,384 @@ main {
         background-position: center; /* 📌 Centra la imagen */
         display: flex;
         flex-direction: column; /* 🏗️ Diseño vertical */
-        width: 80dvh; /* 📏 Ancho ajustado */
-        height: 650dvh; /* 📏 Altura ajustada */
+        width: 50vw; /* 📏 Ancho ajustado */
+        height: 160vh; /* 📏 Altura ajustada */
     }
-
-    /* 🔧 Ajuste del contenido principal */
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 190px; /* ↔️ Margen izquierdo */
+    }
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
     main {
         display: flex;
-        flex-direction: column; /* 🏗️ Organización vertical */
-        justify-content: center; /* 🎯 Centra contenido */
         align-items: center; /* 📌 Alineación adecuada */
-        width: 92% !important; /* 📏 Ajuste de ancho */
-        background: var(--color-3); /* 🎨 Color de fondo */
-        margin-right: 10px; /* ↔️ Margen derecho */
-        height: 100%; /* 📏 Ajuste de altura */
-        margin-top: 480px; /* 🔝 Margen superior */
-        width: 98dvh !important; /* 📏 Ajuste de ancho */
+        justify-content: center; /* 🎯 Centra el contenido */
+        height: 100vh; /* 📏 Ajuste de altura */
+        width: 115vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 250px; /* 🔝 Margen superior */
+        border-radius: 20px; /* 🏅 Bordes redondeados */
+        gap: 30px;
     }
-
-    /* 🏗️ Ajuste en los elementos */
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px;
+        width: 90%;
+        height: 100%;
+    }
     .items {
         display: flex;
-        flex-direction: column; /* 🏗️ Diseño vertical */
+        flex-direction: column; /* 🏗️ Organización vertical */
         align-items: center; /* 📌 Centrado */
-        justify-content: center; /* 🎯 Alineación adecuada */
+        gap: 40px; /* ↔️ Espaciado uniforme */
+        height: 130%; /* 📏 Ajuste de altura */
     }
-
-    /* 🖼️ Iconos en smartwatches */
-    .items img {
-        width: 50px; /* 📏 Ajuste de tamaño */
-        height: 50px; /* 📏 Ajuste de tamaño */
-    }
-
-    /* 🏆 Ajuste de títulos */
     .items h2 {
-        font-size: 28px; /* 🔤 Tamaño adecuado */
-        margin-top: 26px; /* 📏 Espaciado */
-        font-family: "Inter-Black"; /* 🎨 Fuente personalizada */
+        font-size: 25px; /* 🔤 Ajuste del tamaño de fuente */
         color: var(--color-2); /* 🎨 Color del texto */
-        text-align: center; /* 📌 Alineación */
-        width: 60%; /* 📏 Ajuste de ancho */
-    }
-
-    /* 📖 Ajuste de textos */
-    .items p {
-        font-size: 15px; /* 🔤 Ajuste de tamaño */
-        margin-top: 26px; /* 📏 Espaciado */
-        font-family: "LeagueSpartan-Medium"; /* 🎨 Fuente personalizada */
-        color: var(--color-6); /* 🎨 Color del texto */
-        width: 60%; /* 📏 Ajuste de ancho */
-        text-align: center; /* 📌 Alineación */
-    }
-
-    /* 🚀 Ajuste del botón en smartwatches */
-    .items a {
-        font-family: "LeagueSpartan-Medium", sans-serif; /* ✍️ Fuente personalizada */
-        font-size: 20px; /* 🔤 Tamaño adecuado */
-        text-decoration: none; /* 🚫 Sin subrayado */
-        color: var(--color-7); /* 🎨 Color del texto */
-        padding: 10px; /* 🖊️ Espaciado interno */
-        border-radius: 30px; /* 🔵 Bordes redondeados */
-        display: flex;
-        align-items: center; /* 📌 Centrado */
-        justify-content: center; /* 🎯 Alineación */
-        width: 100px; /* 📏 Ancho reducido */
-        height: 45px; /* 📏 Ajuste de altura */
-        margin-bottom: 30px; /* 🔝 Margen inferior */
-        background: var(--color-2); /* 🎨 Color de fondo */
-        transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* 🎭 Animación fluida */
     }
 }
+@media screen and (min-width: 321px) and (max-width: 390px) {
+    /* Estilos aquí */
+    body {
+        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 20% !important; /* 📏 Altura ajustada */
+    }
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 300px; /* ↔️ Margen izquierdo */
+    }
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 90vh  ; /* 📏 Ajuste de altura */
+        width: 110vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 277px; /* 🔝 Margen superior */
+        border-radius: 20px; /* 🏅 Bordes redondeados */
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px;
+    }
+    .items {
+        display: flex;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 440px) {
+    /* Estilos aqui */
+    body {
+        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 120vh !important; /* 📏 Altura ajustada */
+    }
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 320px; /* ↔️ Margen izquierdo */
+    }
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 90vh  ; /* 📏 Ajuste de altura */
+        width: 100vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 250px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 884px){
+    body {
+        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 100vh !important; /* 📏 Altura ajustada */
+    }
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 650px; /* ↔️ Margen izquierdo */
+    }
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 60vh  ; /* 📏 Ajuste de altura */
+        width: 100vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 380px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media screen and (min-width: 885px) and (max-width: 1114px) {
+    body {
+        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 100vh !important; /* 📏 Altura ajustada */
+    }
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 1060px; /* ↔️ Margen izquierdo */
+    }
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 60vh  ; /* 📏 Ajuste de altura */
+        width: 110vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 380px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    /* Estilos aquí */
+    body {
+        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 100vw !important; /* 📏 Ancho ajustado */
+        height: 100vh !important; /* 📏 Altura ajustada */
+    }
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        margin-left: 590px; /* ↔️ Margen izquierdo */
+    }
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 60vh !important; /* 📏 Ajuste de altura */
+        width: 107vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 380px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+  }
+  @media screen and (min-width: 162px) and (max-width: 319px) {
+    /* Estilos aqui */
+    body {
+        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 625vh !important; /* 📏 Altura ajustada */
+    }
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 90px; /* ↔️ Margen izquierdo */
+    }
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 70px; /* 📏 Reduce el ancho del botón */
+    }
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+    .top a p {
+        font-size: 17px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 420vh !important; /* 📏 Ajuste de altura */
+        width: 100vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 240px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    .items h2 {
+        font-size: 26px; /* 🔤 Ajuste del tamaño de fuente */
+        color: var(--color-2); /* 🎨 Color del texto */
+        text-align: center;
+    }
+    .items p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+        color: var(--color-6); /* 🎨 Color del texto */
+        text-align: center;
+        width: 90%;
+    }
+    .items a{
+        width: 120px; /* 📏 Reducción de tamaño de icono */
+    }
+  }
