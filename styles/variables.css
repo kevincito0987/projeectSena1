@@ -20,7 +20,10 @@
     --color-18: #070707; /* 🌑 Negro profundo */
     --color-19: #FF9E74; /* 🍂 Naranja otoñal */
 }
-
+:root {
+    --bg-body: url('../imgs/image1Page3.png'); /* 🎨 Fondo inicial */
+    --bg-card: var(--color-2); /* 🎨 Color inicial de las cajas */
+}
 /* 🖋️ Importación de fuentes personalizadas */
 @font-face {
     font-family: "Poppins-ExtraBold";

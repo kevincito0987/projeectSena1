@@ -10,7 +10,7 @@
 
 /* 🎨 Fondo de la página con imagen */
 body {
-    background-image: url(../imgs/image1Page3.png); /* 🖼️ Establece el fondo */
+    background-image: var(--bg-body); /* 🖼️ Establece el fondo */
     background-size: cover; /* ✨ Ajuste para cubrir toda la pantalla */
     background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
     background-position: center; /* 📌 Centra la imagen */
@@ -60,7 +60,7 @@ main {
     justify-content: center; /* 🎯 Centra el contenido */
     align-items: center; /* 📌 Alineación adecuada */
     height: 390px; /* 📏 Ajuste de altura */
-    width: 99.2vw !important; /* 📏 Ajuste de ancho */
+    width: 100vw !important; /* 📏 Ajuste de ancho */
     background: var(--color-3); /* 🎨 Aplicación del color */
     margin-top: 500px; /* 🔝 Margen superior */
     border-radius: 20px; /* 🏅 Bordes redondeados */  
@@ -146,7 +146,7 @@ main {
     border-radius: 12px;
 }
 .sliders div:first-child {
-    background: var(--color-2);
+    background: var(--bg-card);
 }
 /* 📱 Media query para dispositivos móviles con ancho máximo de 320px */
 @media screen and (max-width: 320px) {
