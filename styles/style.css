@@ -1,7 +1,7 @@
-/* 🔗 Importación de variables */
+/* 🔗 Importación de variables globales */
 @import url("/styles/variables.css");
 
-/* 🌐 Reset de estilos */
+/* 🌐 Reset de estilos: elimina márgenes y rellenos predeterminados */
 * {
     margin: 0;
     padding: 0;
@@ -10,69 +10,70 @@
 
 /* 🎨 Estilos generales */
 body {
-    background-color: var(--color-1);
+    background-color: var(--color-1); /* 🎨 Aplica el color de fondo definido en las variables */
 }
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
+    justify-content: center; /* 🏗️ Centra contenido en el eje horizontal */
+    align-items: center; /* 🎯 Centra contenido en el eje vertical */
+    height: 100dvh; /* 📏 Ocupa toda la altura de la pantalla */
 }
 
-/* 🏗️ Estilos de la sección */
+/* 🏗️ Estilos de la sección principal */
 section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 204.31px;
+    flex-direction: column; /* 🏛️ Organiza elementos en columna */
+    align-items: center; /* 📌 Centra los elementos */
+    justify-content: center; /* 🏅 Mantiene equilibrio visual */
+    text-align: center; /* 🎯 Asegura que el texto esté centrado */
+    width: 204.31px; /* 📏 Define un ancho específico */
 }
 
 /* 🏆 Diseño del título */
 .title {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 197px;
+    align-items: center; /* 📍 Centra verticalmente */
+    justify-content: center; /* 🔄 Centra horizontalmente */
+    text-align: center; /* 📝 Mantiene los textos alineados */
+    width: 197px; /* 📏 Ajusta el ancho para evitar desbordamientos */
 }
 
 /* ✍️ Estilos de los encabezados */
 h1 {
-    font-size: 34.85px;
-    margin-top: 26px;
-    font-family: "Poppins-ExtraBold";
+    font-size: 34.85px; /* 🔤 Tamaño adecuado para encabezado llamativo */
+    margin-top: 26px; /* 📏 Espaciado superior para separación */
+    font-family: "Poppins-ExtraBold"; /* 🎨 Fuente personalizada */
 }
 
 /* 🎨 Colores de los encabezados */
 h1:first-child {
-    color: var(--color-2);
+    color: var(--color-2); /* 🎨 Aplica el color definido en variables */
 }
 
 h1:last-child {
-    color: var(--color-3);
+    color: var(--color-3); /* 🎨 Segundo color para contraste */
 }
 
+/* 🎯 Media Query para Smartwatches (max 162px) */
 @media screen and (max-width: 162px) {
     body {
-        font-size: 12px; /* 🔤 Ajusta el tamaño del texto para mejor legibilidad */
+        font-size: 12px; /* 🔤 Ajusta el tamaño del texto para mejorar la legibilidad */
     }
 
     .main {
         display: flex;
-        flex-direction: column; /* 🏗️ Estructura más compacta para pantallas pequeñas */
-        align-items: center; /* 📏 Centra los elementos para mejor presentación */
+        flex-direction: column; /* 🏗️ Diseño más compacto */
+        align-items: center; /* 🎯 Centra los elementos */
     }
 
     .title h1 {
         font-size: 14px; /* ✍️ Ajusta el tamaño del título */
-        text-align: center; /* 🎯 Centra los títulos */
+        text-align: center; /* 📌 Asegura alineación adecuada */
     }
 
     img {
-        width: 40%; /* 🖼️ Hace que la imagen ocupe el ancho completo */
-        height: auto; /* 🔄 Mantiene la proporción */
+        width: 40%; /* 🖼️ Ajusta tamaño de imagen */
+        height: auto; /* 🔄 Mantiene proporción */
     }
 }
