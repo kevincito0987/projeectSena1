@@ -23,6 +23,7 @@
 :root {
     --bg-body: url('../imgs/image1Page3.png'); /* 🎨 Fondo inicial */
     --bg-card: var(--color-2); /* 🎨 Color inicial de las cajas */
+    --bg-card2: var(--color-5); /* 🎨 Color inicial de las cajas */
 }
 /* 🖋️ Importación de fuentes personalizadas */
 @font-face {

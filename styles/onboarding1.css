@@ -129,25 +129,40 @@ main {
     cursor: pointer; /* 👆 Cambio de cursor */
     transform: scale(1.1) translateY(-5px) translateX(5px); /* 🔄 Animación fluida */
 }
+/* 🔘 Contenedor de sliders (indicadores de progreso) */
 .sliders {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    border-radius: 12px;
-    width: 68px;
-    height: 4px;
-    margin-bottom: 20px;
+    display: flex; /* 🏗️ Activación de flexbox */
+    justify-content: center; /* 🎯 Centrado horizontal */
+    gap: 10px; /* ↔️ Espaciado uniforme entre los elementos */
+    margin-top: 20px; /* 🔝 Espaciado superior */
+    border-radius: 12px; /* 🏅 Bordes redondeados */
+    width: 68px; /* 📏 Ajuste de ancho */
+    height: 4px; /* 📏 Ajuste de altura */
+    margin-bottom: 20px; /* 🔽 Espaciado inferior */
 }
+
+/* 🔘 Estilos para cada elemento dentro de sliders */
 .sliders div {
-    width: 20px;
-    height: 4px;
-    background: var(--color-5);
-    border-radius: 12px;
+    width: 20px; /* 📏 Ajuste de ancho */
+    height: 4px; /* 📏 Ajuste de altura */
+    border-radius: 12px; /* 🏅 Bordes redondeados */
 }
+
+/* 🎨 Color del primer slider */
 .sliders div:first-child {
-    background: var(--bg-card);
+    background: var(--bg-card); /* 🎨 Aplica el color de fondo */
 }
+
+/* 🎨 Color del segundo slider */
+.sliders div:nth-child(2) {
+    background: var(bg-card2); /* 🎨 Color personalizado */
+}
+
+/* 🎨 Color del tercer slider */
+.sliders div:last-child {
+    background: var(bg-card2); /* 🎨 Color uniforme con el segundo */
+}
+
 /* 📱 Media query para dispositivos móviles con ancho máximo de 320px */
 @media screen and (max-width: 320px) {
     
