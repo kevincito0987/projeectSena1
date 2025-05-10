@@ -60,7 +60,7 @@ main {
     justify-content: center; /* 🎯 Centra el contenido */
     align-items: center; /* 📌 Alineación adecuada */
     height: 390px; /* 📏 Ajuste de altura */
-    width: 100vw !important; /* 📏 Ajuste de ancho */
+    width: 99.2vw !important; /* 📏 Ajuste de ancho */
     background: var(--color-3); /* 🎨 Aplicación del color */
     margin-top: 500px; /* 🔝 Margen superior */
     border-radius: 20px; /* 🏅 Bordes redondeados */  
