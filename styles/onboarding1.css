@@ -1,136 +1,240 @@
-/* 🔗 Importación de variables */
+/* 🔗 Importación de variables globales */
 @import url(./variables.css);
 
-/* 🌐 Reset de estilos */
+/* 🌐 Reset de estilos: elimina márgenes y rellenos predeterminados */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* 🚫 Eliminación de margen */
+    padding: 0; /* 🚫 Eliminación de relleno */
+    box-sizing: border-box; /* 📦 Garantiza que el tamaño total incluya borde y relleno */
 }
 
-/* 🎨 Fondo de la página */
+/* 🎨 Fondo de la página con imagen */
 body {
-    background-image: url(../imgs/image1Page3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../imgs/image1Page3.png); /* 🖼️ Establece el fondo */
+    background-size: cover; /* ✨ Ajuste para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+    background-position: center; /* 📌 Centra la imagen */
+    width: 100dvh; /* 📏 Ocupa el ancho completo */
+    height: 100dvh; /* 📏 Ocupa el alto completo */
 }
 
-/* 🔝 Sección superior */
-.top {
+/* 🏗️ Configuración del encabezado */
+header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 43px;
-    height: 14px;
-    margin: 28px 35px 477px 305px;
-    gap: 8px;
-
-    /* 📱 Ajuste universal para que "Skip" se vea bien en cualquier celular */
-    margin-left: 75vw;
+    justify-content: flex-end; /* 📏 Alineación a la derecha */
+    align-items: center; /* 🎯 Centrado vertical */
+    padding: 20px; /* 🖊️ Espaciado interno */
+    width: 197.3dvh !important; /* 📏 Ajuste de ancho */
 }
 
-/* 📝 Texto de "Skip" */
-.top p {
-    font-family: "LeagueSpartan-SemiBold", sans-serif;
-    font-size: 15px;
-    color: var(--color-4);
+/* 🔗 Estilos del botón superior */
+.top a {
+    font-family: "LeagueSpartan-Medium", sans-serif; /* ✍️ Fuente personalizada */
+    font-size: 24px; /* 🔤 Tamaño de fuente óptimo */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    color: var(--color-4); /* 🎨 Color del texto */
+    padding: 10px; /* 🖊️ Espaciado interno */
+    border-radius: 30px; /* 🔵 Bordes redondeados */
+    display: flex;
+    align-items: center; /* 📌 Centrado */
+    justify-content: center;
+    margin-right: 70px; /* ↔️ Espaciado derecho */
+    margin-top: 20px; /* 🔝 Espaciado superior */
+    width: 207px; /* 📏 Ancho */
+    height: 45px; /* 📏 Altura */
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* 🎭 Animación suave */
+    gap: 8px; /* ↔️ Espaciado entre elementos internos */
 }
 
-/* 🔽 Sección inferior ajustada */
+/* ✨ Efecto hover */
+.top a:hover {
+    cursor: pointer; /* 👆 Cambio de cursor al pasar el mouse */
+    transform: scale(1.1) translateY(-5px) translateX(5px); /* 🔄 Animación fluida */
+    background: var(--color-5); /* 🎨 Cambio de color */
+}
+
+/* 🎨 Estilo del contenido principal */
+main {
+    display: flex;
+    flex-direction: column; /* 🏗️ Diseño vertical */
+    justify-content: center; /* 🎯 Centra el contenido */
+    align-items: center; /* 📌 Alineación adecuada */
+    height: 338px; /* 📏 Ajuste de altura */
+    width: 197.3dvh !important; /* 📏 Ajuste de ancho */
+    background: var(--color-3); /* 🎨 Aplicación del color */
+    margin-top: 500px; /* 🔝 Margen superior */
+    border-radius: 20px; /* 🏅 Bordes redondeados */
+}
+
+/* 📌 Configuración de la sección inferior */
 .bottom {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-3);
-    border-radius: 20px;
-    width: 100%; /* 📏 Ahora ocupa todo el ancho */
-    max-width: 500px; /* 🔄 Limita el tamaño máximo para que no se expanda demasiado */
-    height: auto;
-    padding: 25px;
-    margin: auto;
+    flex-direction: column; /* 🏗️ Organización vertical */
+    padding: 10px; /* 🖊️ Espaciado interno */
+    height: 330px; /* 📏 Ajuste de altura */
 }
 
-
-/* 🏗️ Contenedor de elementos */
+/* 🏗️ Organización de los elementos */
 .items {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
+    flex-direction: column; /* 🏗️ Organización vertical */
+    align-items: center; /* 📌 Centrado */
+    gap: 20px; /* ↔️ Espaciado uniforme */
+    height: 338px; /* 📏 Ajuste de altura */
 }
 
-/* 🖼️ Ajuste de imagen */
+/* 🖼️ Iconos dentro de items */
 .items img {
-    margin-top: -20px;
-    width: 60px;
+    width: 50px; /* 📏 Ajuste de tamaño */
+    height: 50px; /* 📏 Ajuste de tamaño */
 }
 
-/* 🏆 Estilos del título */
+/* 🏆 Estilos para títulos */
 .items h2 {
-    font-family: "Inter-Black", sans-serif;
-    font-size: 22px;
-    color: var(--color-4);
-    margin-top: 15px;
+    font-size: 34px; /* 🔤 Tamaño llamativo */
+    margin-top: 26px; /* 📏 Espaciado */
+    font-family: "Inter-Black"; /* 🎨 Fuente personalizada */
+    color: var(--color-2); /* 🎨 Aplicación del color */
 }
 
-/* 📝 Estilos del texto */
+/* 📖 Estilos para textos descriptivos */
 .items p {
-    font-family: "LeagueSpartan-Medium", sans-serif;
-    text-align: center;
-    font-size: 13px;
-    color: var(--color-6);
-    margin-top: 14px;
-    width: 80%;
+    font-size: 20px; /* 🔤 Tamaño optimizado */
+    margin-top: 26px; /* 📏 Espaciado */
+    font-family: "LeagueSpartan-Medium"; /* 🎨 Fuente personalizada */
+    color: var(--color-6); /* 🎨 Aplicación del color */
+    width: 60%; /* 📏 Ajuste de ancho */
+    text-align: center; /* 📌 Alineación centrada */
 }
 
-/* 🔘 Indicadores de progreso */
-.sliders {
+/* 🚀 Estilos del botón */
+.items a {
+    font-family: "LeagueSpartan-Medium", sans-serif; /* ✍️ Fuente personalizada */
+    font-size: 20px; /* 🔤 Tamaño adecuado */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    color: var(--color-7); /* 🎨 Color del texto */
+    padding: 10px; /* 🖊️ Espaciado interno */
+    border-radius: 30px; /* 🔵 Bordes redondeados */
     display: flex;
+    align-items: center; /* 📌 Centrado */
     justify-content: center;
-    width: auto;
-    margin-top: 25px;
-    gap: 5px;
+    width: 207px; /* 📏 Ancho */
+    height: 45px; /* 📏 Altura */
+    background: var(--color-2); /* 🎨 Color de fondo */
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* 🎭 Animación suave */
 }
 
-/* 🎯 Estilos de los indicadores */
-.sliders div {
-    width: 18px;
-    height: 4px;
-    background: var(--color-5);
-    border-radius: 12px;
+/* 🔄 Hover para el botón */
+.items a:hover {
+    cursor: pointer; /* 👆 Cambio de cursor */
+    transform: scale(1.1) translateY(-5px) translateX(5px); /* 🔄 Animación fluida */
 }
 
-/* 🎨 Color destacado del primer indicador */
-.sliders div:first-child {
-    background: var(--color-4);
-}
+/* 📱 Media query para smartwatches con ancho máximo de 162px */
+@media screen and (max-width: 162px) {
+    
+    /* 🏗️ Configuración del encabezado en dispositivos pequeños */
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 40px; /* ↔️ Margen izquierdo */
+    }
 
-/* 🚀 Botón de navegación */
-a {
-    font-family: "LeagueSpartan-Medium", sans-serif;
-    font-size: 17px;
-    text-decoration: none;
-    color: var(--color-7);
-    padding: 10px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 130px;
-    height: 38px;
-    margin-top: 30px;
-    background-color: var(--color-4);
-}
-/* 🔽 Ajuste para pantallas grandes (tablets y PCs) */
-@media (min-width: 768px) {
-    .bottom {
-        width: 100vw; /* 📏 Ocupar todo el ancho */
-        height: 50vh; /* 🔄 Ocupar todo el alto de la pantalla */
-        max-width: none; /* 🔄 Sin límites en pantallas grandes */
-        padding: 40px; /* 📌 Espacio adicional */
-        border-radius: 20px; /* 🔄 Sin esquinas redondeadas */
+    /* 🔗 Ajuste del botón superior */
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 80px; /* 📏 Reduce el ancho del botón */
+    }
+    
+    /* 🖼️ Ajuste del icono dentro del botón */
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+
+    /* 🔤 Ajuste del texto dentro del botón */
+    .top a p {
+        font-size: 16px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+
+    /* 🎨 Ajuste del fondo en smartwatches */
+    body {
+        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 80dvh; /* 📏 Ancho ajustado */
+        height: 650dvh; /* 📏 Altura ajustada */
+    }
+
+    /* 🔧 Ajuste del contenido principal */
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        justify-content: center; /* 🎯 Centra contenido */
+        align-items: center; /* 📌 Alineación adecuada */
+        width: 92% !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Color de fondo */
+        margin-right: 10px; /* ↔️ Margen derecho */
+        height: 100%; /* 📏 Ajuste de altura */
+        margin-top: 480px; /* 🔝 Margen superior */
+        width: 98dvh !important; /* 📏 Ajuste de ancho */
+    }
+
+    /* 🏗️ Ajuste en los elementos */
+    .items {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        align-items: center; /* 📌 Centrado */
+        justify-content: center; /* 🎯 Alineación adecuada */
+    }
+
+    /* 🖼️ Iconos en smartwatches */
+    .items img {
+        width: 50px; /* 📏 Ajuste de tamaño */
+        height: 50px; /* 📏 Ajuste de tamaño */
+    }
+
+    /* 🏆 Ajuste de títulos */
+    .items h2 {
+        font-size: 28px; /* 🔤 Tamaño adecuado */
+        margin-top: 26px; /* 📏 Espaciado */
+        font-family: "Inter-Black"; /* 🎨 Fuente personalizada */
+        color: var(--color-2); /* 🎨 Color del texto */
+        text-align: center; /* 📌 Alineación */
+        width: 60%; /* 📏 Ajuste de ancho */
+    }
+
+    /* 📖 Ajuste de textos */
+    .items p {
+        font-size: 15px; /* 🔤 Ajuste de tamaño */
+        margin-top: 26px; /* 📏 Espaciado */
+        font-family: "LeagueSpartan-Medium"; /* 🎨 Fuente personalizada */
+        color: var(--color-6); /* 🎨 Color del texto */
+        width: 60%; /* 📏 Ajuste de ancho */
+        text-align: center; /* 📌 Alineación */
+    }
+
+    /* 🚀 Ajuste del botón en smartwatches */
+    .items a {
+        font-family: "LeagueSpartan-Medium", sans-serif; /* ✍️ Fuente personalizada */
+        font-size: 20px; /* 🔤 Tamaño adecuado */
+        text-decoration: none; /* 🚫 Sin subrayado */
+        color: var(--color-7); /* 🎨 Color del texto */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        border-radius: 30px; /* 🔵 Bordes redondeados */
+        display: flex;
+        align-items: center; /* 📌 Centrado */
+        justify-content: center; /* 🎯 Alineación */
+        width: 100px; /* 📏 Ancho reducido */
+        height: 45px; /* 📏 Ajuste de altura */
+        margin-bottom: 30px; /* 🔝 Margen inferior */
+        background: var(--color-2); /* 🎨 Color de fondo */
+        transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* 🎭 Animación fluida */
     }
 }
