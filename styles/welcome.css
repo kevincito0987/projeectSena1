@@ -22,6 +22,7 @@ main {
     align-items: center;
     height: 100vh;
     margin-top: 90px;
+    margin-bottom: 40px;
 }
 
 /* 📍 Sección central */
@@ -95,4 +96,59 @@ a:first-child {
 
 a:last-child {
     background-color: var(--color-5);
+}
+
+@media screen and (max-width: 320px) {
+    main {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 390px) {
+    main {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 440px) {
+    main {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 441px) and (max-width: 600px) {
+    main {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    main {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 884px) {
+    main {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 885px) and (max-width: 1114px) {
+    main {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1115px) and (max-width: 1280px) {
+    main {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
