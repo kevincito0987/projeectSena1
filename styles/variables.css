@@ -1,66 +1,68 @@
+/* 🎨 Definición de variables globales */
 :root {
-    --color-1: #F5CB58;
-    --color-2: #FF642F;
-    --color-3: #F8F8F8;
-    --color-4: #E95322;
-    --color-5: #F3E9B5;
-    --color-6: #391713;
-    --color-7: #FFFFFF;
-    --color-8: #252525;
-    --color-9: #FFDECF;
-    --color-10: #F5F5F5;
-    --color-11: #E9F6FE;
-    --color-12: #676767;
-    --color-13: #F4BA1B;
-    --color-14: #FFD8C7;
-    --color-15: #FE4A0C31;
-    --color-16: #000000;
-    --color-17: #D9D9D9;
-    --color-18: #070707;
-    --color-19: #FF9E74;
+    --color-1: #F5CB58; /* 🌞 Amarillo vibrante */
+    --color-2: #FF642F; /* 🔥 Naranja intenso */
+    --color-3: #F8F8F8; /* 🌫️ Blanco suave */
+    --color-4: #E95322; /* 🍊 Rojo anaranjado */
+    --color-5: #F3E9B5; /* 🍯 Amarillo pastel */
+    --color-6: #391713; /* 🌑 Marrón oscuro */
+    --color-7: #FFFFFF; /* ❄️ Blanco puro */
+    --color-8: #252525; /* 🌚 Gris oscuro */
+    --color-9: #FFDECF; /* 🌸 Rosa tenue */
+    --color-10: #F5F5F5; /* 🔲 Gris claro */
+    --color-11: #E9F6FE; /* 🌊 Azul pálido */
+    --color-12: #676767; /* 🏴 Gris medio */
+    --color-13: #F4BA1B; /* 🍯 Dorado vibrante */
+    --color-14: #FFD8C7; /* 🧡 Melocotón suave */
+    --color-15: #FE4A0C31; /* 🔴 Rojo translúcido */
+    --color-16: #000000; /* ⚫ Negro puro */
+    --color-17: #D9D9D9; /* ⚪ Gris plateado */
+    --color-18: #070707; /* 🌑 Negro profundo */
+    --color-19: #FF9E74; /* 🍂 Naranja otoñal */
 }
 
+/* 🖋️ Importación de fuentes personalizadas */
 @font-face {
     font-family: "Poppins-ExtraBold";
-    src: url(../fonts/Poppins/Poppins-ExtraBold.ttf);
+    src: url(../fonts/Poppins/Poppins-ExtraBold.ttf); /* 🏆 Fuente audaz */
 }
 
 @font-face {
     font-family: "LeagueSpartan-Medium";
-    src: url(../fonts/League_Spartan/static/LeagueSpartan-Medium.ttf);
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Medium.ttf); /* 🏛️ Fuente equilibrada */
 }
 
 @font-face {
     font-family: "LeagueSpartan-SemiBold";
-    src: url(../fonts/League_Spartan/static/LeagueSpartan-SemiBold.ttf);
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-SemiBold.ttf); /* 🔡 Fuente seminegrita */
 }
 
 @font-face {
     font-family: "Inter-Black";
-    src: url(../fonts/Inter/static/Inter_24pt-Black.ttf);
+    src: url(../fonts/Inter/static/Inter_24pt-Black.ttf); /* ⚡ Fuente de alto contraste */
 }
 
 @font-face {
     font-family: "LeagueSpartan-Bold";
-    src: url(../fonts/League_Spartan/static/LeagueSpartan-Bold.ttf);
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Bold.ttf); /* 🏅 Fuente destacada */
 }
 
 @font-face {
     font-family: "LeagueSpartan-Light";
-    src: url(../fonts/League_Spartan/static/LeagueSpartan-Light.ttf);
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Light.ttf); /* 🎨 Fuente ligera */
 }
 
 @font-face {
     font-family: "LeagueSpartan-Regular";
-    src: url(../fonts/League_Spartan/static/LeagueSpartan-Regular.ttf);
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Regular.ttf); /* 📖 Fuente estándar */
 }
 
 @font-face {
     font-family: "LeagueSpartan-Thin";
-    src: url(../fonts/League_Spartan/static/LeagueSpartan-Thin.ttf);
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Thin.ttf); /* 🧵 Fuente delicada */
 }
 
 @font-face {
     font-family: "Poppins-SemiBold";
-    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf); /* 🔤 Variante seminegrita */
 }
