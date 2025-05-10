@@ -1,154 +1,200 @@
-/* 🔗 Importación de variables */
+/* 🔗 Importación de variables globales */
 @import url(./variables.css);
 
-/* 🌐 Reset de estilos */
+/* 🌐 Reset de estilos: elimina márgenes y rellenos predeterminados */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* 🚫 Eliminación de margen */
+    padding: 0; /* 🚫 Eliminación de relleno */
+    box-sizing: border-box; /* 📦 Garantiza que el tamaño total incluya borde y relleno */
 }
 
 /* 🎨 Estilos generales */
 body {
-    background-color: var(--color-2);
-    font-family: "Poppins-ExtraBold", sans-serif;
-    color: var(--color-7);
+    background-color: var(--color-2); /* 🎨 Aplicación del color de fondo */
+    font-family: "Poppins-ExtraBold", sans-serif; /* ✍️ Fuente estilizada */
+    color: var(--color-7); /* 🎨 Color del texto */
 }
 
 /* 🏗️ Contenedor principal */
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: 90px;
-    margin-bottom: 40px;
+    justify-content: center; /* 🎯 Centra contenido */
+    align-items: center; /* 📌 Alineación vertical */
+    height: 100vh; /* 📏 Ocupa toda la altura de la pantalla */
+    margin-top: 90px; /* 🔝 Espaciado superior */
+    margin-bottom: 40px; /* 🔝 Espaciado inferior */
 }
 
 /* 📍 Sección central */
 .middle {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin: 20px;
+    flex-direction: column; /* 🏗️ Organización vertical */
+    align-items: center; /* 📌 Centrado */
+    justify-content: center; /* 🎯 Alineación adecuada */
+    text-align: center; /* 📌 Asegura que el texto esté centrado */
+    width: 100%; /* 📏 Ocupa el ancho completo */
+    margin: 20px; /* 🔝 Espaciado */
 }
 
 /* 🏆 Estilos del título */
 .title {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 26.66px;
+    align-items: center; /* 📍 Centrado vertical */
+    justify-content: center; /* 🔄 Centrado horizontal */
+    width: 100%; /* 📏 Ajuste de ancho */
+    margin-top: 26.66px; /* 📏 Espaciado superior */
 }
 
+/* ✍️ Estilos del encabezado */
 .title h1 {
-    font-family: "Poppins-ExtraBold", sans-serif;
-    font-size: 34.85px;
+    font-family: "Poppins-ExtraBold", sans-serif; /* ✍️ Fuente personalizada */
+    font-size: 34.85px; /* 🔤 Tamaño del texto */
 }
 
 /* 🎨 Color del primer encabezado */
 h1:first-child {
-    color: var(--color-1);
+    color: var(--color-1); /* 🎨 Aplicación del color */
 }
 
 /* 📝 Estilos del texto */
 p {
-    font-family: "LeagueSpartan-Medium", sans-serif;
-    font-size: 14px;
-    margin-top: 30.04px;
-    width: 295px;
+    font-family: "LeagueSpartan-Medium", sans-serif; /* ✍️ Fuente estilizada */
+    font-size: 14px; /* 🔤 Ajuste del tamaño */
+    margin-top: 30.04px; /* 📏 Espaciado */
+    width: 295px; /* 📏 Ajuste de ancho */
 }
 
 /* 🔘 Contenedor de botones */
 .buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 30px;
-    gap: 4px;
+    flex-direction: column; /* 🏗️ Organización vertical */
+    align-items: center; /* 📌 Centrado */
+    justify-content: center; /* 🎯 Alineación adecuada */
+    width: 100%; /* 📏 Ajuste de ancho */
+    margin-top: 30px; /* 🔝 Espaciado superior */
+    gap: 4px; /* ↔️ Espaciado uniforme */
 }
 
 /* 🎯 Estilos de los botones */
 a {
-    font-family: "LeagueSpartan-Medium", sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-    color: var(--color-4);
-    padding: 10px;
-    border-radius: 30px;
+    font-family: "LeagueSpartan-Medium", sans-serif; /* ✍️ Fuente estilizada */
+    font-size: 24px; /* 🔤 Tamaño del texto */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    color: var(--color-4); /* 🎨 Color del texto */
+    padding: 10px; /* 🖊️ Espaciado interno */
+    border-radius: 30px; /* 🔵 Bordes redondeados */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 207px;
-    height: 45px;
+    align-items: center; /* 📌 Centrado */
+    justify-content: center; /* 🎯 Alineación adecuada */
+    width: 207px; /* 📏 Ajuste de ancho */
+    height: 45px; /* 📏 Ajuste de altura */
 }
 
 /* 🎨 Colores de los botones */
 a:first-child {
-    background-color: var(--color-1);
+    background-color: var(--color-1); /* 🎨 Color primario */
 }
 
 a:last-child {
-    background-color: var(--color-5);
+    background-color: var(--color-5); /* 🎨 Color secundario */
 }
 
+/* 🔄 Hover para los botones */
+a:hover {
+    cursor: pointer; /* 👆 Cambio de cursor */
+    transform: scale(1.1); /* 🔄 Animación fluida */
+}
+/* 📱 Media query para dispositivos con ancho máximo de 320px */
 @media screen and (max-width: 320px) {
     main {
-        margin-top: 80px;
+        margin-top: 80px; /* 🔝 Ajuste de margen superior en pantallas muy pequeñas */
     }
 }
 
+/* 📱 Media query para dispositivos con ancho entre 321px y 390px */
 @media screen and (min-width: 321px) and (max-width: 390px) {
     main {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 10px; /* 🔝 Ajuste mínimo en pantallas pequeñas */
+        margin-bottom: 20px; /* 🔽 Espaciado inferior */
     }
 }
 
+/* 📱 Media query para dispositivos con ancho entre 391px y 440px */
 @media screen and (min-width: 391px) and (max-width: 440px) {
     main {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 10px; /* 🔝 Espaciado uniforme */
+        margin-bottom: 20px; /* 🔽 Ajuste inferior */
     }
 }
 
+/* 📱 Media query para dispositivos con ancho entre 441px y 600px */
 @media screen and (min-width: 441px) and (max-width: 600px) {
     main {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 10px; /* 🔝 Margen superior controlado */
+        margin-bottom: 20px; /* 🔽 Espaciado inferior */
     }
 }
 
+/* 🖥️ Media query para dispositivos con ancho entre 601px y 768px */
 @media screen and (min-width: 601px) and (max-width: 768px) {
     main {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 10px; /* 🔝 Ajuste del margen superior */
+        margin-bottom: 20px; /* 🔽 Espaciado inferior */
     }
 }
 
+/* 🖥️ Media query para dispositivos con ancho entre 769px y 884px */
 @media screen and (min-width: 769px) and (max-width: 884px) {
     main {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 10px; /* 🔝 Ajuste superior */
+        margin-bottom: 20px; /* 🔽 Margen inferior */
     }
 }
 
+/* 🖥️ Media query para dispositivos con ancho entre 885px y 1114px */
 @media screen and (min-width: 885px) and (max-width: 1114px) {
     main {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 10px; /* 🔝 Ajuste uniforme del margen superior */
+        margin-bottom: 20px; /* 🔽 Ajuste inferior */
     }
 }
 
+/* 🖥️ Media query para dispositivos con ancho entre 1115px y 1280px */
 @media screen and (min-width: 1115px) and (max-width: 1280px) {
     main {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 10px; /* 🔝 Espaciado superior controlado */
+        margin-bottom: 20px; /* 🔽 Espaciado inferior */
+    }
+}
+/* 📱 Media query para dispositivos con ancho entre 162px y 319px */
+@media screen and (min-width: 162px) and (max-width: 319px) {
+
+    /* 🎨 Ajuste del fondo en dispositivos pequeños */
+    body {
+        background-color: var(--color-2); /* 🎨 Aplicación del color de fondo */
+        font-family: "Poppins-ExtraBold", sans-serif; /* ✍️ Fuente estilizada */
+        color: var(--color-7); /* 🎨 Color del texto */
+        width: 40vw; /* 📏 Ajuste de ancho */
+        height: 380vh; /* 📏 Ajuste de altura */
+        display: flex; /* 🏗️ Activación de flexbox */
+    }
+
+    /* 🔧 Ajuste del contenido principal */
+    main {
+        margin-top: 80px; /* 🔝 Espaciado superior controlado */
+        margin-bottom: 20px; /* 🔽 Espaciado inferior */
+        display: flex; /* 🏗️ Activación de flexbox */
+        flex-direction: column; /* 🏛️ Organización vertical */
+        justify-content: center; /* 🎯 Centrado vertical */
+        align-items: center; /* 📌 Centrado horizontal */
+        width: 140vw; /* 📏 Ajuste de ancho */
+        height: 300vh; /* 📏 Ajuste de altura */
+        margin-bottom: 20px; /* 🔝 Espaciado inferior */
+    }
+
+    /* 📖 Ajuste del texto dentro de `main` */
+    main p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+        width: 80%; /* 📏 Ajuste de ancho del texto */
     }
 }
