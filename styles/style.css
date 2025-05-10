@@ -17,7 +17,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
 }
 
 /* 🏗️ Estilos de la sección */
@@ -53,4 +53,26 @@ h1:first-child {
 
 h1:last-child {
     color: var(--color-3);
+}
+
+@media screen and (max-width: 162px) {
+    body {
+        font-size: 12px; /* 🔤 Ajusta el tamaño del texto para mejor legibilidad */
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Estructura más compacta para pantallas pequeñas */
+        align-items: center; /* 📏 Centra los elementos para mejor presentación */
+    }
+
+    .title h1 {
+        font-size: 14px; /* ✍️ Ajusta el tamaño del título */
+        text-align: center; /* 🎯 Centra los títulos */
+    }
+
+    img {
+        width: 40%; /* 🖼️ Hace que la imagen ocupe el ancho completo */
+        height: auto; /* 🔄 Mantiene la proporción */
+    }
 }
