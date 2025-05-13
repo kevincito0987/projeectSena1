@@ -1,5 +1,678 @@
+/* 🔗 Importación de variables globales */
+@import url(./variables.css);
+
+/* 🌐 Reset de estilos: elimina márgenes y rellenos predeterminados */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* 🚫 Eliminación de margen */
+    padding: 0; /* 🚫 Eliminación de relleno */
+    box-sizing: border-box; /* 📦 Garantiza que el tamaño total incluya borde y relleno */
+}
+
+/* 🎨 Fondo de la página con imagen */
+body {
+    background-image: url(../imgs/image1Page4.png); /* 🖼️ Establece el fondo */
+    background-size: cover; /* ✨ Ajuste para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+    background-position: center; /* 📌 Centra la imagen */
+    width: 20vw !important; /* 📏 Ocupa el ancho completo */
+    height: 100vh; /* 📏 Ocupa el alto completo */
+}
+
+/* 🏗️ Configuración del encabezado */
+header {
+    display: flex;
+    justify-content: flex-end; /* 📏 Alineación a la derecha */
+    align-items: center; /* 🎯 Centrado vertical */
+    padding: 20px; /* 🖊️ Espaciado interno */
+    width: 99vw !important; /* 📏 Ajuste de ancho */
+}
+
+/* 🔗 Estilos del botón superior */
+.top a {
+    font-family: "LeagueSpartan-Medium", sans-serif; /* ✍️ Fuente personalizada */
+    font-size: 24px; /* 🔤 Tamaño de fuente óptimo */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    color: var(--color-4); /* 🎨 Color del texto */
+    padding: 10px; /* 🖊️ Espaciado interno */
+    border-radius: 30px; /* 🔵 Bordes redondeados */
+    display: flex;
+    align-items: center; /* 📌 Centrado */
+    justify-content: center;
+    margin-right: 70px; /* ↔️ Espaciado derecho */
+    margin-top: 20px; /* 🔝 Espaciado superior */
+    width: 207px; /* 📏 Ancho */
+    height: 45px; /* 📏 Altura */
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* 🎭 Animación suave */
+    gap: 8px; /* ↔️ Espaciado entre elementos internos */
+}
+
+/* ✨ Efecto hover */
+.top a:hover {
+    cursor: pointer; /* 👆 Cambio de cursor al pasar el mouse */
+    transform: scale(1.1) translateY(-5px) translateX(5px); /* 🔄 Animación fluida */
+    background: var(--color-5); /* 🎨 Cambio de color */
+}
+
+/* 🎨 Estilo del contenido principal */
+main {
+    display: flex;
+    flex-direction: column; /* 🏗️ Diseño vertical */
+    justify-content: center; /* 🎯 Centra el contenido */
+    align-items: center; /* 📌 Alineación adecuada */
+    height: 390px; /* 📏 Ajuste de altura */
+    width: 99.2vw !important; /* 📏 Ajuste de ancho */
+    background: var(--color-3); /* 🎨 Aplicación del color */
+    margin-top: 500px; /* 🔝 Margen superior */
+    border-radius: 20px; /* 🏅 Bordes redondeados */  
+}
+
+/* 📌 Configuración de la sección inferior */
+.bottom {
+    display: flex;
+    flex-direction: column; /* 🏗️ Organización vertical */
+    padding: 10px; /* 🖊️ Espaciado interno */
+    height: 330px; /* 📏 Ajuste de altura */
+}
+
+/* 🏗️ Organización de los elementos */
+.items {
+    display: flex;
+    flex-direction: column; /* 🏗️ Organización vertical */
+    align-items: center; /* 📌 Centrado */
+    gap: 20px; /* ↔️ Espaciado uniforme */
+    height: 338px; /* 📏 Ajuste de altura */
+}
+
+/* 🖼️ Iconos dentro de items */
+.items img {
+    width: 50px; /* 📏 Ajuste de tamaño */
+    height: 50px; /* 📏 Ajuste de tamaño */
+}
+
+/* 🏆 Estilos para títulos */
+.items h2 {
+    font-size: 34px; /* 🔤 Tamaño llamativo */
+    margin-top: 26px; /* 📏 Espaciado */
+    font-family: "Inter-Black"; /* 🎨 Fuente personalizada */
+    color: var(--color-2); /* 🎨 Aplicación del color */
+}
+
+/* 📖 Estilos para textos descriptivos */
+.items p {
+    font-size: 20px; /* 🔤 Tamaño optimizado */
+    margin-top: 26px; /* 📏 Espaciado */
+    font-family: "LeagueSpartan-Medium"; /* 🎨 Fuente personalizada */
+    color: var(--color-6); /* 🎨 Aplicación del color */
+    width: 60%; /* 📏 Ajuste de ancho */
+    text-align: center; /* 📌 Alineación centrada */
+}
+
+/* 🚀 Estilos del botón */
+.items a {
+    font-family: "LeagueSpartan-Medium", sans-serif; /* ✍️ Fuente personalizada */
+    font-size: 20px; /* 🔤 Tamaño adecuado */
+    text-decoration: none; /* 🚫 Sin subrayado */
+    color: var(--color-7); /* 🎨 Color del texto */
+    padding: 10px; /* 🖊️ Espaciado interno */
+    border-radius: 30px; /* 🔵 Bordes redondeados */
+    display: flex;
+    align-items: center; /* 📌 Centrado */
+    justify-content: center;
+    width: 207px; /* 📏 Ancho */
+    height: 45px; /* 📏 Altura */
+    background: var(--color-2); /* 🎨 Color de fondo */
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out; /* 🎭 Animación suave */
+}
+
+/* 🔄 Hover para el botón */
+.items a:hover {
+    cursor: pointer; /* 👆 Cambio de cursor */
+    transform: scale(1.1) translateY(-5px) translateX(5px); /* 🔄 Animación fluida */
+}
+/* 🔘 Contenedor de sliders (indicadores de progreso) */
+.sliders {
+    display: flex; /* 🏗️ Activación de flexbox */
+    justify-content: center; /* 🎯 Centrado horizontal */
+    gap: 10px; /* ↔️ Espaciado uniforme entre los elementos */
+    margin-top: 20px; /* 🔝 Espaciado superior */
+    border-radius: 12px; /* 🏅 Bordes redondeados */
+    width: 68px; /* 📏 Ajuste de ancho */
+    height: 4px; /* 📏 Ajuste de altura */
+    margin-bottom: 20px; /* 🔽 Espaciado inferior */
+}
+
+/* 🔘 Estilos para cada elemento dentro de sliders */
+.sliders div {
+    width: 20px; /* 📏 Ajuste de ancho */
+    height: 4px; /* 📏 Ajuste de altura */
+    border-radius: 12px; /* 🏅 Bordes redondeados */
+}
+
+/* 🎨 Color del primer slider */
+.sliders div:first-child {
+    background: var(--color-5); /* 🎨 Aplica el color de fondo */
+}
+
+/* 🎨 Color del segundo slider */
+.sliders div:nth-child(2) {
+    background: var(--color-2); /* 🎨 Color personalizado */
+}
+
+/* 🎨 Color del tercer slider */
+.sliders div:last-child {
+    background: var(--color-5); /* 🎨 Color uniforme con el segundo */
+}
+
+/* 📱 Media query para dispositivos móviles con ancho máximo de 320px */
+@media screen and (max-width: 320px) {
+    
+    /* 🎨 Ajuste del fondo en dispositivos móviles */
+    body {
+        background-image: url(../imgs/image1Page4.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 50vw; /* 📏 Ancho ajustado */
+        height: 160vh; /* 📏 Altura ajustada */
+    }
+
+    /* 🏗️ Configuración del encabezado en dispositivos móviles */
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 250px; /* ↔️ Margen izquierdo */
+    }
+
+    /* 🔗 Ajuste del botón superior */
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    
+    /* 🖼️ Ajuste del icono dentro del botón */
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+
+    /* 🔤 Ajuste del texto dentro del botón */
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+
+    /* 🔧 Ajuste del contenido principal */
+    main {
+        display: flex;
+        align-items: center; /* 📌 Alineación adecuada */
+        justify-content: center; /* 🎯 Centra el contenido */
+        height: 100vh; /* 📏 Ajuste de altura */
+        width: 115vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 250px; /* 🔝 Margen superior */
+        border-radius: 20px; /* 🏅 Bordes redondeados */
+        gap: 30px; /* ↔️ Espaciado entre elementos */
+    }
+
+    /* 📌 Configuración de la sección inferior */
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px; /* 🔝 Margen inferior */
+        width: 90%; /* 📏 Ajuste de ancho */
+        height: 100%; /* 📏 Ajuste de altura */
+    }
+
+    /* 🏗️ Organización de los elementos */
+    .items {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        align-items: center; /* 📌 Centrado */
+        gap: 40px; /* ↔️ Espaciado uniforme */
+        height: 130%; /* 📏 Ajuste de altura */
+    }
+
+    /* 🏆 Ajuste de títulos */
+    .items h2 {
+        font-size: 25px; /* 🔤 Ajuste del tamaño de fuente */
+        color: var(--color-2); /* 🎨 Color del texto */
+    }
+}
+/* 📱 Media query para dispositivos con ancho entre 321px y 390px */
+@media screen and (min-width: 321px) and (max-width: 390px) {
+    
+    /* 🎨 Ajuste del fondo en dispositivos medianos */
+    body {
+        background-image: url(../imgs/image1Page4.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 20% !important; /* 📏 Altura ajustada */
+    }
+
+    /* 🏗️ Configuración del encabezado en dispositivos medianos */
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 300px; /* ↔️ Margen izquierdo */
+    }
+
+    /* 🔗 Ajuste del botón superior */
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    
+    /* 🖼️ Ajuste del icono dentro del botón */
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+
+    /* 🔤 Ajuste del texto dentro del botón */
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+
+    /* 🔧 Ajuste del contenido principal */
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 90vh; /* 📏 Ajuste de altura */
+        width: 110vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 277px; /* 🔝 Margen superior */
+        border-radius: 20px; /* 🏅 Bordes redondeados */
+    }
+
+    /* 📌 Configuración de la sección inferior */
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px; /* 🔝 Margen inferior */
+    }
+
+    /* 🏗️ Organización de los elementos */
+    .items {
+        display: flex; /* 🏗️ Flexbox para mejor alineación */
+    }
+}
+/* 📱 Media query para dispositivos con ancho entre 391px y 440px */
+@media screen and (min-width: 391px) and (max-width: 440px) {
+
+    /* 🎨 Ajuste del fondo en dispositivos medianos */
+    body {
+        background-image: url(../imgs/image1Page4.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 120vh !important; /* 📏 Altura ajustada */
+    }
+
+    /* 🏗️ Configuración del encabezado en dispositivos medianos */
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 320px; /* ↔️ Margen izquierdo */
+    }
+
+    /* 🔗 Ajuste del botón superior */
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    
+    /* 🖼️ Ajuste del icono dentro del botón */
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+
+    /* 🔤 Ajuste del texto dentro del botón */
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+
+    /* 🔧 Ajuste del contenido principal */
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 90vh; /* 📏 Ajuste de altura */
+        width: 100vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 250px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+
+    /* 📌 Configuración de la sección inferior */
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px; /* 🔝 Margen inferior */
+    }
+
+    /* 🏗️ Organización de los elementos */
+    .items {
+        display: flex; /* 🏗️ Flexbox para mejor alineación */
+        justify-content: center; /* 🎯 Centrado de contenido */
+        gap: 30px; /* ↔️ Espaciado uniforme */
+    }
+}
+/* 📱 Media query para dispositivos con ancho entre 768px y 884px */
+@media screen and (min-width: 768px) and (max-width: 884px) {
+
+    /* 🎨 Ajuste del fondo en dispositivos medianos */
+    body {
+        background-image: url(../imgs/image1Page4.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 100vh !important; /* 📏 Altura ajustada */
+    }
+
+    /* 🏗️ Configuración del encabezado en dispositivos medianos */
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 650px; /* ↔️ Margen izquierdo */
+    }
+
+    /* 🔗 Ajuste del botón superior */
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    
+    /* 🖼️ Ajuste del icono dentro del botón */
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+
+    /* 🔤 Ajuste del texto dentro del botón */
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+
+    /* 🔧 Ajuste del contenido principal */
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 60vh; /* 📏 Ajuste de altura */
+        width: 100vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 380px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+
+    /* 📌 Configuración de la sección inferior */
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px; /* 🔝 Margen inferior */
+    }
+
+    /* 🏗️ Organización de los elementos */
+    .items {
+        display: flex; /* 🏗️ Flexbox para mejor alineación */
+        justify-content: center; /* 🎯 Centrado de contenido */
+        gap: 30px; /* ↔️ Espaciado uniforme */
+    }
+}
+/* 📱 Media query para dispositivos con ancho entre 885px y 1114px */
+@media screen and (min-width: 885px) and (max-width: 1114px) {
+
+    /* 🎨 Ajuste del fondo en dispositivos medianos */
+    body {
+        background-image: url(../imgs/image1Page4.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 100vh !important; /* 📏 Altura ajustada */
+    }
+
+    /* 🏗️ Configuración del encabezado en dispositivos medianos */
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 1060px; /* ↔️ Margen izquierdo */
+    }
+
+    /* 🔗 Ajuste del botón superior */
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    
+    /* 🖼️ Ajuste del icono dentro del botón */
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+
+    /* 🔤 Ajuste del texto dentro del botón */
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+
+    /* 🔧 Ajuste del contenido principal */
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 60vh; /* 📏 Ajuste de altura */
+        width: 110vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 380px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+
+    /* 📌 Configuración de la sección inferior */
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px; /* 🔝 Margen inferior */
+    }
+
+    /* 🏗️ Organización de los elementos */
+    .items {
+        display: flex; /* 🏗️ Flexbox para mejor alineación */
+        justify-content: center; /* 🎯 Centrado de contenido */
+        gap: 30px; /* ↔️ Espaciado uniforme */
+    }
+}
+/* 📱 Media query para dispositivos con ancho entre 162px y 319px */
+@media screen and (min-width: 162px) and (max-width: 319px) {
+
+    /* 🎨 Ajuste del fondo en dispositivos pequeños */
+    body {
+        background-image: url(../imgs/image1Page4.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 10vw !important; /* 📏 Ancho ajustado */
+        height: 625vh !important; /* 📏 Altura ajustada */
+    }
+
+    /* 🏗️ Configuración del encabezado en dispositivos pequeños */
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        width: 100% !important; /* 📏 Ajuste de ancho */
+        margin-left: 90px; /* ↔️ Margen izquierdo */
+    }
+
+    /* 🔗 Ajuste del botón superior */
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 70px; /* 📏 Reduce el ancho del botón */
+    }
+    
+    /* 🖼️ Ajuste del icono dentro del botón */
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+
+    /* 🔤 Ajuste del texto dentro del botón */
+    .top a p {
+        font-size: 17px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+
+    /* 🔧 Ajuste del contenido principal */
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 420vh !important; /* 📏 Ajuste de altura */
+        width: 100vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 240px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+
+    /* 📌 Configuración de la sección inferior */
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px; /* 🔝 Margen inferior */
+    }
+
+    /* 🏗️ Organización de los elementos */
+    .items {
+        display: flex; /* 🏗️ Flexbox para mejor alineación */
+        justify-content: center; /* 🎯 Centrado de contenido */
+        gap: 30px; /* ↔️ Espaciado uniforme */
+    }
+
+    /* 🏆 Ajuste de títulos */
+    .items h2 {
+        font-size: 26px; /* 🔤 Ajuste del tamaño de fuente */
+        color: var(--color-2); /* 🎨 Color del texto */
+        text-align: center; /* 📌 Alineación centrada */
+    }
+
+    /* 📖 Ajuste de textos */
+    .items p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+        color: var(--color-6); /* 🎨 Color del texto */
+        text-align: center; /* 📌 Alineación centrada */
+        width: 90%; /* 📏 Ajuste de ancho */
+    }
+
+    /* 🚀 Ajuste del botón */
+    .items a {
+        width: 120px; /* 📏 Ajuste del tamaño */
+    }
+}
+/* 📱 Media query para dispositivos con ancho entre 1280px y 1281px */
+@media screen and (min-width: 1280px) and (max-width: 1281px) {
+
+    /* 🎨 Ajuste del fondo en dispositivos grandes */
+    body {
+        background-image: url(../imgs/image1Page4.png); /* 🖼️ Mantiene el fondo */
+        background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
+        background-position: center; /* 📌 Centra la imagen */
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        width: 150vw !important; /* 📏 Ajuste de ancho */
+        height: 100vh !important; /* 📏 Ajuste de altura */
+    }
+
+    /* 🏗️ Configuración del encabezado en dispositivos grandes */
+    header {
+        display: flex;
+        align-items: center; /* 🎯 Centra verticalmente los elementos */
+        justify-content: center; /* 📌 Alineación centrada horizontalmente */
+        padding: 20px; /* 🖊️ Espaciado interno */
+        margin-left: 1140px; /* ↔️ Margen izquierdo */
+        width: 80px !important; /* 📏 Ajuste de ancho */
+    }
+
+    /* 🔗 Ajuste del botón superior */
+    .top a {
+        margin-right: 0px; /* 🚫 Elimina el margen derecho */
+        padding: 0; /* 🚫 Elimina padding extra */
+        width: 90px; /* 📏 Reduce el ancho del botón */
+    }
+    
+    /* 🖼️ Ajuste del icono dentro del botón */
+    .top a img {
+        width: 8px; /* 📏 Reducción de tamaño de icono */
+    }
+
+    /* 🔤 Ajuste del texto dentro del botón */
+    .top a p {
+        font-size: 20px; /* 🔤 Ajuste del tamaño de fuente */
+    }
+
+    /* 🔧 Ajuste del contenido principal */
+    main {
+        display: flex;
+        flex-direction: column; /* 🏗️ Diseño vertical */
+        height: 65vh !important; /* 📏 Ajuste de altura */
+        width: 100vw !important; /* 📏 Ajuste de ancho */
+        background: var(--color-3); /* 🎨 Aplicación del color */
+        margin-top: 200px; /* 🔝 Margen superior */
+        border-radius: 30px; /* 🏅 Bordes redondeados */
+    }
+
+    /* 📌 Configuración de la sección inferior */
+    .bottom {
+        display: flex;
+        flex-direction: column; /* 🏗️ Organización vertical */
+        padding: 10px; /* 🖊️ Espaciado interno */
+        height: 380px; /* 📏 Ajuste de altura */
+        margin-bottom: 20px; /* 🔝 Margen inferior */
+    }
+
+    /* 🏗️ Organización de los elementos */
+    .items {
+        display: flex; /* 🏗️ Flexbox para mejor alineación */
+        justify-content: center; /* 🎯 Centrado de contenido */
+        gap: 30px; /* ↔️ Espaciado uniforme */
+    }
 }
