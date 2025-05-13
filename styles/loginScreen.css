@@ -15,10 +15,13 @@ header {
     align-items: center;
     padding: 20px;
     width: 100%;
-    background: var(--color-2);
-    height: 40vh;
+    background-image: url(../imgs/image3FavoritesPage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
 }
-.login-header a img {
+.login-header a img {   
     width: 60px;
     height: 56px;
 }
@@ -29,7 +32,6 @@ header {
     align-items: center;
     padding: 20px;
     width: 100%;
-    background: var(--color-5);
     height: 10vh;
 }
 .login-header h3 {
