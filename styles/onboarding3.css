@@ -10,7 +10,7 @@
 
 /* 🎨 Fondo de la página con imagen */
 body {
-    background-image: url(../imgs/image1Page3.png); /* 🖼️ Establece el fondo */
+    background-image: url(../imgs/image1Page5.png); /* 🖼️ Establece el fondo */
     background-size: cover; /* ✨ Ajuste para cubrir toda la pantalla */
     background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
     background-position: center; /* 📌 Centra la imagen */
@@ -150,7 +150,7 @@ main {
 
 /* 🎨 Color del primer slider */
 .sliders div:first-child {
-    background: var(--color-2); /* 🎨 Aplica el color de fondo */
+    background: var(--color-5); /* 🎨 Aplica el color de fondo */
 }
 
 /* 🎨 Color del segundo slider */
@@ -160,7 +160,7 @@ main {
 
 /* 🎨 Color del tercer slider */
 .sliders div:last-child {
-    background: var(--color-5); /* 🎨 Color uniforme con el segundo */
+    background: var(--color-2); /* 🎨 Color uniforme con el segundo */
 }
 
 /* 📱 Media query para dispositivos móviles con ancho máximo de 320px */
@@ -168,7 +168,7 @@ main {
     
     /* 🎨 Ajuste del fondo en dispositivos móviles */
     body {
-        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-image: url(../imgs/image1Page5.png); /* 🖼️ Mantiene el fondo */
         background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
         background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
         background-position: center; /* 📌 Centra la imagen */
@@ -249,7 +249,7 @@ main {
     
     /* 🎨 Ajuste del fondo en dispositivos medianos */
     body {
-        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-image: url(../imgs/image1Page5.png); /* 🖼️ Mantiene el fondo */
         background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
         background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
         background-position: center; /* 📌 Centra la imagen */
@@ -316,7 +316,7 @@ main {
 
     /* 🎨 Ajuste del fondo en dispositivos medianos */
     body {
-        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-image: url(../imgs/image1Page5.png); /* 🖼️ Mantiene el fondo */
         background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
         background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
         background-position: center; /* 📌 Centra la imagen */
@@ -385,7 +385,7 @@ main {
 
     /* 🎨 Ajuste del fondo en dispositivos medianos */
     body {
-        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-image: url(../imgs/image1Page5.png); /* 🖼️ Mantiene el fondo */
         background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
         background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
         background-position: center; /* 📌 Centra la imagen */
@@ -454,7 +454,7 @@ main {
 
     /* 🎨 Ajuste del fondo en dispositivos medianos */
     body {
-        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-image: url(../imgs/image1Page5.png); /* 🖼️ Mantiene el fondo */
         background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
         background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
         background-position: center; /* 📌 Centra la imagen */
@@ -523,7 +523,7 @@ main {
 
     /* 🎨 Ajuste del fondo en dispositivos pequeños */
     body {
-        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-image: url(../imgs/image1Page5.png); /* 🖼️ Mantiene el fondo */
         background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
         background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
         background-position: center; /* 📌 Centra la imagen */
@@ -612,7 +612,7 @@ main {
 
     /* 🎨 Ajuste del fondo en dispositivos grandes */
     body {
-        background-image: url(../imgs/image1Page3.png); /* 🖼️ Mantiene el fondo */
+        background-image: url(../imgs/image1Page5.png); /* 🖼️ Mantiene el fondo */
         background-size: cover; /* 🔄 Ajuste para cubrir toda la pantalla */
         background-repeat: no-repeat; /* 🚫 Evita repetición de la imagen */
         background-position: center; /* 📌 Centra la imagen */
