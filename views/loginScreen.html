@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- 🏷️ Título de la pantalla de Onboarding -->
-        <title>Onboarding Screen 1</title>
+        <title>Login Screen</title>
     
         <!-- 🔖 Ícono del sitio web (favicon) -->
         <link rel="shortcut icon" href="../icons/restaurante.svg" type="image/x-icon">
@@ -14,8 +14,56 @@
         <link rel="stylesheet" href="">
     </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <div class="login-header">
+            <a href="">
+                <img src="../icons/backIconArrow.svg" alt="Back Icon">
+            </a>
+            <h3>Login</h3>
+            <a href="">
+                <img src="" alt="Toogle Icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <h3>Welcome</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="email">Email or Mobile Number</label>
+                    <input type="text" id="email" name="email" value="example@example.com">
+                </div>
+                <div class="form-group password-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" value="**********">
+                    <span class="password-toggle"><img src="../icons/icon1LogSingUpPage.svg" alt=""></span>
+                </div>
+                <a href="#" class="forgot-password">Forget Password</a>
+            </div>
+            <div class="login-main">
+                <a href="" class="login-button">
+                    <p>Log In</p>
+                </a>
+                <p>or sign up with</p>
+                <div class="appLogin">
+                    <a href="">
+                        <img src="../icons/icon2LogSingUpPage.svg" alt="Google Icon">
+                    </a>
+                    <a href="">
+                        <img src="../icons/icon3LogSingUpPage.svg" alt="Facebook Icon">
+                    </a>
+                    <a href="">
+                        <img src="../icons/icon4LogSingUpPage.svg" alt="Finger Print Icon">
+                    </a>
+                </div>
+            </div>
+            <div class="account">
+                <p>Don't have an account?</p>
+                <a href="">Sign Up</a>
+            </div>
+        </div>
+    </main>
     <footer></footer>
 </body>
 </html>
