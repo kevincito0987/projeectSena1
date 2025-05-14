@@ -260,3 +260,40 @@ main {
     font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
     margin: 20px 0;  /* 🛋️ Espaciado externo */
 }
+/* 🔽 Estilos del pie de página */
+footer {  
+    display: flex;  /* 🏗️ Diseño flexible para adaptación en distintos dispositivos */
+    align-items: center;  /* 📌 Centrado vertical de los elementos */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    height: auto;  /* 📏 Altura adaptable según el contenido */
+    background: var(--color-2);  /* 🎨 Color de fondo personalizado */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para estética */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🎭 Contenedor de íconos sociales o enlaces */
+.icons {  
+    display: flex;  /* 🏗️ Diseño flexible para alineación */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: space-between;  /* ↔️ Distribución equitativa */
+    width: 100%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 20px;  /* 📌 Separación entre elementos */
+    padding: 10px 40px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔗 Estilos para los enlaces dentro de los íconos */
+.icons a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación suave para interactividad */
+    padding: 15px;  /* 🛋️ Espaciado interno para clic cómodo */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor apariencia */
+}
+
+/* ✨ Efecto hover sobre los enlaces de íconos */
+.icons a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo interactivo */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-19);  /* 🎨 Cambio de color para resaltar interacción */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
