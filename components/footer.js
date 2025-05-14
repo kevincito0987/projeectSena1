@@ -1,13 +1,13 @@
 // 📌 footer.js - Manejo dinámico de la barra de navegación en el footer
 
 document.addEventListener('DOMContentLoaded', () => {  
-    // 🎭 Lista de íconos con sus respectivas IDs  
-    const iconsData = [  
-        { id: "home-icon" },  /* 🏠 Icono de Inicio */  
-        { id: "plates-icon" }, /* 🍽️ Icono de Platos */  
-        { id: "hearth-icon" }, /* ❤️ Icono de Favoritos */  
-        { id: "inventary-icon" }, /* 📦 Icono de Inventario */  
-        { id: "support-icon" } /* 🛠️ Icono de Soporte */  
+    // 🎭 Lista de íconos con sus respectivas IDs y posiciones  
+    const icons = [  
+        { id: "home-icon", position: 0 },  /* 🏠 Icono de Inicio */  
+        { id: "plates-icon", position: 1 }, /* 🍽️ Icono de Platos */  
+        { id: "hearth-icon", position: 2 }, /* ❤️ Icono de Favoritos */  
+        { id: "inventary-icon", position: 3 }, /* 📦 Icono de Inventario */  
+        { id: "support-icon", position: 4 } /* 🛠️ Icono de Soporte */  
     ];  
 
     // 🔗 Elementos clave del DOM  
@@ -19,17 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
      * @param {HTMLElement} iconElement - Elemento ícono al que debe moverse la barra  
      */  
     function moveBarToIcon(iconElement) {  
-        if (!movingBar || !iconElement || !iconsContainer) {  
-            console.error("❌ Error: Elementos no válidos en moveBarToIcon.");  
-            return;  
-        }  
-
         const iconRect = iconElement.getBoundingClientRect();  /* 🏷️ Obtención de coordenadas del ícono */  
         const footerRect = iconElement.closest('footer').getBoundingClientRect();  /* 📌 Posición del footer */  
-        const iconsContainerRect = iconsContainer.getBoundingClientRect();  /* 📦 Posición del contenedor de íconos */  
 
         // 📐 Calcular la posición de la barra respecto al ícono seleccionado  
-        const barPosition = (iconRect.left - iconsContainerRect.left) +  
+        const barPosition = iconRect.left - footerRect.left +  
                             (iconElement.offsetWidth / 2) -  
                             (movingBar.offsetWidth / 2);  
 
@@ -39,36 +33,37 @@ document.addEventListener('DOMContentLoaded', () => {
     /**  
      * 🚀 Inicializar la barra en el primer ícono (Home)  
      */  
-    function initializeMovingBar() {  
-        const homeIcon = document.getElementById("home-icon");  /* 🏠 Ícono inicial */  
-        if (homeIcon) {  
-            moveBarToIcon(homeIcon);  
-        }  
+    const homeIcon = document.getElementById("home-icon");  /* 🏠 Ícono inicial */  
+    if (homeIcon) {  
+        moveBarToIcon(homeIcon);  
     }  
 
     // 🎯 Evento para mover la barra al pasar el mouse sobre un ícono  
-    iconsData.forEach(iconInfo => {  
-        const iconElement = document.getElementById(iconInfo.id);  /* 🔗 Obtener ícono del DOM */  
+    icons.forEach(icon => {  
+        const iconElement = document.getElementById(icon.id);  /* 🔗 Obtener ícono del DOM */  
         if (iconElement) {  
             iconElement.addEventListener('mouseover', () => moveBarToIcon(iconElement));  /* 🖱️ Movimiento al pasar el mouse */  
+        }  
+    });  
+
+    // ✅ Evento opcional: Fijar barra al hacer click en un ícono  
+    icons.forEach(icon => {  
+        const iconElement = document.getElementById(icon.id);  
+        if (iconElement) {  
             iconElement.addEventListener('click', () => {  
                 moveBarToIcon(iconElement);  
                 // 💡 Aquí podrías marcar visualmente el ícono activo si es necesario  
             });  
-        } else {  
-            console.warn(`⚠️ Advertencia: Ícono con ID "${iconInfo.id}" no encontrado en el DOM.`);  
         }  
     });  
 
     // 🔄 Restaurar barra al primer ícono si el mouse sale del footer  
     const footerElement = document.querySelector('footer');  
     if (footerElement) {  
-        footerElement.addEventListener('mouseleave', initializeMovingBar);  
+        footerElement.addEventListener('mouseleave', () => {  
+            if (homeIcon) {  
+                moveBarToIcon(homeIcon);  
+            }  
+        });  
     }  
-
-    // 📏 Ajustar posición de la barra al cambiar el tamaño de la ventana  
-    window.addEventListener('resize', () => setTimeout(initializeMovingBar, 100));  
-
-    // 🔥 Ejecutar inicialización al cargar la página  
-    initializeMovingBar();  
 });
