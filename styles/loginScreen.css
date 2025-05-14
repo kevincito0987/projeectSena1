@@ -270,6 +270,10 @@ footer {
     background: var(--color-2);  /* 🎨 Color de fondo personalizado */
     border-radius: 30px;  /* 🏵️ Bordes redondeados para estética */
     padding: 20px;  /* 🛋️ Espaciado interno */
+    position: absolute;
+    position: sticky;
+    z-index: 10;
+    box-shadow: 0px 0px 25px 40px var(--color-14); /* Sombra blanca añadida aquí */
 }
 
 /* 🎭 Contenedor de íconos sociales o enlaces */
@@ -296,4 +300,14 @@ footer {
     transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
     background-color: var(--color-19);  /* 🎨 Cambio de color para resaltar interacción */
     border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+.moving-bar {
+    width: 20px;
+    height: 10px;
+    background-color: var(--color-7);
+    position: absolute;
+    bottom: 0; /* Ajustar para que se vea debajo de los íconos */
+    transition: transform 0.4s ease;
+    left: 0px;
+    border-radius: 5px;
 }
