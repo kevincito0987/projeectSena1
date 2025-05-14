@@ -314,34 +314,45 @@ footer {
     border-radius: 5px;  /* 🏵️ Bordes redondeados */
 }
 
+/* 📱 Media query: Ajustes para pantallas pequeñas (máx. 320px) */
 @media screen and (max-width: 320px) {
 
-    header {
-        height: 80vh;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .login-header h3 {
-        font-size: 40px;
-    }
-    .login-header .back-icon {
-        width: 30px;
-        height: 30px;
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        height: 80vh;  /* 📏 Aumento de altura para una mejor visualización */
+        background-position: center;  /* 🎯 Centrado del fondo */
+        background-size: cover;  /* 🏞️ Ajuste para cubrir toda la pantalla */
+        background-repeat: no-repeat;  /* 🚫 Evitar la repetición */
     }
 
-    .account p {
-        font-size: 14px;
+    /* 🏷️ Tamaño del título en el header */
+    .login-header h3 {  
+        font-size: 40px;  /* 📏 Ajuste de tamaño en pantallas pequeñas */
     }
-    .account a {
-        font-size: 14px;
+
+    /* 🔙 Ajuste de tamaño del ícono de regreso */
+    .login-header .back-icon {  
+        width: 30px;  /* 📏 Reducción de ancho */
+        height: 30px;  /* 📏 Reducción de altura */
     }
-    footer {
-        box-shadow: 0px 0px 25px 30px var(--color-14);
-        width: 100%;
+
+    /* 🔖 Ajuste de texto en la sección de cuentas */
+    .account p {  
+        font-size: 14px;  /* 📏 Reducción de tamaño en pantallas pequeñas */
     }
-    .icons {
-        padding: 0 1px;
-        margin-left: -30px;
+    .account a {  
+        font-size: 14px;  /* 📏 Tamaño uniforme con el texto */
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        box-shadow: 0px 0px 25px 30px var(--color-14);  /* 💡 Efecto de sombra para resaltar el footer */
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        padding: 0 1px;  /* 🛋️ Espaciado reducido */
+        margin-left: -30px;  /* 🏁 Corrección del margen para mejor alineación */
     }
 }
