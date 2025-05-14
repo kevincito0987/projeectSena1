@@ -270,10 +270,10 @@ footer {
     background: var(--color-2);  /* 🎨 Color de fondo personalizado */
     border-radius: 30px;  /* 🏵️ Bordes redondeados para estética */
     padding: 20px;  /* 🛋️ Espaciado interno */
-    position: absolute;
-    position: sticky;
-    z-index: 10;
-    box-shadow: 0px 0px 25px 40px var(--color-14); /* Sombra blanca añadida aquí */
+    position: absolute;  /* 📌 Fijación del pie de página */
+    position: sticky;  /* 🔝 Mantener visible al hacer scroll */
+    z-index: 10;  /* 🔢 Prioridad en la capa de visualización */
+    box-shadow: 0px 0px 25px 40px var(--color-14); /* 💡 Efecto de sombra para resaltar el pie */
 }
 
 /* 🎭 Contenedor de íconos sociales o enlaces */
@@ -301,13 +301,15 @@ footer {
     background-color: var(--color-19);  /* 🎨 Cambio de color para resaltar interacción */
     border-radius: 30px;  /* 🏵️ Bordes redondeados */
 }
-.moving-bar {
-    width: 20px;
-    height: 10px;
-    background-color: var(--color-7);
-    position: absolute;
-    bottom: 0; /* Ajustar para que se vea debajo de los íconos */
-    transition: transform 0.4s ease;
-    left: 0px;
-    border-radius: 5px;
+
+/* 📌 Barra animada en la parte inferior del footer */
+.moving-bar {  
+    width: 20px;  /* 📏 Tamaño definido */
+    height: 10px;  /* 📏 Altura ajustada */
+    background-color: var(--color-7);  /* 🎨 Color de fondo */
+    position: absolute;  /* 📌 Posición absoluta respecto al footer */
+    bottom: 0;  /* 🎯 Ubicación debajo de los íconos */
+    transition: transform 0.4s ease;  /* 🎭 Animación suave */
+    left: 0px;  /* 🏁 Posicionamiento inicial */
+    border-radius: 5px;  /* 🏵️ Bordes redondeados */
 }
