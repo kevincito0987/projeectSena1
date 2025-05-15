@@ -411,3 +411,73 @@ footer {
         height: auto;  /* 🔄 Mantenemos la proporción del icono */  
     }
 }
+/* 📱 Media query: Ajustes para pantallas entre 321px y 390px */
+@media screen and (min-width: 321px) and (max-width: 390px) {
+
+    /* 🎨 Estilos de fondo para el cuerpo */
+    body {  
+        background-position: center;  /* 🎯 Centrado del fondo para asegurar una vista equilibrada */  
+        background-size: cover;  /* 🏞️ Ajuste para cubrir toda la pantalla sin deformaciones */  
+        background-repeat: no-repeat;  /* 🚫 Evitar la repetición para una apariencia más limpia */  
+    }
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        height: 80vh;  /* 📏 Aumento de altura para una mejor visualización */
+    }
+
+    /* 🏷️ Tamaño del título en el header */
+    .login-header h3 {  
+        font-size: 40px;  /* 📏 Ajuste de tamaño en pantallas pequeñas */
+    }
+
+    /* 🔙 Ajuste de tamaño del ícono de regreso */
+    .login-header .back-icon {  
+        width: 30px;  /* 📏 Reducción de ancho */
+        height: 30px;  /* 📏 Reducción de altura */
+    }
+
+    /* 🔖 Ajuste de texto en la sección de cuentas */
+    .account p {  
+        font-size: 14px;  /* 📏 Reducción de tamaño en pantallas pequeñas */
+    }
+    .account a {  
+        font-size: 14px;  /* 📏 Tamaño uniforme con el texto */
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        box-shadow: 0px 0px 25px 30px var(--color-14);  /* 💡 Efecto de sombra para resaltar el footer */
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        padding: 0 1px;  /* 🛋️ Espaciado reducido */
+        margin-left: -20px;  /* 🏁 Corrección del margen para mejor alineación */
+    }
+
+    /* 🔐 Contenedor de la contraseña */
+    .password-container {  
+        position: relative;  /* 📌 Establecemos el contenedor como relativo para posicionar el icono absolutamente dentro de él */  
+        display: flex;  /* 🏗️ Usamos flexbox para alinear los elementos verticalmente */  
+        flex-direction: column;  /* 🔼 Colocamos la etiqueta encima del input para mejor organización */  
+    }
+
+    /* 🔑 Estilos del campo de entrada de la contraseña */
+    #password {  
+        padding-right: 30px;  /* 🛋️ Espaciado a la derecha para evitar la superposición con el ícono */  
+        padding: 4px;  /* 📏 Espaciado interno para mejor visualización */  
+    }
+
+    /* 👁️ Estilos del icono para mostrar/ocultar contraseña */
+    .password-container img {  
+        position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+        top: 50%;  /* 🎯 Centramos verticalmente */  
+        right: 5px;  /* 📏 Ubicación a la derecha del input */  
+        transform: translateY(-50%);  /* 🎭 Ajuste fino del centrado vertical */  
+        cursor: pointer;  /* 🖱️ Indicamos que el icono es interactivo */  
+        width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
+        height: auto;  /* 🔄 Mantenemos la proporción del icono */  
+    }
+}
