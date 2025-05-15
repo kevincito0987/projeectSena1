@@ -1,78 +1,82 @@
-// 📌 footer.js - Manejo dinámico de la barra de navegación en el footer
+// 📌 footer.js - Manejo dinámico de la barra de navegación en el footer adaptable
 
-document.addEventListener('DOMContentLoaded', () => {  
-    // 🎭 Lista de íconos con sus respectivas IDs y posiciones  
-    const icons = [  
-        { id: "home-icon", position: 0 },  /* 🏠 Icono de Inicio */  
-        { id: "plates-icon", position: 1 }, /* 🍽️ Icono de Platos */  
-        { id: "hearth-icon", position: 2 }, /* ❤️ Icono de Favoritos */  
-        { id: "inventary-icon", position: 3 }, /* 📦 Icono de Inventario */  
-        { id: "support-icon", position: 4 } /* 🛠️ Icono de Soporte */  
-    ];  
+document.addEventListener('DOMContentLoaded', () => {
+    // 🎭 Lista de íconos con sus respectivas IDs
+    const icons = [
+        { id: "home-icon" },     /* 🏠 Icono de Inicio */
+        { id: "plates-icon" },   /* 🍽️ Icono de Platos */
+        { id: "hearth-icon" },   /* ❤️ Icono de Favoritos */
+        { id: "inventary-icon" }, /* 📦 Icono de Inventario */
+        { id: "support-icon" }    /* 🛠️ Icono de Soporte */
+    ];
 
-    // 🔗 Elementos clave del DOM  
-    const movingBar = document.getElementById("moving-bar");  /* 🏗️ Barra de navegación animada */  
-    const iconsContainer = document.querySelector('.icons');  /* 📦 Contenedor de íconos */  
+    // 🔗 Elementos clave del DOM
+    const movingBar = document.getElementById("moving-bar");   /* 🏗️ Barra de navegación animada */
+    const iconsContainer = document.querySelector('.icons');   /* 📦 Contenedor de íconos */
+    const iconElements = icons.map(icon => document.getElementById(icon.id)); /* 🔗 Lista de elementos ícono */
 
-    /**  
-     * 🔄 Función para mover la barra al ícono correspondiente  
-     * @param {HTMLElement} iconElement - Elemento ícono al que debe moverse la barra  
-     */  
-    function moveBarToIcon(iconElement) {  
-        const iconRect = iconElement.getBoundingClientRect();  /* 🏷️ Obtención de coordenadas del ícono */  
-        const iconsRect = iconsContainer.getBoundingClientRect(); /* 📌 Posición del contenedor de íconos */  
+    /**
+     * 🔄 Función para mover la barra al centro del ícono correspondiente.
+     * @param {HTMLElement} iconElement - Elemento ícono al que debe moverse la barra
+     */
+    function moveBarToIcon(iconElement) {
+        if (!iconElement || !iconsContainer || !movingBar) return;
 
-        // 📐 Calcular la posición de la barra respecto al centro del ícono y establecer un ancho fijo  
-        const barWidth = 20; // 📏 Ancho fijo de la barra de navegación  
-        let barPosition = iconRect.left - iconsRect.left + (iconRect.width / 2) - (barWidth / 2);  
+        const iconRect = iconElement.getBoundingClientRect();
+        const iconsRect = iconsContainer.getBoundingClientRect();
 
-        // 🏁 Ajuste especial para el ícono de soporte  
-        if (iconElement.id === "support-icon") {  
-            barPosition += 8;  /* 🎭 Pequeño desplazamiento adicional */  
-        }  
+        const barWidth = 20; // Ancho fijo de la barra
+        const adjustmentFactor = 0; // Intenta con valores como -0.1, 0.1, etc.
 
-        console.log("📍 iconRect.left:", iconRect.left);  
-        console.log("📍 iconsRect.left:", iconsRect.left);  
-        console.log("📍 barPosition ajustado:", barPosition);  
+        // Calcular el centro del ícono relativo al contenedor
+        const iconCenterRelativeToContainer = iconRect.left - iconsRect.left + (iconRect.width / 1.3);
 
-        movingBar.style.transform = `translateX(${barPosition}px)`;  /* ✨ Aplicar transformación */  
-        movingBar.style.width = `${barWidth}px`;  /* 📏 Establecer el ancho fijo */  
-    }  
+        // Calcular la posición para centrar la barra bajo el centro del ícono con un ajuste
+        const barPosition = iconCenterRelativeToContainer - (barWidth / 2) + (iconRect.width * adjustmentFactor);
 
-    /**  
-     * 🚀 Inicializar la barra en el primer ícono (Home)  
-     */  
-    const homeIcon = document.getElementById("home-icon");  /* 🏠 Ícono inicial */  
-    if (homeIcon) {  
-        moveBarToIcon(homeIcon);  
-    }  
+        movingBar.style.transform = `translateX(${barPosition}px)`;
+        movingBar.style.width = `${barWidth}px`;
+    }
 
-    // 🎯 Evento para mover la barra al pasar el mouse sobre un ícono  
-    icons.forEach(icon => {  
-        const iconElement = document.getElementById(icon.id);  /* 🔗 Obtener ícono del DOM */  
-        if (iconElement) {  
-            iconElement.addEventListener('mouseover', () => moveBarToIcon(iconElement));  /* 🖱️ Movimiento al pasar el mouse */  
-        }  
-    });  
+    /**
+     * 🚀 Inicializar la barra en el primer ícono (Home).
+     */
+    const homeIcon = document.getElementById("home-icon"); /* 🏠 Ícono inicial */
+    if (homeIcon) {
+        moveBarToIcon(homeIcon);
+    }
 
-    // ✅ Evento opcional: Fijar barra al hacer click en un ícono  
-    icons.forEach(icon => {  
-        const iconElement = document.getElementById(icon.id);  
-        if (iconElement) {  
-            iconElement.addEventListener('click', () => {  
-                moveBarToIcon(iconElement);  
-                // 💡 Aquí podrías marcar visualmente el ícono activo si es necesario  
-            });  
-        }  
-    });  
+    /**
+     * 🎯 Función genérica para manejar eventos de interacción con los íconos.
+     * @param {string} eventType - Tipo de evento a escuchar ('mouseover' o 'click')
+     */
+    function setupIconEventListeners(eventType) {
+        iconElements.forEach(iconElement => {
+            if (iconElement) {
+                iconElement.addEventListener(eventType, () => moveBarToIcon(iconElement));
+            }
+        });
+    }
 
-    // 🔄 Restaurar barra al primer ícono si el mouse sale del footer  
-    const footerElement = document.querySelector('footer');  
-    if (footerElement) {  
-        footerElement.addEventListener('mouseleave', () => {  
-            if (homeIcon) {  
-                moveBarToIcon(homeIcon);  
-            }  
-        });  
-    }  
+    // 🖱️ Eventos para mover la barra al pasar el mouse y al hacer click
+    setupIconEventListeners('mouseover');
+    setupIconEventListeners('click');
+
+    // 🔄 Restaurar barra al primer ícono si el mouse sale del footer
+    const footerElement = document.querySelector('footer');
+    if (footerElement) {
+        footerElement.addEventListener('mouseleave', () => {
+            if (homeIcon) {
+                moveBarToIcon(homeIcon);
+            }
+        });
+    }
+
+    // 📱 Opcional: Recalcular la posición de la barra en redimensionamiento de la ventana
+    window.addEventListener('resize', () => {
+        const activeIcon = document.querySelector('.icons > *:hover') || homeIcon; // Intenta mantener la barra en el ícono activo o en el home
+        if (activeIcon) {
+            moveBarToIcon(activeIcon);
+        }
+    });
 });
