@@ -73,6 +73,7 @@ main {
     height: auto;  /* 📏 Altura adaptable */
     background: var(--color-10);  /* 🎨 Color de fondo */
     border-radius: 30px;  /* 🏵️ Bordes redondeados */
+    text-align: center;
 }
 
 /* 📄 Sección de contenido principal */
@@ -152,9 +153,29 @@ main {
 /* 🔖 Estilos para las etiquetas del formulario */
 .form-group label {  
     color: var(--color-6);  /* 🎨 Color personalizado */
-    font-size: 20px;  /* 📏 Tamaño del texto */
+    font-size: 20px;  /* 📏 Tamaño del texto */  
     font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
 }
+.password-container {
+    position: relative; /* Establecemos el contenedor como relativo para posicionar el icono absolutamente dentro de él */
+    display: flex; /* Usamos flexbox para alinear los elementos verticalmente */
+    flex-direction: column; /* Colocamos la etiqueta encima del input */
+  }
+  
+  #password {
+    padding-right: 30px; /* Añadimos un espacio a la derecha del input para que no se superponga el texto con el icono */
+    padding: 4px; /* Mantenemos el padding que ya tenías */
+  }
+  
+  .password-container img {
+    position: absolute; /* Posicionamos el icono de forma absoluta dentro del contenedor */
+    top: 50%; /* Lo centramos verticalmente */
+    right: 500px; /* Lo colocamos a 5px del borde derecho del input */
+    transform: translateY(-5%); /* Ajustamos el centrado vertical */
+    cursor: pointer; /* Indicamos que es un elemento interactivo */
+    width: 20px; /* Ajusta el tamaño del icono según necesites */
+    height: auto; /* Mantiene la proporción del icono */
+  }
 
 /* 🏠 Contenedor principal de login */
 .login-main {  
@@ -317,7 +338,6 @@ footer {
     /* ... otros estilos ... */
     transition: transform 0.3s ease, width 0.3s ease; /* Transición para la posición y el ancho */
 }
-/* 📱 Media query: Ajustes para pantallas pequeñas (máx. 320px) */
 @media screen and (max-width: 320px) {
     /* 🎨 Estilos de fondo para el cuerpo */
     body {  
@@ -361,39 +381,24 @@ footer {
         padding: 0 1px;  /* 🛋️ Espaciado reducido */
         margin-left: -30px;  /* 🏁 Corrección del margen para mejor alineación */
     }
-}
-@media screen and (min-width: 321px) and (max-width: 390px) {
-     /* 🎨 Estilos de fondo para el cuerpo */
-     body {  
-        background-position: center;  /* 🎯 Centrado del fondo para asegurar una vista equilibrada */  
-        background-size: cover;  /* 🏞️ Ajuste para cubrir toda la pantalla sin deformaciones */  
-        background-repeat: no-repeat;  /* 🚫 Evitar la repetición para una apariencia más limpia */  
-    }
-
-    /* 🔝 Ajuste del encabezado */
-    header {  
-        height: 50vh;  /* 📏 Aumento de altura para una mejor visualización */
-    }
-    .login-header h3 {
-        font-size: 40px;
-    }
-    .login-header .back-icon {
-        width: 30px;
-        height: 30px;
-    }
-    .account p {
-        font-size: 14px;
-    }
-    .account a {
-        font-size: 14px;
-    }
-    footer {
-        box-shadow: 0px 0px 25px 30px var(--color-14);
-        width: 100%;
-    }
-    .icons {
-        padding: 0;
-        width: 100%;
-        margin-right: 35px;
-    }
+    .password-container {
+        position: relative; /* Establecemos el contenedor como relativo para posicionar el icono absolutamente dentro de él */
+        display: flex; /* Usamos flexbox para alinear los elementos verticalmente */
+        flex-direction: column; /* Colocamos la etiqueta encima del input */
+      }
+      
+      #password {
+        padding-right: 30px; /* Añadimos un espacio a la derecha del input para que no se superponga el texto con el icono */
+        padding: 4px; /* Mantenemos el padding que ya tenías */
+      }
+      
+      .password-container img {
+        position: absolute; /* Posicionamos el icono de forma absoluta dentro del contenedor */
+        top: 50%; /* Lo centramos verticalmente */
+        right: 5px; /* Lo colocamos a 5px del borde derecho del input */
+        transform: translateY(-50%); /* Ajustamos el centrado vertical */
+        cursor: pointer; /* Indicamos que es un elemento interactivo */
+        width: 20px; /* Ajusta el tamaño del icono según necesites */
+        height: auto; /* Mantiene la proporción del icono */
+      }
 }
