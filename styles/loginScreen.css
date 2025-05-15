@@ -620,46 +620,59 @@ footer {
         height: auto;  /* 🔄 Mantenemos la proporción del ícono */  
     }
 }
+/* 📱 Media query: Ajustes para pantallas entre 162px y 319px */
 @media screen and (min-width: 162px) and (max-width: 319px) {
-    header {
-        height: 90vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-    .login-header {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        gap: 10px;
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        height: 90vh;  /* 📏 Aumento de altura para una mejor visualización */  
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        flex-direction: column;  /* 🔼 Elementos organizados en columna */  
+        justify-content: center;  /* 📌 Centrado vertical */  
+        align-items: center;  /* 📌 Centrado horizontal */  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 0;  /* 🚫 Eliminamos padding interno */  
     }
 
-    .login-header h3 {
-        font-size: 20px;
+    /* 🏠 Encabezado de login */
+    .login-header {  
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+        height: 100px;  /* 📏 Ajuste de altura */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        justify-content: center;  /* 📌 Centrado horizontal */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 0;  /* 🚫 Eliminamos padding interno */  
+        gap: 10px;  /* 🔼 Separación entre elementos */  
     }
-    .login-header a img {
-        width: 30px;
-        height: 30px;
+
+    /* 🏷️ Ajuste del título en el header */
+    .login-header h3 {  
+        font-size: 20px;  /* 📏 Ajuste de tamaño para mejor legibilidad */  
     }
-    .login-header a .back-icon {
-        width:15px;
-        height: 30px;
+
+    /* 🔙 Ajuste del tamaño de los iconos */
+    .login-header a img {  
+        width: 30px;  /* 📏 Ajuste del ancho */  
+        height: 30px;  /* 📏 Ajuste de la altura */  
     }
-    .content {
-        padding: 10px;
+    .login-header a .back-icon {  
+        width: 15px;  /* 📏 Reducción del ancho */  
+        height: 30px;  /* 📏 Mantención de altura */  
     }
-    .form-container input {
-        width: 150px;
+
+    /* 📜 Ajuste del contenido */
+    .content {  
+        padding: 10px;  /* 🛋️ Espaciado interno */  
     }
-    /* 👁️ Estilos del icono para mostrar/ocultar contraseña */
+
+    /* 🔑 Ajuste de los inputs del formulario */
+    .form-container input {  
+        width: 150px;  /* 📏 Reducción del ancho para adaptabilidad */  
+    }
+
+    /* 👁️ Ajuste del icono para mostrar/ocultar contraseña */
     .password-container img {  
         position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
         top: 50%;  /* 🎯 Centramos verticalmente */  
@@ -669,49 +682,63 @@ footer {
         width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
         height: auto;  /* 🔄 Mantenemos la proporción del icono */  
     }
-    .forgot-password {
-        margin-right: 28px;
+
+    /* 🔖 Ajuste del enlace de recuperación de contraseña */
+    .forgot-password {  
+        margin-right: 28px;  /* 📌 Ajuste de margen derecho */  
     }
-    .appLogin {
-        gap: 20px;
-        margin: 10px;
+
+    /* 🎭 Ajuste del contenedor de login en aplicaciones */
+    .appLogin {  
+        gap: 20px;  /* 🔼 Separación entre elementos */  
+        margin: 10px;  /* 🛋️ Ajuste de margen externo */  
     }
-    footer {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0;
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        flex-direction: column;  /* 🔼 Elementos organizados en columna */  
+        justify-content: center;  /* 📌 Centrado vertical */  
+        align-items: center;  /* 📌 Centrado horizontal */  
+        gap: 0;  /* 🚫 Eliminamos separación innecesaria */  
     }
-    .icons {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 0;
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 0;  /* 🚫 Eliminamos padding interno */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        flex-direction: row;  /* 🔼 Elementos organizados en fila */  
+        justify-content: center;  /* 📌 Centrado horizontal */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        gap: 0;  /* 🚫 Eliminamos separación innecesaria */  
     }
-    footer a {
-        margin: 0;
-        padding: 5px;
-        width: 10px;
-        height: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 0;
+
+    /* 🔗 Ajuste de enlaces dentro del footer */
+    footer a {  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 5px;  /* 🛋️ Espaciado interno */  
+        width: 10px;  /* 📏 Ajuste del ancho */  
+        height: 10px;  /* 📏 Ajuste de la altura */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        flex-direction: row;  /* 🔼 Elementos organizados en fila */  
+        justify-content: center;  /* 📌 Centrado horizontal */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        gap: 0;  /* 🚫 Eliminamos separación innecesaria */  
     }
-    footer a:hover {
-        margin: 0;
-        padding: 10px;
+
+    /* ✨ Ajuste de hover en enlaces del footer */
+    footer a:hover {  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 10px;  /* 🛋️ Expansión del padding al hacer hover */  
     }
-    footer a img{
-        width: 15px;
-        height: 15px;
+
+    /* 📌 Ajuste del tamaño de las imágenes dentro de los enlaces */
+    footer a img {  
+        width: 15px;  /* 📏 Ajuste del ancho */  
+        height: 15px;  /* 📏 Ajuste de la altura */  
     }
 }
