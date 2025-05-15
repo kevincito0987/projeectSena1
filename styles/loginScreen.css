@@ -1,0 +1,744 @@
+@import url(./variables.css); /* 🎨 Importación de variables para mantener estilos consistentes */
+
+/* 🎨 Reset general de estilos: eliminamos márgenes y paddings predeterminados */
+* {  
+    margin: 0;  /* 📏 Eliminamos el margen externo */
+    padding: 0;  /* ✂️ Quitamos el relleno interno */
+    box-sizing: border-box;  /* 📦 Aseguramos que el tamaño incluya bordes y relleno */
+}
+
+
+/* 🏞️ Configuración del fondo del cuerpo */
+body {  
+    background-image: url(../imgs/header.jpg);  /* 🌅 Imagen de fondo */
+    background-size: cover;  /* 📏 Ajuste para cubrir toda la pantalla */
+    background-repeat: no-repeat;  /* 🚫 Evitar la repetición */
+    background-position: center;  /* 🎯 Centramos la imagen */
+}
+
+/* 🔝 Estilización del encabezado */
+header {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    align-items: center;  /* 📌 Centrado vertical */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    width: 100%;  /* 📐 Ocupar todo el ancho */
+    height: 60vh;  /* 📏 Altura proporcional a la pantalla */
+}
+
+/* 🖼️ Logo dentro del header */
+.login-header a img {  
+    width: 60px;  /* 📏 Tamaño definido */
+    height: 56px;  /* 📏 Proporción ajustada */
+}
+
+/* 🔗 Estilos para los enlaces dentro del encabezado */
+header a {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor alineación */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    align-items: center;  /* 📌 Centrado vertical */
+    padding: 10px;  /* 🛋️ Espaciado interno para mejor interacción */
+}
+
+/* 🏠 Encabezado con estructura y distribución */
+.login-header {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    justify-content: space-between;  /* ↔️ Espaciado uniforme entre elementos */
+    align-items: center;  /* 📌 Centrado vertical */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    width: 100%;  /* 📐 Ancho completo */
+    height: 10vh;  /* 📏 Altura proporcional a la pantalla */
+}
+
+/* 📝 Estilización del título dentro del header */
+.login-header h3 {  
+    color: var(--color-3);  /* 🎨 Color personalizado */
+    font-size: 58px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Bold";  /* ✍️ Tipografía elegante */
+}
+
+/* ✨ Efecto hover sobre los enlaces del encabezado */
+header a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
+}
+
+/* 🌍 Contenedor principal - Sección principal de la página */
+main {  
+    display: flex;  /* 🏗️ Diseño flexible para una distribución fluida */  
+    justify-content: center;  /* 📌 Centrado horizontal del contenido */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: auto;  /* 📏 Altura adaptable según el contenido */  
+    background: var(--color-10);  /* 🎨 Color de fondo personalizado */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */  
+    text-align: center;  /* 📝 Asegurar que el contenido esté centrado textualmente */  
+}
+
+/* 📄 Sección de contenido principal */
+.content {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor organización */
+    flex-direction: column;  /* 🏠 Estructura en columnas */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 100%;  /* 📐 Ocupar todo el ancho */
+    margin: 20px;  /* 🛋️ Espaciado externo */
+}
+
+/* 📝 Estilos de los títulos dentro del contenido */
+.content h3 {  
+    color: var(--color-6);  /* 🎨 Color personalizado */
+    font-size: 24px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-SemiBold";  /* ✍️ Tipografía elegante */
+    margin: 40px 0;  /* 📌 Espaciado superior e inferior */
+}
+
+/* 📜 Estilo del párrafo dentro del contenido */
+.content > p {  
+    color: var(--color-8);  /* 🎨 Color personalizado */
+    font-size: 18px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+    margin: 20px 0;  /* 🛋️ Espaciado externo */
+}
+
+/* 📝 Contenedor del formulario */
+.form-container {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 🏠 Elementos en columna */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 70%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 30px;  /* 📌 Espaciado entre elementos */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔗 Enlaces dentro del formulario */
+.form-container a {  
+    text-decoration: none;  /* 🚫 Sin subrayado */
+    color: var(--color-2);  /* 🎨 Color personalizado */
+    font-size: 16px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
+    margin-left: 60px;  /* 🛋️ Espaciado hacia la izquierda */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
+}
+
+/* ✨ Hover sobre los enlaces del formulario */
+.form-container a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
+}
+
+/* 🏷️ Inputs y etiquetas del formulario */
+.form-group {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 🏠 Elementos en columna */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 100%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 20px;  /* 📌 Espaciado entre elementos */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🖋️ Estilos para los inputs del formulario */
+.form-group input {  
+    color: var(--color-6);  /* 🎨 Color personalizado */
+    font-size: 20px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Regular";  /* ✍️ Fuente estilizada */
+    padding: 6px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔖 Estilos para las etiquetas del formulario */
+.form-group label {  
+    color: var(--color-6);  /* 🎨 Color personalizado */
+    font-size: 20px;  /* 📏 Tamaño del texto */  
+    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
+}
+/* 🔐 Contenedor de la contraseña */
+.password-container {  
+    position: relative;  /* 📌 Establecemos el contenedor como relativo para posicionar el icono absolutamente dentro de él */  
+    display: flex;  /* 🏗️ Usamos flexbox para alinear los elementos verticalmente */  
+    flex-direction: column;  /* 🔼 Colocamos la etiqueta encima del input para mejor organización */  
+}
+  
+/* 🔑 Estilos del campo de entrada de la contraseña */
+#password {  
+    padding-right: 30px;  /* 🛋️ Añadimos espacio a la derecha para evitar la superposición con el ícono */  
+    padding: 4px;  /* 📏 Mantenemos el padding para mejor legibilidad */  
+}
+  
+/* 👁️ Estilos del icono para mostrar/ocultar contraseña */
+.password-container img {  
+    position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+    top: 50%;  /* 🎯 Centramos verticalmente */  
+    right: 500px;  /* 📏 Ubicación a la derecha del input */  
+    transform: translateY(-50%);  /* 🎭 Ajuste fino del centrado vertical */  
+    cursor: pointer;  /* 🖱️ Indicamos que el icono es interactivo */  
+    width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
+    height: auto;  /* 🔄 Mantenemos la proporción del icono */  
+}
+
+/* 🏠 Contenedor principal de login */
+.login-main {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor alineación */
+    flex-direction: column;  /* 🔽 Organización en columna */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 70%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 20px;  /* 📌 Espaciado entre elementos */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔗 Estilos para el botón de login */
+.login-main > a {  
+    text-decoration: none;  /* 🚫 Sin subrayado */
+    display: flex;  /* 🏗️ Diseño flexible */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    align-items: center;  /* 📌 Centrado vertical */
+    color: var(--color-7);  /* 🎨 Color personalizado */
+    font-size: 24px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
+    background: var(--color-2);  /* 🎨 Color de fondo */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+    width: 150px;  /* 📏 Ajuste de tamaño */
+}
+
+/* ✨ Hover sobre el botón de login */
+.login-main a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-6);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
+}
+
+/* 📜 Estilo del párrafo en login */
+.login-main > p {  
+    color: var(--color-8);  /* 🎨 Color personalizado */
+    font-size: 16px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+    margin: 20px 0;  /* 🛋️ Espaciado externo */
+}
+
+/* 🔗 Contenedor de accesos rápidos a aplicaciones */
+.appLogin {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    width: 70%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 40px;  /* 📌 Espaciado entre elementos */
+}
+
+/* ✨ Estilos para los enlaces de login en apps */
+.appLogin a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
+    padding: 7px;  /* 🛋️ Espaciado interno */
+    background-color: var(--color-5);  /* 🎨 Color inicial */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 🎭 Hover sobre los enlaces de login en apps */
+.appLogin a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-9);  /* 🎨 Cambio de color */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 🏦 Contenedor de opciones de cuenta */
+.account {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    width: 70%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 40px;  /* 📌 Espaciado entre elementos */
+}
+
+/* 🔗 Estilos para los enlaces de cuenta */
+.account a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
+    padding: 12px;  /* 🛋️ Espaciado interno */
+    text-decoration: none;  /* 🚫 Sin subrayado */
+    color: var(--color-2);  /* 🎨 Color personalizado */
+    font-size: 18px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+}
+
+/* 🎭 Hover sobre los enlaces de cuenta */
+.account a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-9);  /* 🎨 Cambio de color */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 📝 Estilos del texto en la sección de cuenta */
+.account p {  
+    color: var(--color-8);  /* 🎨 Color personalizado */
+    font-size: 16px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+    margin: 20px 0;  /* 🛋️ Espaciado externo */
+}
+/* 🔽 Estilos del pie de página */
+footer {  
+    display: flex;  /* 🏗️ Diseño flexible para adaptación en distintos dispositivos */
+    align-items: center;  /* 📌 Centrado vertical de los elementos */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    height: auto;  /* 📏 Altura adaptable según el contenido */
+    background: var(--color-2);  /* 🎨 Color de fondo personalizado */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para estética */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    position: absolute;  /* 📌 Fijación del pie de página */
+    position: sticky;  /* 🔝 Mantener visible al hacer scroll */
+    z-index: 10;  /* 🔢 Prioridad en la capa de visualización */
+    box-shadow: 0px 0px 25px 40px var(--color-14); /* 💡 Efecto de sombra para resaltar el pie */
+}
+
+/* 🎭 Contenedor de íconos sociales o enlaces */
+.icons {  
+    display: flex;  /* 🏗️ Diseño flexible para alineación */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: space-between;  /* ↔️ Distribución equitativa */
+    width: 100%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 20px;  /* 📌 Separación entre elementos */
+    padding: 10px 40px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔗 Estilos para los enlaces dentro de los íconos */
+.icons a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación suave para interactividad */
+    padding: 15px;  /* 🛋️ Espaciado interno para clic cómodo */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor apariencia */
+}
+
+/* ✨ Efecto hover sobre los enlaces de íconos */
+.icons a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo interactivo */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-19);  /* 🎨 Cambio de color para resaltar interacción */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 📌 Barra animada en la parte inferior del footer */
+.moving-bar {  
+    width: 20px;  /* 📏 Tamaño definido */
+    height: 10px;  /* 📏 Altura ajustada */
+    background-color: var(--color-7);  /* 🎨 Color de fondo */
+    position: absolute;  /* 📌 Posición absoluta respecto al footer */
+    bottom: 0;  /* 🎯 Ubicación debajo de los íconos */
+    transition: transform 0.4s ease;  /* 🎭 Animación suave */
+    left: 0px;  /* 🏁 Posicionamiento inicial */
+    border-radius: 5px;  /* 🏵️ Bordes redondeados */
+}
+#moving-bar {
+    /* ... otros estilos ... */
+    transition: transform 0.3s ease, width 0.3s ease; /* Transición para la posición y el ancho */
+}
+/* 📱 Media query: Ajustes para pantallas pequeñas (máx. 320px) */
+@media screen and (max-width: 320px) {
+
+    /* 🎨 Estilos de fondo para el cuerpo */
+    body {  
+        background-position: center;  /* 🎯 Centrado del fondo para asegurar una vista equilibrada */  
+        background-size: cover;  /* 🏞️ Ajuste para cubrir toda la pantalla sin deformaciones */  
+        background-repeat: no-repeat;  /* 🚫 Evitar la repetición para una apariencia más limpia */  
+    }
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        height: 80vh;  /* 📏 Aumento de altura para una mejor visualización */
+    }
+
+    /* 🏷️ Tamaño del título en el header */
+    .login-header h3 {  
+        font-size: 40px;  /* 📏 Ajuste de tamaño en pantallas pequeñas */
+    }
+
+    /* 🔙 Ajuste de tamaño del ícono de regreso */
+    .login-header .back-icon {  
+        width: 30px;  /* 📏 Reducción de ancho */
+        height: 30px;  /* 📏 Reducción de altura */
+    }
+
+    /* 🔖 Ajuste de texto en la sección de cuentas */
+    .account p {  
+        font-size: 14px;  /* 📏 Reducción de tamaño en pantallas pequeñas */
+    }
+    .account a {  
+        font-size: 14px;  /* 📏 Tamaño uniforme con el texto */
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        box-shadow: 0px 0px 25px 30px var(--color-14);  /* 💡 Efecto de sombra para resaltar el footer */
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        padding: 0 1px;  /* 🛋️ Espaciado reducido */
+        margin-left: -30px;  /* 🏁 Corrección del margen para mejor alineación */
+    }
+
+    /* 🔐 Contenedor de la contraseña */
+    .password-container {  
+        position: relative;  /* 📌 Establecemos el contenedor como relativo para posicionar el icono absolutamente dentro de él */  
+        display: flex;  /* 🏗️ Usamos flexbox para alinear los elementos verticalmente */  
+        flex-direction: column;  /* 🔼 Colocamos la etiqueta encima del input para mejor organización */  
+    }
+
+    /* 🔑 Estilos del campo de entrada de la contraseña */
+    #password {  
+        padding-right: 30px;  /* 🛋️ Espaciado a la derecha para evitar la superposición con el ícono */  
+        padding: 4px;  /* 📏 Espaciado interno para mejor visualización */  
+    }
+
+    /* 👁️ Estilos del icono para mostrar/ocultar contraseña */
+    .password-container img {  
+        position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+        top: 50%;  /* 🎯 Centramos verticalmente */  
+        right: 5px;  /* 📏 Ubicación a la derecha del input */  
+        transform: translateY(-5%);  /* 🎭 Ajuste fino del centrado vertical */  
+        cursor: pointer;  /* 🖱️ Indicamos que el icono es interactivo */  
+        width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
+        height: auto;  /* 🔄 Mantenemos la proporción del icono */  
+    }
+}
+/* 📱 Media query: Ajustes para pantallas entre 321px y 390px */
+@media screen and (min-width: 321px) and (max-width: 390px) {
+
+    /* 🎨 Estilos de fondo para el cuerpo */
+    body {  
+        background-position: center;  /* 🎯 Centrado del fondo para asegurar una vista equilibrada */  
+        background-size: cover;  /* 🏞️ Ajuste para cubrir toda la pantalla sin deformaciones */  
+        background-repeat: no-repeat;  /* 🚫 Evitar la repetición para una apariencia más limpia */  
+    }
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        height: 80vh;  /* 📏 Aumento de altura para una mejor visualización */
+    }
+
+    /* 🏷️ Tamaño del título en el header */
+    .login-header h3 {  
+        font-size: 40px;  /* 📏 Ajuste de tamaño en pantallas pequeñas */
+    }
+
+    /* 🔙 Ajuste de tamaño del ícono de regreso */
+    .login-header .back-icon {  
+        width: 30px;  /* 📏 Reducción de ancho */
+        height: 30px;  /* 📏 Reducción de altura */
+    }
+
+    /* 🔖 Ajuste de texto en la sección de cuentas */
+    .account p {  
+        font-size: 14px;  /* 📏 Reducción de tamaño en pantallas pequeñas */
+    }
+    .account a {  
+        font-size: 14px;  /* 📏 Tamaño uniforme con el texto */
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        box-shadow: 0px 0px 25px 30px var(--color-14);  /* 💡 Efecto de sombra para resaltar el footer */
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        padding: 0 1px;  /* 🛋️ Espaciado reducido */
+        margin-left: -20px;  /* 🏁 Corrección del margen para mejor alineación */
+    }
+
+    /* 🔐 Contenedor de la contraseña */
+    .password-container {  
+        position: relative;  /* 📌 Establecemos el contenedor como relativo para posicionar el icono absolutamente dentro de él */  
+        display: flex;  /* 🏗️ Usamos flexbox para alinear los elementos verticalmente */  
+        flex-direction: column;  /* 🔼 Colocamos la etiqueta encima del input para mejor organización */  
+    }
+
+    /* 🔑 Estilos del campo de entrada de la contraseña */
+    #password {  
+        padding-right: 30px;  /* 🛋️ Espaciado a la derecha para evitar la superposición con el ícono */  
+        padding: 4px;  /* 📏 Espaciado interno para mejor visualización */  
+    }
+
+    /* 👁️ Estilos del icono para mostrar/ocultar contraseña */
+    .password-container img {  
+        position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+        top: 50%;  /* 🎯 Centramos verticalmente */  
+        right: 5px;  /* 📏 Ubicación a la derecha del input */  
+        transform: translateY(-50%);  /* 🎭 Ajuste fino del centrado vertical */  
+        cursor: pointer;  /* 🖱️ Indicamos que el icono es interactivo */  
+        width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
+        height: auto;  /* 🔄 Mantenemos la proporción del icono */  
+    }
+}
+/* 📱 Media query: Ajustes para pantallas entre 391px y 440px */
+@media screen and (min-width: 391px) and (max-width: 440px) {
+
+    /* 🎨 Estilos de fondo para el cuerpo */
+    body {  
+        background-position: center;  /* 🎯 Centrado del fondo para asegurar una vista equilibrada */  
+        background-size: cover;  /* 🏞️ Ajuste para cubrir toda la pantalla sin deformaciones */  
+        background-repeat: no-repeat;  /* 🚫 Evitar la repetición para una apariencia más limpia */  
+    }
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        height: 80vh;  /* 📏 Aumento de altura para una mejor visualización */
+    }
+
+    /* 🏷️ Tamaño del título en el header */
+    .login-header h3 {  
+        font-size: 40px;  /* 📏 Ajuste de tamaño en pantallas pequeñas */
+    }
+
+    /* 🔙 Ajuste de tamaño del ícono de regreso */
+    .login-header .back-icon {  
+        width: 30px;  /* 📏 Reducción de ancho */
+        height: 30px;  /* 📏 Reducción de altura */
+    }
+
+    /* 🔖 Ajuste de texto en la sección de cuentas */
+    .account p {  
+        font-size: 14px;  /* 📏 Reducción de tamaño en pantallas pequeñas */
+    }
+    .account a {  
+        font-size: 14px;  /* 📏 Tamaño uniforme con el texto */
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        box-shadow: 0px 0px 25px 30px var(--color-14);  /* 💡 Efecto de sombra para resaltar el footer */
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        padding: 0 1px;  /* 🛋️ Espaciado reducido */
+        margin-left: -26px;  /* 🏁 Corrección del margen para mejor alineación */
+    }
+
+    /* 🔐 Contenedor de la contraseña */
+    .password-container {  
+        position: relative;  /* 📌 Establecemos el contenedor como relativo para posicionar el icono absolutamente dentro de él */  
+        display: flex;  /* 🏗️ Usamos flexbox para alinear los elementos verticalmente */  
+        flex-direction: column;  /* 🔼 Colocamos la etiqueta encima del input para mejor organización */  
+    }
+
+    /* 🔑 Estilos del campo de entrada de la contraseña */
+    #password {  
+        padding-right: 30px;  /* 🛋️ Espaciado a la derecha para evitar la superposición con el ícono */  
+        padding: 4px;  /* 📏 Espaciado interno para mejor visualización */  
+    }
+
+    /* 👁️ Estilos del icono para mostrar/ocultar contraseña */
+    .password-container img {  
+        position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+        top: 50%;  /* 🎯 Centramos verticalmente */  
+        right: 5px;  /* 📏 Ubicación a la derecha del input */  
+        transform: translateY(-50%);  /* 🎭 Ajuste fino del centrado vertical */  
+        cursor: pointer;  /* 🖱️ Indicamos que el icono es interactivo */  
+        width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
+        height: auto;  /* 🔄 Mantenemos la proporción del icono */  
+    }
+}
+/* 📱 Media query: Ajustes para pantallas entre 768px y 884px */
+@media screen and (min-width: 768px) and (max-width: 884px) {
+
+    /* 🎨 Estilos de fondo para el cuerpo */
+    body {  
+        background-position: center;  /* 🎯 Centrado del fondo para asegurar una vista equilibrada */  
+        background-size: cover;  /* 🏞️ Ajuste para cubrir toda la pantalla sin deformaciones */  
+        background-repeat: no-repeat;  /* 🚫 Evitar la repetición para una apariencia más limpia */  
+    }
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        height: 80vh;  /* 📏 Aumento de altura para una mejor visualización */
+    }
+
+    /* 🏷️ Tamaño del título en el header */
+    .login-header h3 {  
+        font-size: 40px;  /* 📏 Ajuste de tamaño en pantallas medianas */
+    }
+
+    /* 🔙 Ajuste de tamaño del ícono de regreso */
+    .login-header .back-icon {  
+        width: 30px;  /* 📏 Reducción de ancho */
+        height: 30px;  /* 📏 Reducción de altura */
+    }
+
+    /* 🔖 Ajuste de texto en la sección de cuentas */
+    .account p {  
+        font-size: 14px;  /* 📏 Reducción de tamaño para mejorar la legibilidad */
+    }
+    .account a {  
+        font-size: 14px;  /* 📏 Tamaño uniforme con el texto */
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        box-shadow: 0px 0px 25px 30px var(--color-14);  /* 💡 Efecto de sombra para resaltar el footer */
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        padding: 0 5px;  /* 🛋️ Espaciado reducido para adaptabilidad */
+    }
+
+    /* 🔐 Contenedor de la contraseña */
+    .password-container {  
+        position: relative;  /* 📌 Establecemos el contenedor como relativo para posicionar el ícono absolutamente dentro de él */  
+        display: flex;  /* 🏗️ Usamos flexbox para una mejor alineación vertical */  
+        flex-direction: column;  /* 🔼 Colocamos la etiqueta encima del input para mejor estructura */  
+    }
+
+    /* 🔑 Estilos del campo de entrada de la contraseña */
+    #password {  
+        padding-right: 30px;  /* 🛋️ Espaciado a la derecha para evitar la superposición con el ícono */  
+        padding: 4px;  /* 📏 Espaciado interno para mejor visualización */  
+    }
+
+    /* 👁️ Estilos del ícono para mostrar/ocultar contraseña */
+    .password-container img {  
+        position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+        top: 50%;  /* 🎯 Centramos verticalmente */  
+        right: 5px;  /* 📏 Ubicación a la derecha del input */  
+        transform: translateY(-50%);  /* 🎭 Ajuste fino del centrado vertical */  
+        cursor: pointer;  /* 🖱️ Indicamos que el ícono es interactivo */  
+        width: 20px;  /* 📐 Ajustamos el tamaño del ícono según necesidades */  
+        height: auto;  /* 🔄 Mantenemos la proporción del ícono */  
+    }
+}
+/* 📱 Media query: Ajustes para pantallas entre 162px y 319px */
+@media screen and (min-width: 162px) and (max-width: 319px) {
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        height: 90vh;  /* 📏 Aumento de altura para una mejor visualización */  
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        flex-direction: column;  /* 🔼 Elementos organizados en columna */  
+        justify-content: center;  /* 📌 Centrado vertical */  
+        align-items: center;  /* 📌 Centrado horizontal */  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 0;  /* 🚫 Eliminamos padding interno */  
+    }
+
+    /* 🏠 Encabezado de login */
+    .login-header {  
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+        height: 100px;  /* 📏 Ajuste de altura */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        justify-content: center;  /* 📌 Centrado horizontal */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 0;  /* 🚫 Eliminamos padding interno */  
+        gap: 10px;  /* 🔼 Separación entre elementos */  
+    }
+
+    /* 🏷️ Ajuste del título en el header */
+    .login-header h3 {  
+        font-size: 20px;  /* 📏 Ajuste de tamaño para mejor legibilidad */  
+    }
+
+    /* 🔙 Ajuste del tamaño de los iconos */
+    .login-header a img {  
+        width: 30px;  /* 📏 Ajuste del ancho */  
+        height: 30px;  /* 📏 Ajuste de la altura */  
+    }
+    .login-header a .back-icon {  
+        width: 15px;  /* 📏 Reducción del ancho */  
+        height: 30px;  /* 📏 Mantención de altura */  
+    }
+
+    /* 📜 Ajuste del contenido */
+    .content {  
+        padding: 10px;  /* 🛋️ Espaciado interno */  
+    }
+
+    /* 🔑 Ajuste de los inputs del formulario */
+    .form-container input {  
+        width: 150px;  /* 📏 Reducción del ancho para adaptabilidad */  
+    }
+
+    /* 👁️ Ajuste del icono para mostrar/ocultar contraseña */
+    .password-container img {  
+        position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+        top: 50%;  /* 🎯 Centramos verticalmente */  
+        right: -35px;  /* 📏 Ubicación a la derecha del input */  
+        transform: translateY(-50%);  /* 🎭 Ajuste fino del centrado vertical */  
+        cursor: pointer;  /* 🖱️ Indicamos que el icono es interactivo */  
+        width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
+        height: auto;  /* 🔄 Mantenemos la proporción del icono */  
+    }
+
+    /* 🔖 Ajuste del enlace de recuperación de contraseña */
+    .forgot-password {  
+        margin-right: 28px;  /* 📌 Ajuste de margen derecho */  
+    }
+
+    /* 🎭 Ajuste del contenedor de login en aplicaciones */
+    .appLogin {  
+        gap: 20px;  /* 🔼 Separación entre elementos */  
+        margin: 10px;  /* 🛋️ Ajuste de margen externo */  
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        flex-direction: column;  /* 🔼 Elementos organizados en columna */  
+        justify-content: center;  /* 📌 Centrado vertical */  
+        align-items: center;  /* 📌 Centrado horizontal */  
+        gap: 0;  /* 🚫 Eliminamos separación innecesaria */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 0;  /* 🚫 Eliminamos padding interno */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        flex-direction: row;  /* 🔼 Elementos organizados en fila */  
+        justify-content: center;  /* 📌 Centrado horizontal */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        gap: 0;  /* 🚫 Eliminamos separación innecesaria */  
+    }
+
+    /* 🔗 Ajuste de enlaces dentro del footer */
+    footer a {  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 5px;  /* 🛋️ Espaciado interno */  
+        width: 10px;  /* 📏 Ajuste del ancho */  
+        height: 10px;  /* 📏 Ajuste de la altura */  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        flex-direction: row;  /* 🔼 Elementos organizados en fila */  
+        justify-content: center;  /* 📌 Centrado horizontal */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        gap: 0;  /* 🚫 Eliminamos separación innecesaria */  
+    }
+
+    /* ✨ Ajuste de hover en enlaces del footer */
+    footer a:hover {  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 10px;  /* 🛋️ Expansión del padding al hacer hover */  
+    }
+
+    /* 📌 Ajuste del tamaño de las imágenes dentro de los enlaces */
+    footer a img {  
+        width: 15px;  /* 📏 Ajuste del ancho */  
+        height: 15px;  /* 📏 Ajuste de la altura */  
+    }
+}

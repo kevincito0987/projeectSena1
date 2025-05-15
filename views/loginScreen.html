@@ -1,0 +1,121 @@
+<!DOCTYPE html> <!-- 📝 Declaración de tipo de documento -->
+<html lang="en"> <!-- 🌎 Idioma establecido en inglés -->
+    <head>
+        <meta charset="UTF-8"> <!-- 🔤 Codificación de caracteres para soportar caracteres especiales -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 📱 Adaptación a dispositivos móviles -->
+        
+        <!-- 🏷️ Título de la pantalla de Onboarding -->
+        <title>Login Screen</title>
+    
+        <!-- 🔖 Ícono del sitio web (favicon) -->
+        <link rel="shortcut icon" href="../icons/restaurante.svg" type="image/x-icon">
+    
+        <!-- 🎨 Hoja de estilos principal -->
+        <link rel="stylesheet" href="../styles/loginScreen.css">
+        <script type="module" src="../components/footer.js" defer></script>
+    </head>
+<body>
+    <!-- 🔝 Encabezado -->
+    <header>
+        <div class="login-header">
+            <!-- 🔙 Botón de regreso -->
+            <a href="">
+                <img src="../icons/backIconArrow.svg" alt="Back Icon" class="back-icon">
+            </a>
+            <h3>Login</h3>
+            <!-- 🌙 Icono de modo oscuro -->
+            <a href="">
+                <img src="../icons/darkModeIcon.svg" alt="Toggle Icon">
+            </a>
+        </div>
+    </header>
+
+    <!-- 🌍 Contenedor principal -->
+    <main>
+        <div class="content">
+            <h3>Welcome</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <!-- 📝 Contenedor del formulario -->
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="email">Email or Mobile Number</label>
+                    <input type="text" id="email" name="email" value="example@example.com">
+                </div>
+                
+                <!-- 🔐 Contenedor de la contraseña -->
+                <div class="form-group password-container" style="position: relative;">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" value="**********" style="padding: 4px;">
+                    <img src="../icons/icon1LogSingUpPage.svg" alt="" style="position: absolute; top: 66%; transform: translateY(-50%); cursor: pointer;">
+                </div>
+                
+                <!-- ❓ Enlace de recuperación de contraseña -->
+                <a href="#" class="forgot-password">Forget Password</a>
+            </div>
+
+            <!-- 🔗 Botón de acceso -->
+            <div class="login-main">
+                <a href="" class="login-button">
+                    <p>Log In</p>
+                </a>
+                <p>or sign up with</p>
+                
+                <!-- 🌍 Acceso con otras plataformas -->
+                <div class="appLogin">
+                    <a href="">
+                        <img src="../icons/icon2LogSingUpPage.svg" alt="Google Icon">
+                    </a>
+                    <a href="">
+                        <img src="../icons/icon3LogSingUpPage.svg" alt="Facebook Icon">
+                    </a>
+                    <a href="">
+                        <img src="../icons/icon4LogSingUpPage.svg" alt="Finger Print Icon">
+                    </a>
+                </div>
+            </div>
+
+            <!-- 🆕 Registro de cuenta -->
+            <div class="account">
+                <p>Don't have an account?</p>
+                <a href="">Sign Up</a>
+            </div>
+        </div>  
+    </main>
+
+   <!-- 🔽 Pie de página -->
+<footer>
+    <!-- 🎭 Contenedor de íconos de navegación -->
+    <div class="icons">
+        <!-- 🏠 Icono de inicio -->
+        <a href="" id="home-icon">
+            <img src="../icons/icon1Footer.svg" alt="Home Icon">
+        </a>
+        
+        <!-- 🍽️ Icono de menú/platos -->
+        <a href="" id="plates-icon">
+            <img src="../icons/icon2Footer.svg" alt="Plates Icon">
+        </a>
+        
+        <!-- ❤️ Icono de favoritos -->
+        <a href="" id="hearth-icon">
+            <img src="../icons/icon3Footer.svg" alt="Heart Icon">
+        </a>
+        
+        <!-- 📦 Icono de inventario -->
+        <a href="" id="inventary-icon">
+            <img src="../icons/icon4Footer.svg" alt="Inventory Icon">
+        </a>
+        
+        <!-- 🛠️ Icono de soporte -->
+        <a href="" id="support-icon">
+            <img src="../icons/icon5Footer.svg" alt="Support Icon">
+        </a>
+    </div>
+
+    <!-- 🚀 Barra animada para indicar navegación activa -->
+    <div id="moving-bar" class="moving-bar"></div>
+</footer>
+
+</body>
+</html>
