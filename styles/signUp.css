@@ -83,6 +83,7 @@ main {
     align-items: center;  /* 📌 Centrado vertical */
     width: 100%;  /* 📐 Ocupar todo el ancho */
     margin: 20px 0;  /* 🛋️ Espaciado externo */
+    gap: 40px;  /* 📌 Espaciado entre elementos */
 }
 
 /* 📝 Estilos de los títulos dentro del contenido */
@@ -110,19 +111,17 @@ main {
     height: auto;  /* 📏 Altura adaptable */
     gap: 30px;  /* 📌 Espaciado entre elementos */
     padding: 20px;  /* 🛋️ Espaciado interno */
+    background: salmon;
+    margin-bottom: 20px;
 }
-
-/* 🔗 Enlaces dentro del formulario */
-.form-container a {  
-    text-decoration: none;  /* 🚫 Sin subrayado */
-    color: var(--color-2);  /* 🎨 Color personalizado */
-    font-size: 16px;  /* 📏 Tamaño del texto */
-    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
-    margin-left: 60px;  /* 🛋️ Espaciado hacia la izquierda */
-    padding: 20px;  /* 🛋️ Espaciado interno */
-    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
+form {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 🏠 Elementos en columna */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 100%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 30px;  /* 📌 Espaciado entre elementos */
 }
-
 /* ✨ Hover sobre los enlaces del formulario */
 .form-container a:hover {  
     cursor: pointer;  /* 🖱️ Cursor en modo clic */
@@ -132,18 +131,18 @@ main {
 }
 
 /* 🏷️ Inputs y etiquetas del formulario */
-.form-group {  
+.form-field {  
     display: flex;  /* 🏗️ Diseño flexible */
     flex-direction: column;  /* 🏠 Elementos en columna */
     align-items: center;  /* 📌 Centrado vertical */
     width: 100%;  /* 📐 Ajuste del ancho */
-    height: auto;  /* 📏 Altura adaptable */
+    height: auto;     /* 📏 Altura adaptable */
     gap: 20px;  /* 📌 Espaciado entre elementos */
     padding: 20px;  /* 🛋️ Espaciado interno */
 }
 
 /* 🖋️ Estilos para los inputs del formulario */
-.form-group input {  
+.form-field input {  
     color: var(--color-6);  /* 🎨 Color del texto para mejorar la legibilidad */  
     font-size: 20px;  /* 📏 Ajuste del tamaño del texto para mayor claridad */  
     font-family: "LeagueSpartan-Regular";  /* ✍️ Tipografía estilizada para un diseño moderno */  
@@ -151,10 +150,14 @@ main {
     border-radius: 20px;  /* 🏵️ Bordes redondeados para una apariencia más suave */  
     background: var(--color-5);  /* 🎨 Color de fondo personalizado para contraste adecuado */  
 }
-
+form .form-field input::placeholder {  
+    color: var(--color-6);  /* 🎨 Color del texto para mejorar la legibilidad */  
+    font-size: 20px;  /* 📏 Ajuste del tamaño del texto para mayor claridad */  
+    font-family: "LeagueSpartan-Regular";  /* ✍️ Tipografía estilizada para un diseño moderno */  
+}
 
 /* 🔖 Estilos para las etiquetas del formulario */
-.form-group label {  
+.form-field label {  
     color: var(--color-6);  /* 🎨 Color personalizado */
     font-size: 20px;  /* 📏 Tamaño del texto */  
     font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
@@ -175,57 +178,13 @@ main {
 /* 👁️ Estilos del icono para mostrar/ocultar contraseña */
 .password-container img {  
     position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
-    top: 50%;  /* 🎯 Centramos verticalmente */  
-    right: 500px;  /* 📏 Ubicación a la derecha del input */  
+    top: 68%;  /* 🎯 Centramos verticalmente */  
+    right: 530px;  /* 📏 Ubicación a la derecha del input */  
     transform: translateY(-50%);  /* 🎭 Ajuste fino del centrado vertical */  
     cursor: pointer;  /* 🖱️ Indicamos que el icono es interactivo */  
     width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
     height: auto;  /* 🔄 Mantenemos la proporción del icono */  
 }
-
-/* 🏠 Contenedor principal de login */
-.login-main {  
-    display: flex;  /* 🏗️ Diseño flexible para mejor alineación */
-    flex-direction: column;  /* 🔽 Organización en columna */
-    align-items: center;  /* 📌 Centrado vertical */
-    width: 70%;  /* 📐 Ajuste del ancho */
-    height: auto;  /* 📏 Altura adaptable */
-    gap: 20px;  /* 📌 Espaciado entre elementos */
-    padding: 20px;  /* 🛋️ Espaciado interno */
-}
-
-/* 🔗 Estilos para el botón de login */
-.login-main > a {  
-    text-decoration: none;  /* 🚫 Sin subrayado */
-    display: flex;  /* 🏗️ Diseño flexible */
-    justify-content: center;  /* 📌 Centrado horizontal */
-    align-items: center;  /* 📌 Centrado vertical */
-    color: var(--color-7);  /* 🎨 Color personalizado */
-    font-size: 24px;  /* 📏 Tamaño del texto */
-    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
-    padding: 20px;  /* 🛋️ Espaciado interno */
-    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
-    background: var(--color-2);  /* 🎨 Color de fondo */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados */
-    width: 150px;  /* 📏 Ajuste de tamaño */
-}
-
-/* ✨ Hover sobre el botón de login */
-.login-main a:hover {  
-    cursor: pointer;  /* 🖱️ Cursor en modo clic */
-    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
-    background-color: var(--color-6);  /* 🎨 Cambio de color al pasar el mouse */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
-}
-
-/* 📜 Estilo del párrafo en login */
-.login-main > p {  
-    color: var(--color-8);  /* 🎨 Color personalizado */
-    font-size: 16px;  /* 📏 Tamaño del texto */
-    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
-    margin: 20px 0;  /* 🛋️ Espaciado externo */
-}
-
 /* 🔗 Contenedor de accesos rápidos a aplicaciones */
 .appLogin {  
     display: flex;  /* 🏗️ Diseño flexible */
@@ -243,49 +202,43 @@ main {
     background-color: var(--color-5);  /* 🎨 Color inicial */
     border-radius: 30px;  /* 🏵️ Bordes redondeados */
 }
-
-/* 🎭 Hover sobre los enlaces de login en apps */
-.appLogin a:hover {  
-    cursor: pointer;  /* 🖱️ Cursor en modo clic */
-    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
-    background-color: var(--color-9);  /* 🎨 Cambio de color */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
 }
-
-/* 🏦 Contenedor de opciones de cuenta */
-.account {  
-    display: flex;  /* 🏗️ Diseño flexible */
-    align-items: center;  /* 📌 Centrado vertical */
-    justify-content: center;  /* 📌 Centrado horizontal */
-    width: 70%;  /* 📐 Ajuste del ancho */
-    height: auto;  /* 📏 Altura adaptable */
-    gap: 40px;  /* 📌 Espaciado entre elementos */
+.description > p {
+    color: var(--color-6);
+    font-size: 16px;
+    font-family: "LeagueSpartan-Light";
+    margin: 20px 0;
 }
-
-/* 🔗 Estilos para los enlaces de cuenta */
-.account a {  
-    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
-    padding: 12px;  /* 🛋️ Espaciado interno */
-    text-decoration: none;  /* 🚫 Sin subrayado */
-    color: var(--color-2);  /* 🎨 Color personalizado */
-    font-size: 18px;  /* 📏 Tamaño del texto */
-    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+.second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 5px;
 }
-
-/* 🎭 Hover sobre los enlaces de cuenta */
-.account a:hover {  
-    cursor: pointer;  /* 🖱️ Cursor en modo clic */
-    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
-    background-color: var(--color-9);  /* 🎨 Cambio de color */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+.second p {
+    font-size: 16px;
+    font-family: "LeagueSpartan-Light";
 }
-
-/* 📝 Estilos del texto en la sección de cuenta */
-.account p {  
-    color: var(--color-8);  /* 🎨 Color personalizado */
-    font-size: 16px;  /* 📏 Tamaño del texto */
-    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
-    margin: 20px 0;  /* 🛋️ Espaciado externo */
+.second p:first-child {
+    color: var(--color-2);
+}
+.second p:nth-child(2) {
+    color: var(--color-6);
+}
+.second p:last-child {
+    color: var(--color-2);
 }
 /* 🔽 Estilos del pie de página */
 footer {  

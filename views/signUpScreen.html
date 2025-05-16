@@ -39,9 +39,10 @@
                         <label for="full-name">Nombre Completo</label>
                         <input type="text" id="full-name" name="full-name" placeholder="Tu nombre completo">
                     </div>
-                    <div class="form-field">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" placeholder="********">
+                    <div class="form-field password-container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" value="**********">
+                        <img src="../icons/icon1LogSingUpPage.svg" alt="Mostrar/Ocultar contraseña">
                     </div>
                     <div class="form-field">
                         <label for="email">Correo Electrónico</label>
@@ -56,10 +57,13 @@
                         <input type="text" id="date-of-birth" name="date-of-birth" placeholder="DD / MM / AAAA">
                     </div>
                     <div class="description">
-                        <p>By continuing, you agree to</p>
-                        <p>Terms of Use</p>
-                        <p>and</p>
-                        <p>Privacy Policy.</p>
+                            <p>By continuing, you agree to</p>
+                        <div class="second">
+                            <p>Terms of Use</p>
+                            <p>and</p>
+                            <p>Privacy Policy.</p> 
+                        </div>                                 
+                    </div>
                         <!-- 🌍 Acceso con otras plataformas -->
                     <div class="appLogin">
                         <a href="">
@@ -72,9 +76,7 @@
                             <img src="../icons/icon4LogSingUpPage.svg" alt="Finger Print Icon">
                         </a>
                     </div>
-                </div>
-                    </div>
-                    <a type="submit"><p>Sign Up</p></a>
+                    <a href="" class="signUp-button"><p>Sign Up</p></a>
                     <div class="signUp">
                         <p>or sign up with</p>
                         <div class="login">
