@@ -73,6 +73,7 @@ main {
     background: var(--color-10);  /* 🎨 Color de fondo personalizado */  
     border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */  
     text-align: center;  /* 📝 Asegurar que el contenido esté centrado textualmente */  
+    flex-direction: column;  /* 🏠 Elementos en columna */
 }
 
 /* 📄 Sección de contenido principal */
@@ -81,7 +82,7 @@ main {
     flex-direction: column;  /* 🏠 Estructura en columnas */
     align-items: center;  /* 📌 Centrado vertical */
     width: 100%;  /* 📐 Ocupar todo el ancho */
-    margin: 20px;  /* 🛋️ Espaciado externo */
+    margin: 20px 0;  /* 🛋️ Espaciado externo */
 }
 
 /* 📝 Estilos de los títulos dentro del contenido */
