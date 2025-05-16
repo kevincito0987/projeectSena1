@@ -144,11 +144,14 @@ main {
 
 /* 🖋️ Estilos para los inputs del formulario */
 .form-group input {  
-    color: var(--color-6);  /* 🎨 Color personalizado */
-    font-size: 20px;  /* 📏 Tamaño del texto */
-    font-family: "LeagueSpartan-Regular";  /* ✍️ Fuente estilizada */
-    padding: 6px;  /* 🛋️ Espaciado interno */
+    color: var(--color-6);  /* 🎨 Color del texto para mejorar la legibilidad */  
+    font-size: 20px;  /* 📏 Ajuste del tamaño del texto para mayor claridad */  
+    font-family: "LeagueSpartan-Regular";  /* ✍️ Tipografía estilizada para un diseño moderno */  
+    padding: 12px;  /* 🛋️ Espaciado interno para mejorar la usabilidad */  
+    border-radius: 20px;  /* 🏵️ Bordes redondeados para una apariencia más suave */  
+    background: var(--color-5);  /* 🎨 Color de fondo personalizado para contraste adecuado */  
 }
+
 
 /* 🔖 Estilos para las etiquetas del formulario */
 .form-group label {  
