@@ -6,3 +6,340 @@
     padding: 0; /* 🚫 Eliminación de relleno */
     box-sizing: border-box; /* 📦 Garantiza que el tamaño total incluya borde y relleno */
 }
+
+/* 🏞️ Configuración del fondo del cuerpo */
+body {  
+    background-image: url(../imgs/header.jpg);  /* 🌅 Imagen de fondo */
+    background-size: cover;  /* 📏 Ajuste para cubrir toda la pantalla */
+    background-repeat: no-repeat;  /* 🚫 Evitar la repetición */
+    background-position: center;  /* 🎯 Centramos la imagen */
+}
+
+/* 🔝 Estilización del encabezado */
+header {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    align-items: center;  /* 📌 Centrado vertical */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    width: 100%;  /* 📐 Ocupar todo el ancho */
+    height: 60vh;  /* 📏 Altura proporcional a la pantalla */
+}
+
+/* 🖼️ Logo dentro del header */
+.login-header a img {  
+    width: 60px;  /* 📏 Tamaño definido */
+    height: 56px;  /* 📏 Proporción ajustada */
+}
+
+/* 🔗 Estilos para los enlaces dentro del encabezado */
+header a {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor alineación */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    align-items: center;  /* 📌 Centrado vertical */
+    padding: 10px;  /* 🛋️ Espaciado interno para mejor interacción */
+}
+
+/* 🏠 Encabezado con estructura y distribución */
+.login-header {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    justify-content: space-between;  /* ↔️ Espaciado uniforme entre elementos */
+    align-items: center;  /* 📌 Centrado vertical */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    width: 100%;  /* 📐 Ancho completo */
+    height: 10vh;  /* 📏 Altura proporcional a la pantalla */
+}
+
+/* 📝 Estilización del título dentro del header */
+.login-header h3 {  
+    color: var(--color-3);  /* 🎨 Color personalizado */
+    font-size: 58px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Bold";  /* ✍️ Tipografía elegante */
+}
+
+/* ✨ Efecto hover sobre los enlaces del encabezado */
+header a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
+}
+
+/* 🌍 Contenedor principal - Sección principal de la página */
+main {  
+    display: flex;  /* 🏗️ Diseño flexible para una distribución fluida */  
+    justify-content: center;  /* 📌 Centrado horizontal del contenido */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: auto;  /* 📏 Altura adaptable según el contenido */  
+    background: var(--color-10);  /* 🎨 Color de fondo personalizado */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */  
+    text-align: center;  /* 📝 Asegurar que el contenido esté centrado textualmente */  
+}
+
+/* 📄 Sección de contenido principal */
+.content {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor organización */
+    flex-direction: column;  /* 🏠 Estructura en columnas */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 100%;  /* 📐 Ocupar todo el ancho */
+    margin: 20px;  /* 🛋️ Espaciado externo */
+}
+
+/* 📝 Estilos de los títulos dentro del contenido */
+.content h3 {  
+    color: var(--color-6);  /* 🎨 Color personalizado */
+    font-size: 24px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-SemiBold";  /* ✍️ Tipografía elegante */
+    margin: 40px 0;  /* 📌 Espaciado superior e inferior */
+}
+
+/* 📜 Estilo del párrafo dentro del contenido */
+.content > p {  
+    color: var(--color-8);  /* 🎨 Color personalizado */
+    font-size: 18px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+    margin: 20px 0;  /* 🛋️ Espaciado externo */
+}
+
+/* 📝 Contenedor del formulario */
+.form-container {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 🏠 Elementos en columna */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 70%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 30px;  /* 📌 Espaciado entre elementos */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔗 Enlaces dentro del formulario */
+.form-container a {  
+    text-decoration: none;  /* 🚫 Sin subrayado */
+    color: var(--color-2);  /* 🎨 Color personalizado */
+    font-size: 16px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
+    margin-left: 60px;  /* 🛋️ Espaciado hacia la izquierda */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
+}
+
+/* ✨ Hover sobre los enlaces del formulario */
+.form-container a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
+}
+
+/* 🏷️ Inputs y etiquetas del formulario */
+.form-group {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 🏠 Elementos en columna */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 100%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 20px;  /* 📌 Espaciado entre elementos */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🖋️ Estilos para los inputs del formulario */
+.form-group input {  
+    color: var(--color-6);  /* 🎨 Color del texto para mejorar la legibilidad */  
+    font-size: 20px;  /* 📏 Ajuste del tamaño del texto para mayor claridad */  
+    font-family: "LeagueSpartan-Regular";  /* ✍️ Tipografía estilizada para un diseño moderno */  
+    padding: 12px;  /* 🛋️ Espaciado interno para mejorar la usabilidad */  
+    border-radius: 20px;  /* 🏵️ Bordes redondeados para una apariencia más suave */  
+    background: var(--color-5);  /* 🎨 Color de fondo personalizado para contraste adecuado */  
+}
+
+
+/* 🔖 Estilos para las etiquetas del formulario */
+.form-group label {  
+    color: var(--color-6);  /* 🎨 Color personalizado */
+    font-size: 20px;  /* 📏 Tamaño del texto */  
+    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
+}
+/* 🔐 Contenedor de la contraseña */
+.password-container {  
+    position: relative;  /* 📌 Establecemos el contenedor como relativo para posicionar el icono absolutamente dentro de él */  
+    display: flex;  /* 🏗️ Usamos flexbox para alinear los elementos verticalmente */  
+    flex-direction: column;  /* 🔼 Colocamos la etiqueta encima del input para mejor organización */  
+}
+  
+/* 🔑 Estilos del campo de entrada de la contraseña */
+#password {  
+    padding-right: 30px;  /* 🛋️ Añadimos espacio a la derecha para evitar la superposición con el ícono */  
+    padding: 4px;  /* 📏 Mantenemos el padding para mejor legibilidad */  
+}
+  
+/* 👁️ Estilos del icono para mostrar/ocultar contraseña */
+.password-container img {  
+    position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+    top: 50%;  /* 🎯 Centramos verticalmente */  
+    right: 500px;  /* 📏 Ubicación a la derecha del input */  
+    transform: translateY(-50%);  /* 🎭 Ajuste fino del centrado vertical */  
+    cursor: pointer;  /* 🖱️ Indicamos que el icono es interactivo */  
+    width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
+    height: auto;  /* 🔄 Mantenemos la proporción del icono */  
+}
+
+/* 🏠 Contenedor principal de login */
+.login-main {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor alineación */
+    flex-direction: column;  /* 🔽 Organización en columna */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 70%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 20px;  /* 📌 Espaciado entre elementos */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔗 Estilos para el botón de login */
+.login-main > a {  
+    text-decoration: none;  /* 🚫 Sin subrayado */
+    display: flex;  /* 🏗️ Diseño flexible */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    align-items: center;  /* 📌 Centrado vertical */
+    color: var(--color-7);  /* 🎨 Color personalizado */
+    font-size: 24px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
+    background: var(--color-2);  /* 🎨 Color de fondo */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+    width: 150px;  /* 📏 Ajuste de tamaño */
+}
+
+/* ✨ Hover sobre el botón de login */
+.login-main a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-6);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
+}
+
+/* 📜 Estilo del párrafo en login */
+.login-main > p {  
+    color: var(--color-8);  /* 🎨 Color personalizado */
+    font-size: 16px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+    margin: 20px 0;  /* 🛋️ Espaciado externo */
+}
+
+/* 🔗 Contenedor de accesos rápidos a aplicaciones */
+.appLogin {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    width: 70%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 40px;  /* 📌 Espaciado entre elementos */
+}
+
+/* ✨ Estilos para los enlaces de login en apps */
+.appLogin a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
+    padding: 7px;  /* 🛋️ Espaciado interno */
+    background-color: var(--color-5);  /* 🎨 Color inicial */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 🎭 Hover sobre los enlaces de login en apps */
+.appLogin a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-9);  /* 🎨 Cambio de color */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 🏦 Contenedor de opciones de cuenta */
+.account {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    width: 70%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 40px;  /* 📌 Espaciado entre elementos */
+}
+
+/* 🔗 Estilos para los enlaces de cuenta */
+.account a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
+    padding: 12px;  /* 🛋️ Espaciado interno */
+    text-decoration: none;  /* 🚫 Sin subrayado */
+    color: var(--color-2);  /* 🎨 Color personalizado */
+    font-size: 18px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+}
+
+/* 🎭 Hover sobre los enlaces de cuenta */
+.account a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-9);  /* 🎨 Cambio de color */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 📝 Estilos del texto en la sección de cuenta */
+.account p {  
+    color: var(--color-8);  /* 🎨 Color personalizado */
+    font-size: 16px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+    margin: 20px 0;  /* 🛋️ Espaciado externo */
+}
+/* 🔽 Estilos del pie de página */
+footer {  
+    display: flex;  /* 🏗️ Diseño flexible para adaptación en distintos dispositivos */
+    align-items: center;  /* 📌 Centrado vertical de los elementos */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    height: auto;  /* 📏 Altura adaptable según el contenido */
+    background: var(--color-2);  /* 🎨 Color de fondo personalizado */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para estética */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    position: absolute;  /* 📌 Fijación del pie de página */
+    position: sticky;  /* 🔝 Mantener visible al hacer scroll */
+    z-index: 10;  /* 🔢 Prioridad en la capa de visualización */
+    box-shadow: 0px 0px 25px 40px var(--color-14); /* 💡 Efecto de sombra para resaltar el pie */
+}
+
+/* 🎭 Contenedor de íconos sociales o enlaces */
+.icons {  
+    display: flex;  /* 🏗️ Diseño flexible para alineación */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: space-between;  /* ↔️ Distribución equitativa */
+    width: 100%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 20px;  /* 📌 Separación entre elementos */
+    padding: 10px 40px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔗 Estilos para los enlaces dentro de los íconos */
+.icons a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación suave para interactividad */
+    padding: 15px;  /* 🛋️ Espaciado interno para clic cómodo */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor apariencia */
+}
+
+/* ✨ Efecto hover sobre los enlaces de íconos */
+.icons a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo interactivo */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-19);  /* 🎨 Cambio de color para resaltar interacción */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 📌 Barra animada en la parte inferior del footer */
+.moving-bar {  
+    width: 20px;  /* 📏 Tamaño definido */
+    height: 10px;  /* 📏 Altura ajustada */
+    background-color: var(--color-7);  /* 🎨 Color de fondo */
+    position: absolute;  /* 📌 Posición absoluta respecto al footer */
+    bottom: 0;  /* 🎯 Ubicación debajo de los íconos */
+    transition: transform 0.4s ease;  /* 🎭 Animación suave */
+    left: 0px;  /* 🏁 Posicionamiento inicial */
+    border-radius: 5px;  /* 🏵️ Bordes redondeados */
+}
+#moving-bar {
+    /* ... otros estilos ... */
+    transition: transform 0.3s ease, width 0.3s ease; /* Transición para la posición y el ancho */
+}
