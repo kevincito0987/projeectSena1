@@ -13,7 +13,9 @@ body {
     background-image: url(../imgs/header.jpg);  /* 🌅 Imagen de fondo personalizada */  
     background-size: cover;  /* 📏 Ajuste para cubrir toda la pantalla sin deformaciones */  
     background-repeat: no-repeat;  /* 🚫 Evitar la repetición para una apariencia más limpia */  
-    background-position: center;  /* 🎯 Centrado de la imagen de fondo */  
+    background-position: center;  /* 🎯 Centrado de la imagen de fondo */ 
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: auto;  /* 📏 Ocupar todo el alto disponible */
 }
 
 /* 🔝 Estilización del encabezado */
@@ -398,6 +400,42 @@ footer {
     }
     header .login-header h3 {
         font-size: 30px;
+    
+    }
+    header .login-header .back-icon {
+        width: 20px;
+    }
+    footer {
+        padding: 10px;
+    }
+    .icons {
+        gap: 10px;
+        padding: 10px 0px;
+    }
+    .icons a {
+        padding: 10px;
+    }
+    .description {
+        width: 120%;
+    }
+    .signUp .login a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 390px) {
+    header {
+        padding: 1px;
+    }
+    .login-header {
+        width: 100vw;
+        gap: 20px;
+    }
+    header .login-header h3 {
+        font-size: 40px;
     
     }
     header .login-header .back-icon {
