@@ -386,45 +386,65 @@ footer {
     border-radius: 5px;  /* 🏵️ Bordes redondeados */  
 }
 
+/* 📌 Barra animada en la parte inferior del footer */
 #moving-bar {  
-    transition: transform 0.3s ease, width 0.3s ease;  /* 📌 Transición para posición y tamaño */  
+    transition: transform 0.3s ease, width 0.3s ease;  /* 🎭 Animación suave para cambios de posición y tamaño */  
 }
 
+/* 📱 Media query: Ajustes para pantallas de máximo 320px */
 @media screen and (max-width: 320px) {
-    header {
-        padding: 1px;
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        padding: 1px;  /* 🛋️ Espaciado interno mínimo */  
     }
-    .login-header {
-        width: 100vw;
-        gap: 20px;
+
+    /* 🏠 Estilos del encabezado de login */
+    .login-header {  
+        width: 100vw;  /* 📐 Ocupar todo el ancho de la ventana */  
+        gap: 20px;  /* 🔼 Separación entre elementos */  
     }
-    header .login-header h3 {
-        font-size: 30px;
-    
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        font-size: 30px;  /* 📏 Reducción del tamaño para pantallas pequeñas */  
     }
-    header .login-header .back-icon {
-        width: 20px;
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 20px;  /* 📏 Ajuste de tamaño para mejor visualización */  
     }
-    footer {
-        padding: 10px;
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para distribución equilibrada */  
     }
-    .icons {
-        gap: 10px;
-        padding: 10px 0px;
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Separación reducida entre íconos */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
     }
-    .icons a {
-        padding: 10px;
+
+    /* 🔗 Estilos para los enlaces dentro de los íconos */
+    .icons a {  
+        padding: 10px;  /* 🛋️ Espaciado interno para interacción cómoda */  
     }
-    .description {
-        width: 120%;
+
+    /* 📜 Ajuste del contenedor de descripción */
+    .description {  
+        width: 120%;  /* 📐 Extensión para mayor visibilidad en pantallas pequeñas */  
     }
-    .signUp .login a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        width: 100px;
+
+    /* 🔗 Ajuste del enlace en la sección de login */
+    .signUp .login a {  
+        display: flex;  /* 🏗️ Diseño flexible para alineación eficiente */  
+        justify-content: center;  /* 📌 Centrado horizontal */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        padding: 10px;  /* 🛋️ Espaciado interno */  
+        width: 100px;  /* 📐 Ajuste de ancho */  
     }
+
     /* 🔐 Contenedor de la contraseña */
     .password-container {  
         position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
@@ -449,41 +469,61 @@ footer {
         height: auto;  /* 🔄 Mantiene la proporción del ícono */  
     }
 }
+
+/* 📱 Media query: Ajustes para pantallas entre 321px y 390px */
 @media screen and (min-width: 321px) and (max-width: 390px) {
-    header {
-        padding: 1px;
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        padding: 1px;  /* 🛋️ Espaciado mínimo para mejor estructura */  
     }
-    .login-header {
-        width: 100vw;
-        gap: 20px;
+
+    /* 🏠 Estilos del encabezado de login */
+    .login-header {  
+        width: 100vw;  /* 📐 Ocupar todo el ancho de la ventana */  
+        gap: 20px;  /* 🔼 Separación entre elementos para distribución clara */  
     }
-    header .login-header h3 {
-        font-size: 40px;
-    
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        font-size: 40px;  /* 📏 Tamaño optimizado para visibilidad */  
     }
-    header .login-header .back-icon {
-        width: 20px;
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 20px;  /* 📏 Ajuste del ancho para mejor adaptación */  
     }
-    footer {
-        padding: 10px;
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejor estructura visual */  
     }
-    .icons {
-        gap: 10px;
-        padding: 10px 0px;
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
     }
-    .icons a {
-        padding: 10px;
+
+    /* 🔗 Estilos para los enlaces dentro de los íconos */
+    .icons a {  
+        padding: 10px;  /* 🛋️ Espaciado interno para clic cómodo */  
     }
-    .description {
-        width: 120%;
+
+    /* 📜 Ajuste del contenedor de descripción */
+    .description {  
+        width: 120%;  /* 📐 Ajuste del ancho para mejor visualización */  
     }
-    .signUp .login a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        width: 100px;
+
+    /* 🔗 Ajuste del enlace en la sección de login */
+    .signUp .login a {  
+        display: flex;  /* 🏗️ Diseño flexible para alineación eficiente */  
+        justify-content: center;  /* 📌 Centrado horizontal */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        padding: 10px;  /* 🛋️ Espaciado interno */  
+        width: 100px;  /* 📐 Ajuste de ancho */  
     }
+
     /* 🔐 Contenedor de la contraseña */
     .password-container {  
         position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
@@ -508,28 +548,42 @@ footer {
         height: auto;  /* 🔄 Mantiene la proporción del ícono */  
     }
 }
+
+/* 📱 Media query: Ajustes para pantallas entre 391px y 440px */
 @media screen and (min-width: 391px) and (max-width: 440px) {
-    header {
-        padding: 1px;
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        padding: 1px;  /* 🛋️ Espaciado mínimo para mejor estructura */  
     }
-    .login-header {
-        width: 100vw;
-        gap: 20px;
+
+    /* 🏠 Estilos del encabezado de login */
+    .login-header {  
+        width: 100vw;  /* 📐 Ocupar todo el ancho de la ventana */  
+        gap: 20px;  /* 🔼 Separación entre elementos para distribución clara */  
     }
-    header .login-header h3 {
-        font-size: 50px;
-    
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        font-size: 50px;  /* 📏 Tamaño optimizado para visibilidad */  
     }
-    header .login-header .back-icon {
-        width: 20px;
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 20px;  /* 📏 Ajuste del ancho para mejor adaptación */  
     }
-    footer {
-        padding: 10px;
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejor estructura visual */  
     }
-    .icons {
-        gap: 10px;
-        padding: 10px 0px;
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
     }
+
     /* 🔐 Contenedor de la contraseña */
     .password-container {  
         position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
@@ -554,14 +608,21 @@ footer {
         height: auto;  /* 🔄 Mantiene la proporción del ícono */  
     }
 }
+
+/* 📱 Media query: Ajustes para pantallas entre 768px y 884px */
 @media screen and (min-width: 768px) and (max-width: 884px) {
-    header .login-header .back-icon {
-        width: 30px;
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 30px;  /* 📏 Ajuste del ancho para mejor visibilidad */  
     }
-    header .login-header a img {
-        width: 80px;
-        height: 80px;
+
+    /* 🏷️ Ajuste del logo dentro del encabezado */
+    header .login-header a img {  
+        width: 80px;  /* 📏 Ajuste del ancho del logo */  
+        height: 80px;  /* 📏 Ajuste de altura */  
     }
+
     /* 🔐 Contenedor de la contraseña */
     .password-container {  
         position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
@@ -586,14 +647,21 @@ footer {
         height: auto;  /* 🔄 Mantiene la proporción del ícono */  
     }
 }
+
+/* 📱 Media query: Ajustes para pantallas entre 885px y 1114px */
 @media screen and (min-width: 885px) and (max-width: 1114px) {
-    header .login-header .back-icon {
-        width: 30px;
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 30px;  /* 📏 Ajuste del ancho para mejor visibilidad */  
     }
-    header .login-header a img {
-        width: 80px;
-        height: 80px;
+
+    /* 🏷️ Ajuste del logo dentro del encabezado */
+    header .login-header a img {  
+        width: 80px;  /* 📏 Ajuste del ancho del logo */  
+        height: 80px;  /* 📏 Ajuste de altura */  
     }
+
     /* 🔐 Contenedor de la contraseña */
     .password-container {  
         position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
@@ -618,14 +686,21 @@ footer {
         height: auto;  /* 🔄 Mantiene la proporción del ícono */  
     }
 }
+
+/* 📱 Media query: Ajustes para pantallas entre 1280px y 1281px */
 @media screen and (min-width: 1280px) and (max-width: 1281px) {
-    header .login-header .back-icon {
-        width: 30px;
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 30px;  /* 📏 Ajuste del ancho para mejor visibilidad */  
     }
-    header .login-header a img {
-        width: 80px;
-        height: 80px;
+
+    /* 🏷️ Ajuste del logo dentro del encabezado */
+    header .login-header a img {  
+        width: 80px;  /* 📏 Ajuste del ancho del logo */  
+        height: 80px;  /* 📏 Ajuste de altura */  
     }
+
     /* 🔐 Contenedor de la contraseña */
     .password-container {  
         position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
@@ -650,67 +725,92 @@ footer {
         height: auto;  /* 🔄 Mantiene la proporción del ícono */  
     }
 }
-@media screen and (min-width: 162px) and (max-width: 319px){
-    header .login-header{
-        width: 90%;
-        padding: 5px;
-        gap: 0px;
+
+/* 📱 Media query: Ajustes para pantallas entre 162px y 319px */
+@media screen and (min-width: 162px) and (max-width: 319px) {
+
+    /* 🏠 Estilos del encabezado de login */
+    header .login-header {  
+        width: 90%;  /* 📐 Ajuste del ancho para mejor responsividad */  
+        padding: 5px;  /* 🛋️ Espaciado interno */  
+        gap: 0px;  /* 🚫 Eliminamos separación innecesaria */  
     }
-    header .login-header h3{
-        font-size: 15px;
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        font-size: 15px;  /* 📏 Reducción del tamaño para mejor adaptación */  
     }
-    header .login-header .back-icon{
-        width: 10px;
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 10px;  /* 📏 Tamaño ajustado */  
     }
-    header .login-header a img {
-        width: 30px;
-        height: 30px;
+
+    /* 🖼️ Ajuste del logo dentro del encabezado */
+    header .login-header a img {  
+        width: 30px;  /* 📏 Ajuste de tamaño */  
+        height: 30px;  /* 📏 Proporción mantenida */  
     }
-    header {
-        padding: 1px;
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        padding: 1px;  /* 🛋️ Espaciado mínimo */  
     }
-    .content .form-container .form-field input {
-        font-size: 12px;
+
+    /* 🏷️ Ajuste de inputs dentro del formulario */
+    .content .form-container .form-field input {  
+        font-size: 12px;  /* 📏 Reducción de tamaño para pantallas pequeñas */  
     }
+
+    /* 👁️ Estilos del ícono para mostrar/ocultar contraseña */
     .password-container img {  
         position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
         top: 68%;  /* 🎯 Centramos verticalmente */  
         right: -10px;  /* 📏 Ubicación precisa a la derecha del input */  
-        transform: translateY(-50%);  /* 🎭 Ajuste fino para perfecto alineamiento */  
-        cursor: pointer;  /* 🖱️ Indicación visual de interacción */  
-        width: 20px;  /* 📐 Ajuste del tamaño del ícono */  
-        height: auto;  /* 🔄 Mantiene la proporción del ícono */  
+        transform: translateY(-50%);  /* 🎭 Ajuste fino para alineamiento */  
+        cursor: pointer;  /* 🖱️ Indicación de interacción */  
+        width: 20px;  /* 📐 Ajuste del tamaño */  
+        height: auto;  /* 🔄 Mantiene la proporción */  
     }
+
+    /* 📜 Ajuste del contenedor de descripción */
     .description > p {  
-        color: var(--color-6);  /* 🎨 Color personalizado para mejor contraste */  
-        font-size: 18px;  /* 📏 Tamaño optimizado para legibilidad */  
-        font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada para armonía visual */  
+        color: var(--color-6);  /* 🎨 Color optimizado */  
+        font-size: 18px;  /* 📏 Tamaño ajustado para mejor legibilidad */  
+        font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */  
     }
-    .description .second {
-        gap: 10px;
+
+    /* 🎭 Ajuste del segundo bloque de descripción */
+    .description .second {  
+        gap: 10px;  /* 📌 Separación entre elementos */  
     }
-    .appLogin {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
-        height: auto;
-        gap: 10px;
+
+    /* 🔗 Contenedor de accesos rápidos a aplicaciones */
+    .appLogin {  
+        display: flex;  /* 🏗️ Diseño flexible */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        justify-content: center;  /* 📌 Centrado horizontal */  
+        width: 70%;  /* 📐 Ajuste del ancho */  
+        height: auto;  /* 📏 Altura adaptable */  
+        gap: 10px;  /* 📌 Espaciado entre elementos */  
     }
-    .form-container .signUp-button {
-        font-size: 15px;
-        width: 120px;
+
+    /* 🔘 Botón de registro */
+    .form-container .signUp-button {  
+        font-size: 15px;  /* 📏 Tamaño ajustado */  
+        width: 120px;  /* 📐 Ancho definido */  
     }
+
     /* 🎭 Ajuste del contenedor de íconos */
     .icons {  
-        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
-        margin: 0;  /* 🚫 Eliminamos margen externo */  
-        padding: 0;  /* 🚫 Eliminamos padding interno */  
+        width: 100%;  /* 📐 Ocupar todo el ancho */  
+        margin: 0;  /* 🚫 Eliminamos margen */  
+        padding: 0;  /* 🚫 Eliminamos padding */  
         display: flex;  /* 🏗️ Diseño flexible */  
-        flex-direction: row;  /* 🔼 Elementos organizados en fila */  
+        flex-direction: row;  /* 🔼 Elementos en fila */  
         justify-content: center;  /* 📌 Centrado horizontal */  
         align-items: center;  /* 📌 Centrado vertical */  
-        gap: 5px;  /* 🚫 Eliminamos separación innecesaria */  
+        gap: 5px;  /* 📌 Separación mínima entre íconos */  
     }
 
     /* 🔗 Ajuste de enlaces dentro del footer */
@@ -718,9 +818,9 @@ footer {
         margin: 0;  /* 🚫 Eliminamos margen externo */  
         padding: 5px;  /* 🛋️ Espaciado interno */  
         width: 10px;  /* 📏 Ajuste del ancho */  
-        height: 10px;  /* 📏 Ajuste de la altura */  
+        height: 10px;  /* 📏 Ajuste de altura */  
         display: flex;  /* 🏗️ Diseño flexible */  
-        flex-direction: row;  /* 🔼 Elementos organizados en fila */  
+        flex-direction: row;  /* 🔼 Elementos en fila */  
         justify-content: center;  /* 📌 Centrado horizontal */  
         align-items: center;  /* 📌 Centrado vertical */  
         gap: 0;  /* 🚫 Eliminamos separación innecesaria */  
@@ -728,13 +828,13 @@ footer {
 
     /* ✨ Ajuste de hover en enlaces del footer */
     footer a:hover {  
-        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        margin: 0;  /* 🚫 Eliminamos margen */  
         padding: 10px;  /* 🛋️ Expansión del padding al hacer hover */  
     }
 
     /* 📌 Ajuste del tamaño de las imágenes dentro de los enlaces */
     footer a img {  
         width: 15px;  /* 📏 Ajuste del ancho */  
-        height: 15px;  /* 📏 Ajuste de la altura */  
+        height: 15px;  /* 📏 Ajuste de altura */  
     }
 }
