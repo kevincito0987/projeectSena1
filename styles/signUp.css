@@ -343,7 +343,7 @@ footer {
     padding: 20px;  /* 🛋️ Espaciado interno */  
     position: sticky;  /* 🔝 Mantener visible al hacer scroll */  
     z-index: 10;  /* 🔢 Prioridad en la capa de visualización */  
-    box-shadow: 0px 0px 25px 40px var(--color-14); /* 💡 Efecto de sombra para resaltar */  
+    box-shadow: 0px 0px 25px 30px var(--color-14); /* 💡 Efecto de sombra para resaltar */  
 }
 
 /* 🎭 Contenedor de íconos sociales o enlaces */
@@ -386,4 +386,41 @@ footer {
 
 #moving-bar {  
     transition: transform 0.3s ease, width 0.3s ease;  /* 📌 Transición para posición y tamaño */  
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding: 1px;
+    }
+    .login-header {
+        width: 100vw;
+        gap: 20px;
+    }
+    header .login-header h3 {
+        font-size: 30px;
+    
+    }
+    header .login-header .back-icon {
+        width: 20px;
+    }
+    footer {
+        padding: 10px;
+    }
+    .icons {
+        gap: 10px;
+        padding: 10px 0px;
+    }
+    .icons a {
+        padding: 10px;
+    }
+    .description {
+        width: 120%;
+    }
+    .signUp .login a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100px;
+    }
 }
