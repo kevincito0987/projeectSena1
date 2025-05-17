@@ -1,358 +1,389 @@
-@import url(./variables.css);
+/* 📜 Importación de variables globales */
+@import url(./variables.css);  
 
 /* 🌐 Reset de estilos: elimina márgenes y rellenos predeterminados */
-* {
-    margin: 0; /* 🚫 Eliminación de margen */
-    padding: 0; /* 🚫 Eliminación de relleno */
-    box-sizing: border-box; /* 📦 Garantiza que el tamaño total incluya borde y relleno */
+* {  
+    margin: 0;  /* 🚫 Eliminación de margen externo */  
+    padding: 0;  /* 🚫 Eliminación de relleno interno */  
+    box-sizing: border-box;  /* 📦 Garantiza que el tamaño total incluya borde y relleno */  
 }
 
 /* 🏞️ Configuración del fondo del cuerpo */
 body {  
-    background-image: url(../imgs/header.jpg);  /* 🌅 Imagen de fondo */
-    background-size: cover;  /* 📏 Ajuste para cubrir toda la pantalla */
-    background-repeat: no-repeat;  /* 🚫 Evitar la repetición */
-    background-position: center;  /* 🎯 Centramos la imagen */
+    background-image: url(../imgs/header.jpg);  /* 🌅 Imagen de fondo personalizada */  
+    background-size: cover;  /* 📏 Ajuste para cubrir toda la pantalla sin deformaciones */  
+    background-repeat: no-repeat;  /* 🚫 Evitar la repetición para una apariencia más limpia */  
+    background-position: center;  /* 🎯 Centrado de la imagen de fondo */  
 }
 
 /* 🔝 Estilización del encabezado */
 header {  
-    display: flex;  /* 🏗️ Diseño flexible */
-    justify-content: center;  /* 📌 Centrado horizontal */
-    align-items: center;  /* 📌 Centrado vertical */
-    padding: 20px;  /* 🛋️ Espaciado interno */
-    width: 100%;  /* 📐 Ocupar todo el ancho */
-    height: 60vh;  /* 📏 Altura proporcional a la pantalla */
+    display: flex;  /* 🏗️ Diseño flexible para adaptar el contenido */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    padding: 20px;  /* 🛋️ Espaciado interno para mejor organización */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: 60vh;  /* 📏 Altura ajustada proporcionalmente */  
 }
 
-/* 🖼️ Logo dentro del header */
+/* 🖼️ Estilos para el logo dentro del encabezado */
 .login-header a img {  
-    width: 60px;  /* 📏 Tamaño definido */
-    height: 56px;  /* 📏 Proporción ajustada */
+    width: 60px;  /* 📏 Ajuste del ancho */  
+    height: 56px;  /* 📏 Ajuste de la altura manteniendo proporción */  
 }
 
 /* 🔗 Estilos para los enlaces dentro del encabezado */
 header a {  
-    display: flex;  /* 🏗️ Diseño flexible para mejor alineación */
-    justify-content: center;  /* 📌 Centrado horizontal */
-    align-items: center;  /* 📌 Centrado vertical */
-    padding: 10px;  /* 🛋️ Espaciado interno para mejor interacción */
+    display: flex;  /* 🏗️ Diseño flexible para mejorar alineación */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    padding: 10px;  /* 🛋️ Espaciado interno para mejorar interacción */  
 }
 
 /* 🏠 Encabezado con estructura y distribución */
 .login-header {  
-    display: flex;  /* 🏗️ Diseño flexible */
-    justify-content: space-between;  /* ↔️ Espaciado uniforme entre elementos */
-    align-items: center;  /* 📌 Centrado vertical */
-    padding: 20px;  /* 🛋️ Espaciado interno */
-    width: 100%;  /* 📐 Ancho completo */
-    height: 10vh;  /* 📏 Altura proporcional a la pantalla */
+    display: flex;  /* 🏗️ Diseño flexible para distribución de elementos */  
+    justify-content: space-between;  /* ↔️ Espaciado uniforme entre elementos */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    padding: 20px;  /* 🛋️ Espaciado interno */  
+    width: 100%;  /* 📐 Ancho completo para adaptación responsiva */  
+    height: 10vh;  /* 📏 Ajuste proporcional a la pantalla */  
 }
 
-/* 📝 Estilización del título dentro del header */
+/* 📝 Estilización del título dentro del encabezado */
 .login-header h3 {  
-    color: var(--color-3);  /* 🎨 Color personalizado */
-    font-size: 58px;  /* 📏 Tamaño del texto */
-    font-family: "LeagueSpartan-Bold";  /* ✍️ Tipografía elegante */
+    color: var(--color-3);  /* 🎨 Color personalizado para mejor contraste */  
+    font-size: 58px;  /* 📏 Ajuste del tamaño de fuente para impacto visual */  
+    font-family: "LeagueSpartan-Bold";  /* ✍️ Tipografía estilizada para resaltar el encabezado */  
 }
 
 /* ✨ Efecto hover sobre los enlaces del encabezado */
 header a:hover {  
-    cursor: pointer;  /* 🖱️ Cursor en modo clic */
-    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
-    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
+    cursor: pointer;  /* 🖱️ Cursor en modo clic para mejorar la interacción */  
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y desplazamiento */  
+    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */  
 }
 
 /* 🌍 Contenedor principal - Sección principal de la página */
 main {  
     display: flex;  /* 🏗️ Diseño flexible para una distribución fluida */  
     justify-content: center;  /* 📌 Centrado horizontal del contenido */  
+    flex-direction: column;  /* 🏠 Elementos en columna */  
     width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
     height: auto;  /* 📏 Altura adaptable según el contenido */  
     background: var(--color-10);  /* 🎨 Color de fondo personalizado */  
     border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */  
     text-align: center;  /* 📝 Asegurar que el contenido esté centrado textualmente */  
-    flex-direction: column;  /* 🏠 Elementos en columna */
 }
 
 /* 📄 Sección de contenido principal */
 .content {  
-    display: flex;  /* 🏗️ Diseño flexible para mejor organización */
-    flex-direction: column;  /* 🏠 Estructura en columnas */
-    align-items: center;  /* 📌 Centrado vertical */
-    width: 100%;  /* 📐 Ocupar todo el ancho */
-    margin: 20px 0;  /* 🛋️ Espaciado externo */
-    gap: 40px;  /* 📌 Espaciado entre elementos */
+    display: flex;  /* 🏗️ Diseño flexible para mejor organización */  
+    flex-direction: column;  /* 🏠 Estructura en columnas */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    width: 100%;  /* 📐 Ocupar todo el ancho */  
+    margin: 20px 0;  /* 🛋️ Espaciado externo */  
+    gap: 40px;  /* 📌 Espaciado entre elementos */  
 }
 
 /* 📝 Estilos de los títulos dentro del contenido */
 .content h3 {  
-    color: var(--color-6);  /* 🎨 Color personalizado */
-    font-size: 24px;  /* 📏 Tamaño del texto */
-    font-family: "LeagueSpartan-SemiBold";  /* ✍️ Tipografía elegante */
-    margin: 40px 0;  /* 📌 Espaciado superior e inferior */
+    color: var(--color-6);  /* 🎨 Color personalizado para destacar */  
+    font-size: 24px;  /* 📏 Tamaño del texto optimizado */  
+    font-family: "LeagueSpartan-SemiBold";  /* ✍️ Tipografía elegante */  
+    margin: 40px 0;  /* 📌 Espaciado superior e inferior */  
 }
 
 /* 📜 Estilo del párrafo dentro del contenido */
 .content > p {  
-    color: var(--color-8);  /* 🎨 Color personalizado */
-    font-size: 18px;  /* 📏 Tamaño del texto */
-    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
-    margin: 20px 0;  /* 🛋️ Espaciado externo */
+    color: var(--color-8);  /* 🎨 Color personalizado para una lectura cómoda */  
+    font-size: 18px;  /* 📏 Tamaño del texto ajustado */  
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada para mejor estética */  
+    margin: 20px 0;  /* 🛋️ Espaciado externo para estructura visual limpia */  
 }
 
 /* 📝 Contenedor del formulario */
 .form-container {  
-    display: flex;  /* 🏗️ Diseño flexible */
-    flex-direction: column;  /* 🏠 Elementos en columna */
-    align-items: center;  /* 📌 Centrado vertical */
-    width: 70%;  /* 📐 Ajuste del ancho */
-    height: auto;  /* 📏 Altura adaptable */
-    gap: 30px;  /* 📌 Espaciado entre elementos */
-    padding: 20px;  /* 🛋️ Espaciado interno */
-    margin-bottom: 20px;
+    display: flex;  /* 🏗️ Diseño flexible para estructura adaptable */  
+    flex-direction: column;  /* 🏠 Elementos en columna */  
+    align-items: center;  /* 📌 Centrado vertical para mejor diseño */  
+    width: 70%;  /* 📐 Ajuste del ancho */  
+    height: auto;  /* 📏 Altura adaptable */  
+    gap: 30px;  /* 📌 Espaciado entre elementos */  
+    padding: 20px;  /* 🛋️ Espaciado interno */  
+    margin-bottom: 20px;  /* 📌 Espaciado inferior */  
 }
+
+/* 📄 Estilos generales del formulario */
 form {  
-    display: flex;  /* 🏗️ Diseño flexible */
-    flex-direction: column;  /* 🏠 Elementos en columna */
-    align-items: center;  /* 📌 Centrado vertical */
-    width: 100%;  /* 📐 Ajuste del ancho */
-    height: auto;  /* 📏 Altura adaptable */
-    gap: 30px;  /* 📌 Espaciado entre elementos */
+    display: flex;  /* 🏗️ Diseño flexible */  
+    flex-direction: column;  /* 🏠 Elementos en columna */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    width: 100%;  /* 📐 Ajuste del ancho completo */  
+    height: auto;  /* 📏 Altura adaptable */  
+    gap: 30px;  /* 📌 Espaciado entre elementos */  
 }
+
 /* ✨ Hover sobre los enlaces del formulario */
 .form-container a:hover {  
-    cursor: pointer;  /* 🖱️ Cursor en modo clic */
-    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
-    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */  
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y desplazamiento */  
+    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */  
 }
 
 /* 🏷️ Inputs y etiquetas del formulario */
 .form-field {  
-    display: flex;  /* 🏗️ Diseño flexible */
-    flex-direction: column;  /* 🏠 Elementos en columna */
-    align-items: center;  /* 📌 Centrado vertical */
-    width: 100%;  /* 📐 Ajuste del ancho */
-    height: auto;     /* 📏 Altura adaptable */
-    gap: 20px;  /* 📌 Espaciado entre elementos */
-    padding: 20px;  /* 🛋️ Espaciado interno */
+    display: flex;  /* 🏗️ Diseño flexible */  
+    flex-direction: column;  /* 🏠 Elementos en columna */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    width: 100%;  /* 📐 Ajuste del ancho completo */  
+    height: auto;  /* 📏 Altura adaptable */  
+    gap: 20px;  /* 📌 Espaciado entre elementos */  
+    padding: 20px;  /* 🛋️ Espaciado interno */  
 }
 
 /* 🖋️ Estilos para los inputs del formulario */
 .form-field input {  
-    color: var(--color-6);  /* 🎨 Color del texto para mejorar la legibilidad */  
-    font-size: 20px;  /* 📏 Ajuste del tamaño del texto para mayor claridad */  
-    font-family: "LeagueSpartan-Regular";  /* ✍️ Tipografía estilizada para un diseño moderno */  
-    padding: 12px;  /* 🛋️ Espaciado interno para mejorar la usabilidad */  
-    border-radius: 20px;  /* 🏵️ Bordes redondeados para una apariencia más suave */  
-    background: var(--color-5);  /* 🎨 Color de fondo personalizado para contraste adecuado */  
+    color: var(--color-6);  /* 🎨 Color del texto */  
+    font-size: 20px;  /* 📏 Tamaño del texto */  
+    font-family: "LeagueSpartan-Regular";  /* ✍️ Tipografía estilizada */  
+    padding: 12px;  /* 🛋️ Espaciado interno */  
+    border-radius: 20px;  /* 🏵️ Bordes redondeados */  
+    background: var(--color-5);  /* 🎨 Color de fondo personalizado */  
 }
+
+/* 📝 Estilos para los placeholders */
 form .form-field input::placeholder {  
-    color: var(--color-6);  /* 🎨 Color del texto para mejorar la legibilidad */  
-    font-size: 20px;  /* 📏 Ajuste del tamaño del texto para mayor claridad */  
-    font-family: "LeagueSpartan-Regular";  /* ✍️ Tipografía estilizada para un diseño moderno */  
+    color: var(--color-6);  /* 🎨 Color del texto */  
+    font-size: 20px;  /* 📏 Tamaño del texto */  
+    font-family: "LeagueSpartan-Regular";  /* ✍️ Tipografía estilizada */  
 }
 
 /* 🔖 Estilos para las etiquetas del formulario */
 .form-field label {  
-    color: var(--color-6);  /* 🎨 Color personalizado */
-    font-size: 20px;  /* 📏 Tamaño del texto */  
-    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */
+    color: var(--color-6);  /* 🎨 Color personalizado para mejorar la legibilidad */  
+    font-size: 20px;  /* 📏 Tamaño optimizado para claridad visual */  
+    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada para un diseño elegante */  
 }
+
 /* 🔐 Contenedor de la contraseña */
 .password-container {  
-    position: relative;  /* 📌 Establecemos el contenedor como relativo para posicionar el icono absolutamente dentro de él */  
-    display: flex;  /* 🏗️ Usamos flexbox para alinear los elementos verticalmente */  
-    flex-direction: column;  /* 🔼 Colocamos la etiqueta encima del input para mejor organización */  
+    position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
+    display: flex;  /* 🏗️ Uso de flexbox para distribución eficiente */  
+    flex-direction: column;  /* 🔼 Organiza la etiqueta encima del input */  
 }
-  
+
 /* 🔑 Estilos del campo de entrada de la contraseña */
 #password {  
-    padding-right: 30px;  /* 🛋️ Añadimos espacio a la derecha para evitar la superposición con el ícono */  
-    padding: 4px;  /* 📏 Mantenemos el padding para mejor legibilidad */  
+    padding-right: 30px;  /* 🛋️ Espaciado a la derecha para evitar la superposición con el ícono */  
+    padding: 4px;  /* 📏 Espaciado interno para mejor legibilidad */  
 }
-  
-/* 👁️ Estilos del icono para mostrar/ocultar contraseña */
+
+/* 👁️ Estilos del ícono para mostrar/ocultar contraseña */
 .password-container img {  
     position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
     top: 68%;  /* 🎯 Centramos verticalmente */  
-    right: 530px;  /* 📏 Ubicación a la derecha del input */  
-    transform: translateY(-50%);  /* 🎭 Ajuste fino del centrado vertical */  
-    cursor: pointer;  /* 🖱️ Indicamos que el icono es interactivo */  
-    width: 20px;  /* 📐 Ajustamos el tamaño del icono según necesidades */  
-    height: auto;  /* 🔄 Mantenemos la proporción del icono */  
+    right: 530px;  /* 📏 Ubicación precisa a la derecha del input */  
+    transform: translateY(-50%);  /* 🎭 Ajuste fino para perfecto alineamiento */  
+    cursor: pointer;  /* 🖱️ Indicación visual de interacción */  
+    width: 20px;  /* 📐 Ajuste del tamaño del ícono */  
+    height: auto;  /* 🔄 Mantiene la proporción del ícono */  
 }
+
 /* 🔗 Contenedor de accesos rápidos a aplicaciones */
 .appLogin {  
-    display: flex;  /* 🏗️ Diseño flexible */
-    align-items: center;  /* 📌 Centrado vertical */
-    justify-content: center;  /* 📌 Centrado horizontal */
-    width: 70%;  /* 📐 Ajuste del ancho */
-    height: auto;  /* 📏 Altura adaptable */
-    gap: 40px;  /* 📌 Espaciado entre elementos */
+    display: flex;  /* 🏗️ Diseño flexible para alineación responsiva */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    width: 70%;  /* 📐 Ajuste del ancho */  
+    height: auto;  /* 📏 Adaptabilidad en altura */  
+    gap: 40px;  /* 📌 Espaciado para una mejor organización visual */  
 }
 
 /* ✨ Estilos para los enlaces de login en apps */
 .appLogin a {  
-    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida */
-    padding: 7px;  /* 🛋️ Espaciado interno */
-    background-color: var(--color-5);  /* 🎨 Color inicial */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida para mejor interacción */  
+    padding: 7px;  /* 🛋️ Espaciado interno */  
+    background-color: var(--color-5);  /* 🎨 Color inicial para los accesos rápidos */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para estética suave */  
 }
-.description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    height: auto;
-    padding: 20px;
-    margin: 20px;
+
+/* 📝 Contenedor de descripción */
+.description {  
+    display: flex;  /* 🏗️ Diseño flexible para distribución organizada */  
+    flex-direction: column;  /* 🏠 Estructura en columnas */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    width: 70%;  /* 📐 Ajuste de ancho responsivo */  
+    height: auto;  /* 📏 Altura adaptable */  
+    padding: 20px;  /* 🛋️ Espaciado interno */  
+    margin: 20px;  /* 📌 Margen externo para separación adecuada */  
 }
-.description > p {
-    color: var(--color-6);
-    font-size: 16px;
-    font-family: "LeagueSpartan-Light";
-    margin: 20px 0;
+
+/* 📜 Estilo de los párrafos dentro de la descripción */
+.description > p {  
+    color: var(--color-6);  /* 🎨 Color personalizado para mejor contraste */  
+    font-size: 16px;  /* 📏 Tamaño optimizado para legibilidad */  
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada para armonía visual */  
+    margin: 20px 0;  /* 🛋️ Espaciado para mejor distribución */  
 }
-.second {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    gap: 5px;
+
+/* 📌 Segunda línea de texto con colores diferenciados */
+.second {  
+    display: flex;  /* 🏗️ Diseño flexible para alineación horizontal */  
+    flex-direction: row;  /* ↔️ Elementos en fila */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: auto;  /* 📏 Altura adaptable */  
+    gap: 5px;  /* 📌 Espaciado reducido entre elementos */  
 }
-.second p {
-    font-size: 16px;
-    font-family: "LeagueSpartan-Light";
+
+/* 🎨 Estilos diferenciados en textos de la segunda línea */
+.second p {  
+    font-size: 16px;  /* 📏 Tamaño del texto uniforme */  
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada para coherencia */  
 }
-.second p:first-child {
-    color: var(--color-2);
+.second p:first-child {  
+    color: var(--color-2);  /* 🎨 Color inicial */  
 }
-.second p:nth-child(2) {
-    color: var(--color-6);
+.second p:nth-child(2) {  
+    color: var(--color-6);  /* 🎨 Color secundario */  
 }
-.second p:last-child {
-    color: var(--color-2);
+.second p:last-child {  
+    color: var(--color-2);  /* 🎨 Color final */  
 }
-.signUp-button {
-    transition: all 0.3s ease-in-out;
-    padding: 7px;
-    background-color: var(--color-2);
-    border-radius: 30px;
-    text-decoration: none;
-    color: var(--color-7);
-    font-size: 24px;
-    font-family: "LeagueSpartan-Medium";
-    text-align: center;
-    padding: 20px;
-    width: 200px;
+
+/* 🔘 Botón de registro */
+.signUp-button {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación fluida para efecto dinámico */  
+    padding: 7px;  /* 🛋️ Espaciado interno */  
+    background-color: var(--color-2);  /* 🎨 Color inicial */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para aspecto pulido */  
+    text-decoration: none;  /* 🚫 Eliminamos decoración del texto */  
+    color: var(--color-7);  /* 🎨 Color del texto */  
+    font-size: 24px;  /* 📏 Tamaño definido para mayor impacto */  
+    font-family: "LeagueSpartan-Medium";  /* ✍️ Fuente estilizada */  
+    text-align: center;  /* 📌 Centrado del texto */  
+    padding: 20px;  /* 🛋️ Espaciado interno adicional */  
+    width: 200px;  /* 📐 Ancho definido */  
 }
-.signUp-button:hover {
-    background-color: var(--color-7);
-    color: var(--color-2);
+
+/* ✨ Hover sobre el botón de registro */
+.signUp-button:hover {  
+    background-color: var(--color-7);  /* 🎨 Cambio de fondo al pasar el mouse */  
+    color: var(--color-2);  /* 🎨 Cambio de color en el texto */  
 }
-.signUp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    gap: 20px;
+
+/* 🎟️ Contenedor de registro */
+.signUp {  
+    display: flex;  /* 🏗️ Diseño flexible */  
+    flex-direction: column;  /* 🏠 Elementos organizados en columna */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: auto;  /* 📏 Altura adaptable */  
+    gap: 20px;  /* 📌 Separación entre elementos */  
 }
-.signUp > p {
-    color: var(--color-6);
-    font-size: 16px;
-    font-family: "LeagueSpartan-Light";
+
+/* 📝 Texto dentro de la sección de registro */
+.signUp > p {  
+    color: var(--color-6);  /* 🎨 Color personalizado */  
+    font-size: 16px;  /* 📏 Ajuste de tamaño para mejor legibilidad */  
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada para coherencia visual */  
 }
-.signUp .login {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    gap: 10px;
+
+/* 🔑 Contenedor del login dentro de la sección de registro */
+.signUp .login {  
+    display: flex;  /* 🏗️ Diseño flexible */  
+    flex-direction: row;  /* 🔄 Elementos alineados en fila */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: auto;  /* 📏 Altura adaptable */  
+    gap: 10px;  /* 📌 Espaciado entre elementos */  
 }
-.signUp .login > p {
-    color: var(--color-6);
-    font-size: 16px;
-    font-family: "LeagueSpartan-Light";
+
+/* 📝 Texto dentro del login */
+.signUp .login > p {  
+    color: var(--color-6);  /* 🎨 Color personalizado */  
+    font-size: 16px;  /* 📏 Ajuste de tamaño */  
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */  
 }
-.signUp .login a {
-    transition: all 0.3s ease-in-out;
-    padding: 7px;
-    border-radius: 30px;
-    text-decoration: none;
-    color: var(--color-7);
-    font-size: 16px;
-    font-family: "LeagueSpartan-Light";
-    text-align: center;
-    color: var(--color-2);
+
+/* 🔗 Enlace dentro del login */
+.signUp .login a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación suave */  
+    padding: 7px;  /* 🛋️ Espaciado interno */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */  
+    text-decoration: none;  /* 🚫 Eliminación de subrayado */  
+    color: var(--color-2);  /* 🎨 Color personalizado */  
+    font-size: 16px;  /* 📏 Tamaño ajustado */  
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */  
+    text-align: center;  /* 📌 Centrado de texto */  
 }
-.signUp .login a:hover {
-    background-color: var(--color-5);
-    color: var(--color-2);
+
+/* ✨ Efecto hover sobre el enlace de login */
+.signUp .login a:hover {  
+    background-color: var(--color-5);  /* 🎨 Cambio de color de fondo al pasar el mouse */  
+    color: var(--color-2);  /* 🎨 Cambio de color del texto */  
 }
+
 /* 🔽 Estilos del pie de página */
 footer {  
-    display: flex;  /* 🏗️ Diseño flexible para adaptación en distintos dispositivos */
-    align-items: center;  /* 📌 Centrado vertical de los elementos */
-    justify-content: center;  /* 📌 Centrado horizontal */
-    width: 100%;  /* 📐 Ocupar todo el ancho disponible */
-    height: auto;  /* 📏 Altura adaptable según el contenido */
-    background: var(--color-2);  /* 🎨 Color de fondo personalizado */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados para estética */
-    padding: 20px;  /* 🛋️ Espaciado interno */
-    position: absolute;  /* 📌 Fijación del pie de página */
-    position: sticky;  /* 🔝 Mantener visible al hacer scroll */
-    z-index: 10;  /* 🔢 Prioridad en la capa de visualización */
-    box-shadow: 0px 0px 25px 40px var(--color-14); /* 💡 Efecto de sombra para resaltar el pie */
+    display: flex;  /* 🏗️ Diseño flexible para adaptabilidad */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    width: 100%;  /* 📐 Ocupar todo el ancho */  
+    height: auto;  /* 📏 Altura adaptable */  
+    background: var(--color-2);  /* 🎨 Color de fondo personalizado */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavidad visual */  
+    padding: 20px;  /* 🛋️ Espaciado interno */  
+    position: sticky;  /* 🔝 Mantener visible al hacer scroll */  
+    z-index: 10;  /* 🔢 Prioridad en la capa de visualización */  
+    box-shadow: 0px 0px 25px 40px var(--color-14); /* 💡 Efecto de sombra para resaltar */  
 }
 
 /* 🎭 Contenedor de íconos sociales o enlaces */
 .icons {  
-    display: flex;  /* 🏗️ Diseño flexible para alineación */
-    align-items: center;  /* 📌 Centrado vertical */
-    justify-content: space-between;  /* ↔️ Distribución equitativa */
-    width: 100%;  /* 📐 Ajuste del ancho */
-    height: auto;  /* 📏 Altura adaptable */
-    gap: 20px;  /* 📌 Separación entre elementos */
-    padding: 10px 40px;  /* 🛋️ Espaciado interno */
+    display: flex;  /* 🏗️ Diseño flexible */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    justify-content: space-between;  /* ↔️ Distribución equitativa */  
+    width: 100%;  /* 📐 Ajuste del ancho */  
+    height: auto;  /* 📏 Altura adaptable */  
+    gap: 20px;  /* 📌 Separación entre elementos */  
+    padding: 10px 40px;  /* 🛋️ Espaciado interno */  
 }
 
 /* 🔗 Estilos para los enlaces dentro de los íconos */
 .icons a {  
-    transition: all 0.3s ease-in-out;  /* 🎭 Animación suave para interactividad */
-    padding: 15px;  /* 🛋️ Espaciado interno para clic cómodo */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor apariencia */
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación suave */  
+    padding: 15px;  /* 🛋️ Espaciado interno */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */  
 }
 
 /* ✨ Efecto hover sobre los enlaces de íconos */
 .icons a:hover {  
-    cursor: pointer;  /* 🖱️ Cursor en modo interactivo */
-    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
-    background-color: var(--color-19);  /* 🎨 Cambio de color para resaltar interacción */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+    cursor: pointer;  /* 🖱️ Cursor en modo interactivo */  
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */  
+    background-color: var(--color-19);  /* 🎨 Cambio de color al pasar el mouse */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */  
 }
 
 /* 📌 Barra animada en la parte inferior del footer */
 .moving-bar {  
-    width: 20px;  /* 📏 Tamaño definido */
-    height: 10px;  /* 📏 Altura ajustada */
-    background-color: var(--color-7);  /* 🎨 Color de fondo */
-    position: absolute;  /* 📌 Posición absoluta respecto al footer */
-    bottom: 0;  /* 🎯 Ubicación debajo de los íconos */
-    transition: transform 0.4s ease;  /* 🎭 Animación suave */
-    left: 0px;  /* 🏁 Posicionamiento inicial */
-    border-radius: 5px;  /* 🏵️ Bordes redondeados */
+    width: 20px;  /* 📏 Tamaño definido */  
+    height: 10px;  /* 📏 Altura ajustada */  
+    background-color: var(--color-7);  /* 🎨 Color de fondo */  
+    position: absolute;  /* 📌 Posición absoluta respecto al footer */  
+    bottom: 0;  /* 🎯 Ubicación debajo de los íconos */  
+    transition: transform 0.4s ease;  /* 🎭 Animación suave */  
+    left: 0px;  /* 🏁 Posicionamiento inicial */  
+    border-radius: 5px;  /* 🏵️ Bordes redondeados */  
 }
-#moving-bar {
-    /* ... otros estilos ... */
-    transition: transform 0.3s ease, width 0.3s ease; /* Transición para la posición y el ancho */
+
+#moving-bar {  
+    transition: transform 0.3s ease, width 0.3s ease;  /* 📌 Transición para posición y tamaño */  
 }
