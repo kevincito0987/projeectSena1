@@ -111,7 +111,6 @@ main {
     height: auto;  /* 📏 Altura adaptable */
     gap: 30px;  /* 📌 Espaciado entre elementos */
     padding: 20px;  /* 🛋️ Espaciado interno */
-    background: salmon;
     margin-bottom: 20px;
 }
 form {  
@@ -238,6 +237,66 @@ form .form-field input::placeholder {
     color: var(--color-6);
 }
 .second p:last-child {
+    color: var(--color-2);
+}
+.signUp-button {
+    transition: all 0.3s ease-in-out;
+    padding: 7px;
+    background-color: var(--color-2);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--color-7);
+    font-size: 24px;
+    font-family: "LeagueSpartan-Medium";
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+}
+.signUp-button:hover {
+    background-color: var(--color-7);
+    color: var(--color-2);
+}
+.signUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+.signUp > p {
+    color: var(--color-6);
+    font-size: 16px;
+    font-family: "LeagueSpartan-Light";
+}
+.signUp .login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+.signUp .login > p {
+    color: var(--color-6);
+    font-size: 16px;
+    font-family: "LeagueSpartan-Light";
+}
+.signUp .login a {
+    transition: all 0.3s ease-in-out;
+    padding: 7px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--color-7);
+    font-size: 16px;
+    font-family: "LeagueSpartan-Light";
+    text-align: center;
+    color: var(--color-2);
+}
+.signUp .login a:hover {
+    background-color: var(--color-5);
     color: var(--color-2);
 }
 /* 🔽 Estilos del pie de página */
