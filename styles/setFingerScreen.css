@@ -1,0 +1,539 @@
+/* 📜 Importación de variables globales */
+@import url(./variables.css);  
+
+/* 🌐 Reset de estilos: elimina márgenes y rellenos predeterminados */
+* {  
+    margin: 0;  /* 🚫 Eliminación de margen externo */  
+    padding: 0;  /* 🚫 Eliminación de relleno interno */  
+    box-sizing: border-box;  /* 📦 Garantiza que el tamaño total incluya borde y relleno */  
+}
+
+/* 🏞️ Configuración del fondo del cuerpo */
+body {  
+    background-image: url(../imgs/header.jpg);  /* 🌅 Imagen de fondo personalizada */  
+    background-size: cover;  /* 📏 Ajuste para cubrir toda la pantalla sin deformaciones */  
+    background-repeat: no-repeat;  /* 🚫 Evitar la repetición para una apariencia más limpia */  
+    background-position: center;  /* 🎯 Centrado de la imagen de fondo */  
+    height: auto;  /* 📏 Altura adaptable */
+}
+
+/* 🔝 Estilización del encabezado */
+header {  
+    display: flex;  /* 🏗️ Diseño flexible para adaptar el contenido */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    padding: 20px;  /* 🛋️ Espaciado interno para mejor organización */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: 60vh;  /* 📏 Altura ajustada proporcionalmente */  
+}
+
+/* 🖼️ Estilos para el logo dentro del encabezado */
+.login-header a img {  
+    width: 100px;  /* 📏 Ajuste del ancho */  
+    height: 100px;  /* 📏 Ajuste de la altura manteniendo proporción */  
+}
+
+/* 🔗 Estilos para los enlaces dentro del encabezado */
+header a {  
+    display: flex;  /* 🏗️ Diseño flexible para mejorar alineación */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    padding: 10px;  /* 🛋️ Espaciado interno para mejorar interacción */  
+}
+
+/* 🏠 Encabezado con estructura y distribución */
+.login-header {  
+    display: flex;  /* 🏗️ Diseño flexible para distribución de elementos */  
+    justify-content: space-between;  /* ↔️ Espaciado uniforme entre elementos */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    padding: 20px;  /* 🛋️ Espaciado interno */  
+    width: 100%;  /* 📐 Ancho completo para adaptación responsiva */  
+    height: 10vh;  /* 📏 Ajuste proporcional a la pantalla */  
+}
+
+
+/* 📝 Estilización del título dentro del encabezado */
+.login-header h3 {  
+    color: var(--color-3);  /* 🎨 Color personalizado para destacar el título */  
+    font-size: 58px;  /* 📏 Tamaño del texto optimizado para visibilidad */  
+    font-family: "LeagueSpartan-Bold";  /* ✍️ Tipografía elegante y llamativa */  
+}
+
+/* ✨ Efecto hover sobre los enlaces del encabezado */
+header a:hover {  
+    cursor: pointer;  /* 🖱️ Indicación visual de interactividad */  
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento dinámico */  
+    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para un diseño moderno */  
+}
+
+/* 🌍 Contenedor principal - Sección principal de la página */
+main {  
+    display: flex;  /* 🏗️ Diseño flexible para una distribución fluida */  
+    justify-content: center;  /* 📌 Centrado horizontal del contenido */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: auto;  /* 📏 Adaptabilidad para diferentes tamaños de contenido */  
+    background: var(--color-10);  /* 🎨 Color de fondo personalizado para una estética limpia */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */  
+    text-align: center;  /* 📝 Asegurar que el contenido esté centrado textualmente */  
+}
+
+/* 📄 Sección de contenido principal */
+.content {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor organización visual */  
+    flex-direction: column;  /* 🏠 Estructura en columnas para facilitar la lectura */  
+    align-items: center;  /* 📌 Centrado vertical del contenido */  
+    width: 100%;  /* 📐 Ocupar todo el ancho */  
+    margin: 30px;  /* 🛋️ Espaciado externo para separación óptima */  
+}
+
+/* 📜 Estilo del párrafo dentro del contenido */
+.content > p {  
+    color: var(--color-8);  /* 🎨 Color personalizado para un buen contraste */  
+    font-size: 18px;  /* 📏 Tamaño del texto ajustado para legibilidad */  
+    font-family: "LeagueSpartan-Light";  /* ✍️ Tipografía estilizada para armonía visual */  
+    margin: 20px 0;  /* 🛋️ Espaciado para mejor estructura del contenido */  
+}
+
+/* 🖼️ Contenedor de imagen */
+.image-container {  
+    background-image: url(../icons/fingerSprintIcon.svg);  /* 🌅 Imagen de fondo personalizada */  
+    background-size: contain;  /* 📏 Ajuste para que la imagen se muestre completa */  
+    background-repeat: no-repeat;  /* 🚫 Evitar la repetición de la imagen */  
+    background-position: center;  /* 🎯 Centrado de la imagen */  
+    width: 40%;  /* 📐 Ajuste del ancho */  
+    height: 120vh;  /* 📏 Altura proporcional */  
+    border-radius: 50px;  /* 🏵️ Bordes redondeados para un diseño suave */  
+    margin: 10px;  /* 🛋️ Espaciado externo para separación adecuada */  
+}
+
+/* 🔘 Contenedor de botones */
+.buttons {  
+    display: flex;  /* 🏗️ Diseño flexible para alineación óptima */  
+    flex-direction: row;  /* ↔️ Elementos en fila */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    margin: 10px;  /* 🛋️ Espaciado externo para equilibrio visual */  
+}
+
+/* 🔘 Estilos para los botones */
+.buttons a {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor alineación */  
+    flex-direction: row;  /* ↔️ Distribución en fila */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    margin: 10px;  /* 🛋️ Espaciado externo */  
+    padding: 20px;  /* 🛋️ Espaciado interno */  
+    border-radius: 50px;  /* 🏵️ Bordes redondeados para una estética moderna */  
+    color: var(--color-8);  /* 🎨 Color personalizado */  
+    text-decoration: none;  /* 🚫 Eliminamos el subrayado */  
+    width: 155px;  /* 📏 Tamaño del botón */  
+}
+
+/* 🎨 Estilos diferenciados según el tipo de botón */
+.buttons a:first-child {  
+    background-color: var(--color-9);  /* 🎨 Color personalizado para el primer botón */  
+}
+.buttons a:last-child {  
+    background-color: var(--color-2);  /* 🎨 Color personalizado para el segundo botón */  
+}
+
+/* 🏷️ Estilos del texto dentro de los botones */
+.buttons a p {  
+    font-family: "LeagueSpartan-Regular";  /* ✍️ Tipografía estilizada */  
+    font-size: 18px;  /* 📏 Tamaño del texto optimizado */  
+}
+.buttons a:first-child p {  
+    color: var(--color-2);  /* 🎨 Color personalizado para primer botón */  
+}
+.buttons a:last-child p {  
+    color: var(--color-7);  /* 🎨 Color personalizado para segundo botón */  
+}
+
+/* ✨ Efecto hover sobre los botones */
+.buttons a:hover {  
+    cursor: pointer;  /* 🖱️ Indicación de interactividad */  
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */  
+    background-color: var(--color-6);  /* 🎨 Cambio de color al pasar el mouse */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para efecto dinámico */  
+    color: var(--color-7);  /* 🎨 Ajuste de color de texto */  
+}
+
+/* 🔽 Estilos del pie de página */
+footer {  
+    display: flex;  /* 🏗️ Diseño flexible para adaptación en distintos dispositivos */  
+    align-items: center;  /* 📌 Centrado vertical de los elementos */  
+    justify-content: center;  /* 📌 Centrado horizontal */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: auto;  /* 📏 Altura adaptable según el contenido */  
+    background: var(--color-2);  /* 🎨 Color de fondo personalizado */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para estética */  
+    padding: 20px;  /* 🛋️ Espaciado interno */  
+    position: sticky;  /* 🔝 Mantener visible al hacer scroll */  
+    z-index: 10;  /* 🔢 Prioridad en la capa de visualización */  
+    box-shadow: 0px 0px 25px 40px var(--color-14); /* 💡 Efecto de sombra para resaltar el pie */  
+}
+
+/* 🎭 Contenedor de íconos sociales o enlaces */
+.icons {  
+    display: flex;  /* 🏗️ Diseño flexible para alineación */  
+    align-items: center;  /* 📌 Centrado vertical */  
+    justify-content: space-between;  /* ↔️ Distribución equitativa */  
+    width: 100%;  /* 📐 Ajuste del ancho */  
+    height: auto;  /* 📏 Altura adaptable */  
+    gap: 20px;  /* 📌 Separación entre elementos */  
+    padding: 10px 40px;  /* 🛋️ Espaciado interno */  
+}
+
+/* 🔗 Estilos para los enlaces dentro de los íconos */
+.icons a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación suave para interactividad */  
+    padding: 15px;  /* 🛋️ Espaciado interno para clic cómodo */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor apariencia */  
+}
+
+/* ✨ Efecto hover sobre los enlaces de íconos */
+.icons a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo interactivo */  
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */  
+    background-color: var(--color-19);  /* 🎨 Cambio de color para resaltar interacción */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */  
+}
+
+/* 📌 Barra animada en la parte inferior del footer */
+.moving-bar {  
+    width: 20px;  /* 📏 Tamaño definido */  
+    height: 10px;  /* 📏 Altura ajustada */  
+    background-color: var(--color-7);  /* 🎨 Color de fondo */  
+    position: absolute;  /* 📌 Posición absoluta respecto al footer */  
+    bottom: 0;  /* 🎯 Ubicación debajo de los íconos */  
+    transition: transform 0.4s ease;  /* 🎭 Animación suave */  
+    left: 0px;  /* 🏁 Posicionamiento inicial */  
+    border-radius: 5px;  /* 🏵️ Bordes redondeados */  
+}
+
+#moving-bar {  
+    transition: transform 0.3s ease, width 0.3s ease;  /* 📌 Transición para posición y tamaño */  
+}
+
+/* 📱 Media query: Ajustes para pantallas de máximo 320px */
+@media screen and (max-width: 320px) {
+
+    /* 🔝 Ajuste del encabezado para mejor organización */
+    header {  
+        padding: 1px;  /* 🛋️ Espaciado mínimo para mejorar estructura */  
+    }
+
+    /* 🏠 Estilos del encabezado de login */
+    .login-header {  
+        width: 100vw;  /* 📐 Ocupar todo el ancho disponible */  
+        gap: 20px;  /* 🔼 Separación entre elementos para distribución clara */  
+    }
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        font-size: 1.2rem;  /* 📏 Tamaño optimizado para visibilidad y accesibilidad */  
+        text-align: center;  /* 🎯 Centramos el texto para una mejor presentación */  
+    }
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 20px;  /* 📏 Ajuste del tamaño para mejor adaptación visual */  
+    }
+
+    /* 🖼️ Ajuste del logo dentro del encabezado */
+    header .login-header a img {  
+        width: 60px;  /* 📏 Ajuste del ancho del logo */  
+        height: 60px;  /* 📏 Manteniendo la proporción */  
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejor distribución */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
+    }
+
+    /* 🔗 Estilos para los enlaces dentro de los íconos */
+    .icons a {  
+        padding: 10px;  /* 🛋️ Espaciado interno para interacción cómoda */  
+    }
+
+    /* 🖼️ Ajuste del contenedor de imagen */
+    .image-container {  
+        height: 60vh;  /* 📏 Ajuste de altura para mejorar adaptabilidad */  
+    }
+
+    /* 🔘 Ajuste del contenedor de botones */
+    .buttons {  
+        width: 90%;  /* 📐 Ajuste del ancho para mejor responsividad en pantallas pequeñas */  
+    }
+}
+
+/* 📱 Media query: Ajustes para pantallas entre 321px y 390px */
+@media screen and (min-width: 321px) and (max-width: 390px) {
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        padding: 1px;  /* 🛋️ Espaciado mínimo para mejorar estructura */  
+    }
+
+    /* 🏠 Estilos del encabezado de login */
+    .login-header {  
+        width: 100vw;  /* 📐 Ocupar todo el ancho disponible */  
+        gap: 20px;  /* 🔼 Separación entre elementos para distribución clara */  
+    }
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        font-size: 1.4rem;  /* 📏 Tamaño optimizado para visibilidad y accesibilidad */  
+        text-align: center;  /* 🎯 Centramos el texto para una mejor presentación */  
+    }
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 20px;  /* 📏 Ajuste del tamaño para mejor adaptación visual */  
+    }
+
+    /* 🖼️ Ajuste del logo dentro del encabezado */
+    header .login-header a img {  
+        width: 60px;  /* 📏 Ajuste del ancho del logo */  
+        height: 60px;  /* 📏 Manteniendo la proporción */  
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejor distribución */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
+    }
+
+    /* 🔗 Estilos para los enlaces dentro de los íconos */
+    .icons a {  
+        padding: 10px;  /* 🛋️ Espaciado interno para interacción cómoda */  
+    }
+
+    /* 🖼️ Ajuste del contenedor de imagen */
+    .image-container {  
+        height: 40vh;  /* 📏 Ajuste de altura para mejorar adaptabilidad */  
+    }
+
+    /* 🔘 Ajuste del contenedor de botones */
+    .buttons {  
+        width: 90%;  /* 📐 Ajuste del ancho para mejor responsividad en pantallas pequeñas */  
+    }
+
+    /* 📄 Ajuste de contenido */
+    .content {  
+        width: 90%;  /* 📐 Ajuste del ancho para una presentación óptima */  
+    }
+}
+
+/* 📱 Media query: Ajustes para pantallas entre 391px y 440px */
+@media screen and (min-width: 391px) and (max-width: 440px) {
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        padding: 1px;  /* 🛋️ Espaciado mínimo para mejor estructura y orden visual */  
+    }
+
+    /* 🏠 Estilos del encabezado de login */
+    .login-header {  
+        width: 100vw;  /* 📐 Ocupar todo el ancho de la ventana para una mejor distribución */  
+        gap: 20px;  /* 🔼 Separación entre elementos para mejorar la legibilidad */  
+    }
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        font-size: 1.4rem;  /* 📏 Tamaño optimizado para visibilidad en pantallas pequeñas */  
+        text-align: center;  /* 🎯 Centramos el texto para una mejor presentación */  
+    }
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 20px;  /* 📏 Ajuste del ancho para mejor adaptación en pantallas pequeñas */  
+    }
+
+    /* 🖼️ Ajuste del logo dentro del encabezado */
+    header .login-header a img {  
+        width: 60px;  /* 📏 Ajuste del tamaño del logo para una buena proporción */  
+        height: 60px;  /* 📏 Manteniendo la proporción */  
+    }
+
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejorar organización */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior para alineación visual */  
+    }
+
+    /* 🔗 Estilos para los enlaces dentro de los íconos */
+    .icons a {  
+        padding: 10px;  /* 🛋️ Espaciado interno para interacción cómoda y accesible */  
+    }
+
+    /* 🖼️ Ajuste del contenedor de imagen */
+    .image-container {  
+        height: 40vh;  /* 📏 Ajuste de altura para mejorar adaptación a la pantalla */  
+    }
+
+    /* 🔘 Ajuste del contenedor de botones */
+    .buttons {  
+        width: 90%;  /* 📐 Ajuste del ancho para mejor responsividad en dispositivos pequeños */  
+    }
+
+    /* 📄 Ajuste de contenido */
+    .content {  
+        width: 90%;  /* 📐 Ajuste del ancho para presentación uniforme */  
+    }
+}
+
+/* 📱 Media query: Ajustes para pantallas entre 768px y 884px */
+@media screen and (min-width: 768px) and (max-width: 884px) {
+
+    /* 🏠 Estilos del encabezado de login */
+    .login-header {  
+        width: 90%;  /* 📐 Ajuste del ancho para mejor responsividad */  
+        gap: 100px;  /* 🔼 Separación amplia entre elementos para claridad */  
+    }
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 40px;  /* 📏 Ajuste del tamaño para mejor visibilidad */  
+    }
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        text-align: center;  /* 🎯 Centramos el texto para presentación armoniosa */  
+    }
+
+    /* 🖼️ Ajuste del contenedor de imagen */
+    .image-container {  
+        height: 60vh;  /* 📏 Ajuste de altura para mejor adaptación */  
+    }
+
+    /* 🔘 Ajuste del contenedor de botones */
+    .buttons {  
+        width: 90%;  /* 📐 Ajuste del ancho para mejor distribución */  
+    }
+
+    /* 📄 Ajuste de contenido */
+    .content {  
+        width: 90%;  /* 📐 Ajuste del ancho para presentación uniforme */  
+    }
+}
+
+/* 📱 Media query: Ajustes para pantallas entre 885px y 1114px */
+@media screen and (min-width: 885px) and (max-width: 1114px) {
+
+    /* 🔘 Ajuste del contenedor de botones */
+    .buttons {  
+        gap: 100px;  /* 🔼 Separación amplia entre botones para mejor diseño */  
+    }
+}
+
+/* 📱 Media query: Ajustes para pantallas entre 1280px y 1281px */
+@media screen and (min-width: 1280px) and (max-width: 1281px) {
+
+    /* 🔘 Ajuste del contenedor de botones */
+    .buttons {  
+        gap: 100px;  /* 🔼 Espaciado amplio para mejorar la distribución visual */  
+    }
+}
+
+/* 📱 Media query: Ajustes para pantallas entre 162px y 319px */
+@media screen and (min-width: 162px) and (max-width: 319px) {
+
+    /* 🏠 Estilos del encabezado de login */
+    header .login-header {  
+        width: 90%;  /* 📐 Ocupar casi todo el ancho disponible para mejor responsividad */  
+        padding: 5px;  /* 🛋️ Espaciado interno para separación equilibrada */  
+        gap: 0px;  /* 🚫 Eliminamos separación innecesaria entre elementos */  
+    }
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        font-size: 15px;  /* 📏 Reducción del tamaño para mejor adaptación en pantallas pequeñas */  
+    }
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 10px;  /* 📏 Tamaño ajustado para mejor visualización */  
+    }
+
+    /* 🖼️ Ajuste del logo dentro del encabezado */
+    header .login-header a img {  
+        width: 30px;  /* 📏 Ajuste del tamaño del logo para mejor adaptación */  
+        height: 30px;  /* 📏 Manteniendo la proporción */  
+    }
+
+    /* 🔝 Ajuste del encabezado */
+    header {  
+        padding: 0px;  /* 🛋️ Espaciado mínimo para un diseño más compacto */  
+        margin-left: -8px;  /* 🏗️ Ajuste de margen para alineación óptima */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 0;  /* 🚫 Eliminamos padding interno */  
+        display: flex;  /* 🏗️ Diseño flexible para mejor distribución */  
+        flex-direction: row;  /* 🔼 Elementos organizados en fila */  
+        justify-content: center;  /* 📌 Centrado horizontal de los íconos */  
+        align-items: center;  /* 📌 Centrado vertical */  
+        gap: 5px;  /* 📌 Espaciado mínimo entre íconos para mejor estructura */  
+    }
+
+    /* 🔗 Ajuste de enlaces dentro del footer */
+    footer a {  
+        margin: 0;  /* 🚫 Eliminamos margen externo para evitar desajustes */  
+        padding: 5px;  /* 🛋️ Espaciado interno para mejor interacción */  
+        width: 10px;  /* 📏 Ajuste del ancho del enlace */  
+        height: 10px;  /* 📏 Ajuste de la altura */  
+        display: flex;  /* 🏗️ Diseño flexible para alineación óptima */  
+        flex-direction: row;  /* 🔼 Elementos organizados en fila */  
+        justify-content: center;  /* 📌 Centrado horizontal de los enlaces */  
+        align-items: center;  /* 📌 Centrado vertical */  
+    }
+
+    /* ✨ Ajuste de hover en enlaces del footer */
+    footer a:hover {  
+        margin: 0;  /* 🚫 Eliminamos margen externo */  
+        padding: 10px;  /* 🛋️ Expansión del padding al hacer hover para mejor interacción */  
+    }
+
+    /* 📌 Ajuste del tamaño de las imágenes dentro de los enlaces */
+    footer a img {  
+        width: 15px;  /* 📏 Ajuste del ancho de la imagen dentro del enlace */  
+        height: 15px;  /* 📏 Ajuste de la altura para mantener proporción */  
+    }
+
+    /* 📄 Ajuste de contenido */
+    .content {  
+        width: 90%;  /* 📐 Ajuste del ancho para mejor presentación */  
+    }
+
+    /* 🔘 Ajuste del contenedor de botones */
+    .buttons {  
+        flex-direction: column;  /* 📌 Organización en columna para mejor adaptación */  
+        gap: 10px;  /* 🔼 Espaciado entre botones para estructura equilibrada */  
+    }
+
+    /* 🎭 Ajuste de tamaño de los botones */
+    .buttons a {  
+        width: 90%;  /* 📐 Botones ocupando la mayoría del ancho disponible */  
+    }
+}
