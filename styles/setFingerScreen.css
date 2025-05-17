@@ -6,3 +6,145 @@
     padding: 0; /* 🚫 Eliminación de relleno */
     box-sizing: border-box; /* 📦 Garantiza que el tamaño total incluya borde y relleno */
 }
+
+/* 🏞️ Configuración del fondo del cuerpo */
+body {  
+    background-image: url(../imgs/header.jpg);  /* 🌅 Imagen de fondo */
+    background-size: cover;  /* 📏 Ajuste para cubrir toda la pantalla */
+    background-repeat: no-repeat;  /* 🚫 Evitar la repetición */
+    background-position: center;  /* 🎯 Centramos la imagen */
+}
+
+/* 🔝 Estilización del encabezado */
+header {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    align-items: center;  /* 📌 Centrado vertical */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    width: 100%;  /* 📐 Ocupar todo el ancho */
+    height: 60vh;  /* 📏 Altura proporcional a la pantalla */
+}
+
+/* 🖼️ Logo dentro del header */
+.login-header a img {  
+    width: 60px;  /* 📏 Tamaño definido */
+    height: 56px;  /* 📏 Proporción ajustada */
+}
+
+/* 🔗 Estilos para los enlaces dentro del encabezado */
+header a {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor alineación */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    align-items: center;  /* 📌 Centrado vertical */
+    padding: 10px;  /* 🛋️ Espaciado interno para mejor interacción */
+}
+
+/* 🏠 Encabezado con estructura y distribución */
+.login-header {  
+    display: flex;  /* 🏗️ Diseño flexible */
+    justify-content: space-between;  /* ↔️ Espaciado uniforme entre elementos */
+    align-items: center;  /* 📌 Centrado vertical */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    width: 100%;  /* 📐 Ancho completo */
+    height: 10vh;  /* 📏 Altura proporcional a la pantalla */
+}
+
+/* 📝 Estilización del título dentro del header */
+.login-header h3 {  
+    color: var(--color-3);  /* 🎨 Color personalizado */
+    font-size: 58px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Bold";  /* ✍️ Tipografía elegante */
+}
+
+/* ✨ Efecto hover sobre los enlaces del encabezado */
+header a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo clic */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-5);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor estética */
+}
+
+/* 🌍 Contenedor principal - Sección principal de la página */
+main {  
+    display: flex;  /* 🏗️ Diseño flexible para una distribución fluida */  
+    justify-content: center;  /* 📌 Centrado horizontal del contenido */  
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
+    height: auto;  /* 📏 Altura adaptable según el contenido */  
+    background: var(--color-10);  /* 🎨 Color de fondo personalizado */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */  
+    text-align: center;  /* 📝 Asegurar que el contenido esté centrado textualmente */  
+}
+
+/* 📄 Sección de contenido principal */
+.content {  
+    display: flex;  /* 🏗️ Diseño flexible para mejor organización */
+    flex-direction: column;  /* 🏠 Estructura en columnas */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 100%;  /* 📐 Ocupar todo el ancho */
+    margin: 20px;  /* 🛋️ Espaciado externo */
+}
+
+/* 📜 Estilo del párrafo dentro del contenido */
+.content > p {  
+    color: var(--color-8);  /* 🎨 Color personalizado */
+    font-size: 18px;  /* 📏 Tamaño del texto */
+    font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
+    margin: 20px 0;  /* 🛋️ Espaciado externo */
+}
+/* 🔽 Estilos del pie de página */
+footer {  
+    display: flex;  /* 🏗️ Diseño flexible para adaptación en distintos dispositivos */
+    align-items: center;  /* 📌 Centrado vertical de los elementos */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    height: auto;  /* 📏 Altura adaptable según el contenido */
+    background: var(--color-2);  /* 🎨 Color de fondo personalizado */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para estética */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    position: absolute;  /* 📌 Fijación del pie de página */
+    position: sticky;  /* 🔝 Mantener visible al hacer scroll */
+    z-index: 10;  /* 🔢 Prioridad en la capa de visualización */
+    box-shadow: 0px 0px 25px 40px var(--color-14); /* 💡 Efecto de sombra para resaltar el pie */
+}
+
+/* 🎭 Contenedor de íconos sociales o enlaces */
+.icons {  
+    display: flex;  /* 🏗️ Diseño flexible para alineación */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: space-between;  /* ↔️ Distribución equitativa */
+    width: 100%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 20px;  /* 📌 Separación entre elementos */
+    padding: 10px 40px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔗 Estilos para los enlaces dentro de los íconos */
+.icons a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación suave para interactividad */
+    padding: 15px;  /* 🛋️ Espaciado interno para clic cómodo */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor apariencia */
+}
+
+/* ✨ Efecto hover sobre los enlaces de íconos */
+.icons a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo interactivo */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-19);  /* 🎨 Cambio de color para resaltar interacción */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 📌 Barra animada en la parte inferior del footer */
+.moving-bar {  
+    width: 20px;  /* 📏 Tamaño definido */
+    height: 10px;  /* 📏 Altura ajustada */
+    background-color: var(--color-7);  /* 🎨 Color de fondo */
+    position: absolute;  /* 📌 Posición absoluta respecto al footer */
+    bottom: 0;  /* 🎯 Ubicación debajo de los íconos */
+    transition: transform 0.4s ease;  /* 🎭 Animación suave */
+    left: 0px;  /* 🏁 Posicionamiento inicial */
+    border-radius: 5px;  /* 🏵️ Bordes redondeados */
+}
+#moving-bar {
+    /* ... otros estilos ... */
+    transition: transform 0.3s ease, width 0.3s ease; /* Transición para la posición y el ancho */
+}
