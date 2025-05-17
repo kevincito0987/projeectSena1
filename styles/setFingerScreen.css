@@ -316,3 +316,83 @@ footer {
         width: 90%;
     }
 }
+
+@media screen and (min-width: 391px) and (max-width: 440px) {
+     /* 🔝 Ajuste del encabezado */
+     header {  
+        padding: 1px;  /* 🛋️ Espaciado mínimo para mejor estructura */  
+    }
+
+    /* 🏠 Estilos del encabezado de login */
+    .login-header {  
+        width: 100vw;  /* 📐 Ocupar todo el ancho de la ventana */  
+        gap: 20px;  /* 🔼 Separación entre elementos para distribución clara */  
+    }
+
+    /* 🏷️ Ajuste del título en el header */
+    header .login-header h3 {  
+        font-size: 1.4rem;  /* 📏 Tamaño optimizado para visibilidad */ 
+        text-align: center;
+    }
+
+    /* 🔙 Ajuste del tamaño del icono de regreso */
+    header .login-header .back-icon {  
+        width: 20px;  /* 📏 Ajuste del ancho para mejor adaptación */  
+    }
+    header .login-header a img {
+        width: 60px;
+        height: 60px;
+    }
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejor estructura visual */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
+    }
+
+    /* 🔗 Estilos para los enlaces dentro de los íconos */
+    .icons a {  
+        padding: 10px;  /* 🛋️ Espaciado interno para clic cómodo */  
+    }
+    .image-container {
+        height: 40vh;
+    }
+    .buttons {
+        width: 90%;
+    }
+    .content {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 884px) {
+    .login-header {
+        width: 90%;
+        gap: 100px;
+    }
+    header .login-header .back-icon {
+        width: 40px;
+    }
+    header .login-header h3 {
+        text-align: center;
+    }
+    .image-container {
+        height: 60vh;
+    }
+    .buttons {
+        width: 90%;
+    }
+    .content {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 885px) and (max-width: 1114px) {
+    .buttons {
+        gap: 100px;
+    }
+}
