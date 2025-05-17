@@ -554,3 +554,99 @@ footer {
         height: auto;  /* 🔄 Mantiene la proporción del ícono */  
     }
 }
+@media screen and (min-width: 768px) and (max-width: 884px) {
+    header .login-header .back-icon {
+        width: 30px;
+    }
+    header .login-header a img {
+        width: 80px;
+        height: 80px;
+    }
+    /* 🔐 Contenedor de la contraseña */
+    .password-container {  
+        position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
+        display: flex;  /* 🏗️ Uso de flexbox para distribución eficiente */  
+        flex-direction: column;  /* 🔼 Organiza la etiqueta encima del input */  
+    }
+
+    /* 🔑 Estilos del campo de entrada de la contraseña */
+    #password {  
+        padding-right: 30px;  /* 🛋️ Espaciado a la derecha para evitar la superposición con el ícono */  
+        padding: 4px;  /* 📏 Espaciado interno para mejor legibilidad */  
+    }
+
+    /* 👁️ Estilos del ícono para mostrar/ocultar contraseña */
+    .password-container img {  
+        position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+        top: 68%;  /* 🎯 Centramos verticalmente */  
+        right: 180px;  /* 📏 Ubicación precisa a la derecha del input */  
+        transform: translateY(-50%);  /* 🎭 Ajuste fino para perfecto alineamiento */  
+        cursor: pointer;  /* 🖱️ Indicación visual de interacción */  
+        width: 20px;  /* 📐 Ajuste del tamaño del ícono */  
+        height: auto;  /* 🔄 Mantiene la proporción del ícono */  
+    }
+}
+@media screen and (min-width: 885px) and (max-width: 1114px) {
+    header .login-header .back-icon {
+        width: 30px;
+    }
+    header .login-header a img {
+        width: 80px;
+        height: 80px;
+    }
+    /* 🔐 Contenedor de la contraseña */
+    .password-container {  
+        position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
+        display: flex;  /* 🏗️ Uso de flexbox para distribución eficiente */  
+        flex-direction: column;  /* 🔼 Organiza la etiqueta encima del input */  
+    }
+
+    /* 🔑 Estilos del campo de entrada de la contraseña */
+    #password {  
+        padding-right: 30px;  /* 🛋️ Espaciado a la derecha para evitar la superposición con el ícono */  
+        padding: 4px;  /* 📏 Espaciado interno para mejor legibilidad */  
+    }
+
+    /* 👁️ Estilos del ícono para mostrar/ocultar contraseña */
+    .password-container img {  
+        position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+        top: 68%;  /* 🎯 Centramos verticalmente */  
+        right: 280px;  /* 📏 Ubicación precisa a la derecha del input */  
+        transform: translateY(-50%);  /* 🎭 Ajuste fino para perfecto alineamiento */  
+        cursor: pointer;  /* 🖱️ Indicación visual de interacción */  
+        width: 20px;  /* 📐 Ajuste del tamaño del ícono */  
+        height: auto;  /* 🔄 Mantiene la proporción del ícono */  
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1281px) {
+    header .login-header .back-icon {
+        width: 30px;
+    }
+    header .login-header a img {
+        width: 80px;
+        height: 80px;
+    }
+    /* 🔐 Contenedor de la contraseña */
+    .password-container {  
+        position: relative;  /* 📌 Posición relativa para alinear el ícono dentro del contenedor */  
+        display: flex;  /* 🏗️ Uso de flexbox para distribución eficiente */  
+        flex-direction: column;  /* 🔼 Organiza la etiqueta encima del input */  
+    }
+
+    /* 🔑 Estilos del campo de entrada de la contraseña */
+    #password {  
+        padding-right: 30px;  /* 🛋️ Espaciado a la derecha para evitar la superposición con el ícono */  
+        padding: 4px;  /* 📏 Espaciado interno para mejor legibilidad */  
+    }
+
+    /* 👁️ Estilos del ícono para mostrar/ocultar contraseña */
+    .password-container img {  
+        position: absolute;  /* 📌 Posicionamiento absoluto dentro del contenedor */  
+        top: 68%;  /* 🎯 Centramos verticalmente */  
+        right: 340px;  /* 📏 Ubicación precisa a la derecha del input */  
+        transform: translateY(-50%);  /* 🎭 Ajuste fino para perfecto alineamiento */  
+        cursor: pointer;  /* 🖱️ Indicación visual de interacción */  
+        width: 20px;  /* 📐 Ajuste del tamaño del ícono */  
+        height: auto;  /* 🔄 Mantiene la proporción del ícono */  
+    }
+}
