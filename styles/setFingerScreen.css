@@ -81,7 +81,7 @@ main {
     flex-direction: column;  /* 🏠 Estructura en columnas */
     align-items: center;  /* 📌 Centrado vertical */
     width: 100%;  /* 📐 Ocupar todo el ancho */
-    margin: 20px;  /* 🛋️ Espaciado externo */
+    margin: 30px;  /* 🛋️ Espaciado externo */
 }
 
 /* 📜 Estilo del párrafo dentro del contenido */
@@ -90,6 +90,59 @@ main {
     font-size: 18px;  /* 📏 Tamaño del texto */
     font-family: "LeagueSpartan-Light";  /* ✍️ Fuente estilizada */
     margin: 20px 0;  /* 🛋️ Espaciado externo */
+}
+
+.image-container {
+    background-image: url(../icons/fingerSprintIcon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
+    height: 120vh;
+    border-radius: 50px;
+    margin: 10px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.buttons a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    color: var(--color-8);
+    text-decoration: none;
+    width: 155px;
+}
+.buttons a:first-child {
+    background-color: var(--color-9);
+}
+.buttons a:last-child {
+    background-color: var(--color-2);
+}
+.buttons a p {
+    font-family: "LeagueSpartan-Regular";
+    font-size: 18px;
+}
+.buttons a:first-child p {
+    color: var(--color-2);
+}
+.buttons a:last-child p {
+    color: var(--color-7);
+}
+.buttons a:hover {
+    cursor: pointer;
+    transform: scale(1.1) translateY(-5px) translateX(5px);
+    background-color: var(--color-6);
+    border-radius: 30px;
+    color: var(--color-7);
 }
 /* 🔽 Estilos del pie de página */
 footer {  
