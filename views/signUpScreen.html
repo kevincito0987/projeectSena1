@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- 🔤 Codificación de caracteres para soportar caracteres especiales -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 📱 Adaptación a dispositivos móviles -->
+        
+        <!-- 🏷️ Título de la pantalla de Onboarding -->
+        <title  >Sign Up Screen</title>
+    
+        <!-- 🔖 Ícono del sitio web (favicon) -->
+        <link rel="shortcut icon" href="../icons/restaurante.svg" type="image/x-icon">
+    
+        <!-- 🎨 Hoja de estilos principal -->
+        <link rel="stylesheet" href="../styles/signUp.css">
+        <script type="module" src="../components/footer.js" defer></script>
+    </head>
+<body>
+    <header>
+        <!-- 🔝 Encabezado -->
+    <header>
+        <div class="login-header">
+            <!-- 🔙 Botón de regreso -->
+            <a href="">
+                <img src="../icons/backIconArrow.svg" alt="Back Icon" class="back-icon">
+            </a>
+            <h3>Sign Up</h3>
+            <!-- 🌙 Icono de modo oscuro -->
+            <a href="">
+                <img src="../icons/darkModeIcon.svg" alt="Toggle Icon">
+            </a>
+        </div>
+    </header>
+    </header>
+    <main>
+        <div class="content">
+            <div class="form-container">
+                <form>
+                    <div class="form-field">
+                        <label for="full-name">Nombre Completo</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Tu nombre completo">
+                    </div>
+                    <div class="form-field password-container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" value="**********">
+                        <img src="../icons/icon1LogSingUpPage.svg" alt="Mostrar/Ocultar contraseña">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="mobile-number">Número de Teléfono</label>
+                        <input type="tel" id="mobile-number" name="mobile-number" placeholder="+57 123 456 7890">
+                    </div>
+                    <div class="form-field">
+                        <label for="date-of-birth">Fecha de Nacimiento</label>
+                        <input type="text" id="date-of-birth" name="date-of-birth" placeholder="DD / MM / AAAA">
+                    </div>
+                    <div class="description">
+                            <p>By continuing, you agree to</p>
+                        <div class="second">
+                            <p>Terms of Use</p>
+                            <p>and</p>
+                            <p>Privacy Policy.</p> 
+                        </div>                                 
+                    </div>
+                        <!-- 🌍 Acceso con otras plataformas -->
+                    <div class="appLogin">
+                        <a href="">
+                            <img src="../icons/icon2LogSingUpPage.svg" alt="Google Icon">
+                        </a>
+                        <a href="">
+                            <img src="../icons/icon3LogSingUpPage.svg" alt="Facebook Icon">
+                        </a>
+                        <a href="">
+                            <img src="../icons/icon4LogSingUpPage.svg" alt="Finger Print Icon">
+                        </a>
+                    </div>
+                    <a href="" class="signUp-button"><p>Sign Up</p></a>
+                    <div class="signUp">
+                        <p>or sign up with</p>
+                        <div class="login">
+                            <p>Already have an account?</p>
+                            <a href=""><p>Log in</p></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer>
+            <!-- 🎭 Contenedor de íconos de navegación -->
+            <div class="icons">
+                <!-- 🏠 Icono de inicio -->
+                <a href="" id="home-icon">
+                    <img src="../icons/icon1Footer.svg" alt="Home Icon">
+                </a>
+                
+                <!-- 🍽️ Icono de menú/platos -->
+                <a href="" id="plates-icon">
+                    <img src="../icons/icon2Footer.svg" alt="Plates Icon">
+                </a>
+                
+                <!-- ❤️ Icono de favoritos -->
+                <a href="" id="hearth-icon">
+                    <img src="../icons/icon3Footer.svg" alt="Heart Icon">
+                </a>
+                
+                <!-- 📦 Icono de inventario -->
+                <a href="" id="inventary-icon">
+                    <img src="../icons/icon4Footer.svg" alt="Inventory Icon">
+                </a>
+                
+                <!-- 🛠️ Icono de soporte -->
+                <a href="" id="support-icon">
+                    <img src="../icons/icon5Footer.svg" alt="Support Icon">
+                </a>
+            </div>
+        
+            <!-- 🚀 Barra animada para indicar navegación activa -->
+            <div id="moving-bar" class="moving-bar"></div>
+    </footer>
+</body>
+</html>
