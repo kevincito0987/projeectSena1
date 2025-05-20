@@ -23,6 +23,42 @@ header {
     height: 60vh;  /* 📏 Altura proporcional a la pantalla */
     background: var(--color-2);  /* 🎨 Color de fondo personalizado */
     border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */
+    flex-direction: column;
+}
+.icons-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding: 10px 40px;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: var(--color-1);
+    border-radius: 30px;
+    text-align: center;
+    gap: 50%;
+    margin: 20px;
+}
+.form-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: var(--color-10);
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    gap: 50%;
 }
 /* 🌍 Contenedor principal - Sección principal de la página */
 main {  
