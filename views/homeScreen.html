@@ -12,8 +12,63 @@
     <script type="module" src="../components/footer.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="form-container">
+            <form class="form__busqueda" action="?" method="get">
+                <div class="filtro">
+                    <div class="input__logo">
+                        <input type="text" class="search-bar" name="search" placeholder="Search clothes. . ." autocomplete="off">
+                        <img src="../icons/menuIcon.svg" alt="Menu Icon">
+                    </div>
+                    <div class="icons-header">
+                        <div>
+                            <img src="../icons/cartStoreIcon.svg" alt="Cart Icon">
+                        </div>
+                        <div>
+                            <img src="../icons/notificationIcon.svg" alt="Notification Icon">
+                        </div>
+                        <div>
+                            <img src="../icons/userIcon.svg" alt="User Icon">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <h1>Bienvenido al Restaurante Mayorca</h1>
+        <p>Rise and shine! It's breakfast time.</p>
+    </header>
     <main></main>
-    <footer></footer>
+    <footer>
+        <!-- 🎭 Contenedor de íconos de navegación -->
+    <div class="icons">
+        <!-- 🏠 Icono de inicio -->
+        <a href="" id="home-icon">
+            <img src="../icons/icon1Footer.svg" alt="Home Icon">
+        </a>
+        
+        <!-- 🍽️ Icono de menú/platos -->
+        <a href="" id="plates-icon">
+            <img src="../icons/icon2Footer.svg" alt="Plates Icon">
+        </a>
+        
+        <!-- ❤️ Icono de favoritos -->
+        <a href="" id="hearth-icon">
+            <img src="../icons/icon3Footer.svg" alt="Heart Icon">
+        </a>
+        
+        <!-- 📦 Icono de inventario -->
+        <a href="" id="inventary-icon">
+            <img src="../icons/icon4Footer.svg" alt="Inventory Icon">
+        </a>
+        
+        <!-- 🛠️ Icono de soporte -->
+        <a href="" id="support-icon">
+            <img src="../icons/icon5Footer.svg" alt="Support Icon">
+        </a>
+    </div>
+
+    <!-- 🚀 Barra animada para indicar navegación activa -->
+    <div id="moving-bar" class="moving-bar"></div>
+    </footer>
 </body>
 </html>
