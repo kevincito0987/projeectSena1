@@ -1,411 +1,494 @@
-@import url(./variables.css);
+@import url(./variables.css);  /* 🔗 Importación de variables para mantener consistencia en el diseño */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* 🌍 Reset de estilos para evitar inconsistencias en diferentes navegadores */
+* {  
+    margin: 0;  /* 🚫 Eliminamos márgenes predeterminados */
+    padding: 0;  /* 🚫 Eliminamos relleno predeterminado */
+    box-sizing: border-box;  /* 📏 Modelo de caja correcto para evitar desbordes */
 }
 
-/* 🏞️ Configuración del fondo del cuerpo */
+/* 🌅 Configuración del fondo del cuerpo */
 body {  
-    background-image: url(../imgs/header.jpg);  /* 🌅 Imagen de fondo */
-    background-size: cover;  /* 📏 Ajuste para cubrir toda la pantalla */
-    background-repeat: no-repeat;  /* 🚫 Evitar la repetición */
-    background-position: center;  /* 🎯 Centramos la imagen */
+    background-image: url(../imgs/header.jpg);  /* 🖼️ Establecemos la imagen de fondo */
+    background-size: cover;  /* 📌 Aseguramos que cubra toda la pantalla */
+    background-repeat: no-repeat;  /* 🚫 Evitamos que se repita */
+    background-position: center;  /* 🎯 Centramos correctamente la imagen */
 }
-/* 🔝 Estilización del encabezado */
+
+/* 🏗️ Diseño del encabezado */
 header {  
-    display: flex;  /* 🏗️ Diseño flexible */
-    justify-content: center;  /* 📌 Centrado horizontal */
+    display: flex;  /* 🔧 Usamos Flexbox para estructura flexible */
+    justify-content: center;  /* 🎯 Centramos horizontalmente */
     padding: 20px;  /* 🛋️ Espaciado interno */
-    width: 100%;  /* 📐 Ocupar todo el ancho */
-    height: 60vh;  /* 📏 Altura proporcional a la pantalla */
-    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */
-    flex-direction: column;
-    gap: 50px;
+    width: 100%;  /* 📏 Ocupa todo el ancho disponible */
+    height: 60vh;  /* 📐 Altura proporcional a la pantalla */
+    border-radius: 30px;  /* 🔵 Bordes redondeados para suavizar el diseño */
+    flex-direction: column;  /* 📂 Organizado en columnas */
+    gap: 50px;  /* 🔗 Espaciado entre elementos */
 }
+
+/* 🔗 Diseño de los íconos dentro del encabezado */
 .icons-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex;  /* 🏗️ Flexbox para alinearlos correctamente */
+    flex-direction: row;  /* 🔀 Alineación en fila */
+    align-items: center;  /* 🎯 Centrado verticalmente */
     width: 100%;
     height: auto;
-    gap: 20px;
-    padding: 10px 40px;
+    gap: 20px;  /* 🔗 Espaciado entre elementos */
+    padding: 10px 40px;  /* 🖼️ Espaciado interno */
 }
+
+/* ✨ Estilos base de los íconos */
 .icons-header a {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;  /* ⏳ Transición fluida */
     padding: 10px;
-    border-radius: 30px;
-    background: var(--color-10);
+    border-radius: 30px;  /* 🔵 Bordes suaves */
+    background: var(--color-10);  /* 🎨 Color de fondo inicial */
 }
 
+/* 🚀 Efecto hover para los íconos */
 .icons-header a:hover {
-    cursor: pointer;
-    transform: scale(1.1) translateY(-5px) translateX(5px);
-    background-color: var(--color-19);
-    border-radius: 30px;
-}
-form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background: var(--color-1);
-    border-radius: 30px;
-    text-align: center;
-    gap: 50%;
-    margin: 20px;
-}
-.input__logo {
-    background: var(--color-4);
-    border-radius: 30px;
-    position: relative;
-    display: inline-block;
-}
-.search-bar {
-    width: 700%;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    background: var(--color-7);
-    color: var(--color-1);
-    font-size: 16px;
+    cursor: pointer;  /* 🖱️ Indica interactividad */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🔄 Efecto de elevación */
+    background-color: var(--color-19);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 30px;  /* 🔵 Mantener suavidad en el diseño */
 }
 
+/* 🏗️ Configuración del formulario de búsqueda */
+form {
+    display: flex;  /* 📌 Flexbox para organización */
+    flex-direction: row;  /* 🔀 Alinear elementos en fila */
+    align-items: center;  /* 🎯 Centrar verticalmente */
+    width: 100%;  /* 📏 Expande al ancho completo */
+    height: auto;  /* 🚀 Se adapta dinámicamente */
+    background: var(--color-1);  /* 🎨 Fondo del formulario */
+    border-radius: 30px;  /* 🔵 Bordes suaves */
+    text-align: center;  /* 📝 Centrado del texto */
+    gap: 50%;  /* 🔗 Espaciado entre elementos */
+    margin: 20px;  /* 🛋️ Separación externa */
+}
+
+/* 🔍 Contenedor del campo de búsqueda */
+.input__logo {
+    background: var(--color-4);  /* 🎨 Fondo del campo */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    position: relative;  /* 📍 Posicionamiento adecuado */
+    display: inline-block;  /* 🏗️ Estructura flexible */
+}
+
+/* ⌨️ Estilos del campo de búsqueda */
+.search-bar {
+    width: 700%;  /* 📏 Ampliado para mejor visibilidad */
+    padding: 10px;  /* 🛋️ Espaciado interno */
+    border: none;  /* 🚫 Sin bordes */
+    border-radius: 30px;  /* 🔵 Bordes suaves */
+    background: var(--color-7);  /* 🎨 Fondo del campo */
+    color: var(--color-1);  /* 🖊️ Color del texto */
+    font-size: 16px;  /* 🔡 Tamaño de fuente */
+}
+
+/* 🎯 Ícono dentro del campo de búsqueda */
 .input__logo a {
     position: absolute;
-    right: -470px; /* Ajusta según necesidad */
+    right: -470px; /* 🚀 Ajuste de posición */
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 50%;
-    padding: 5px;
-    background: var(--color-4);
-    display: flex;
-    justify-content: center;
+    border-radius: 50%;  /* 🔵 Bordes circulares */
+    padding: 5px;  /* 🛋️ Espaciado interno */
+    background: var(--color-4);  /* 🎨 Fondo */
+    display: flex;  /* 📌 Alineación correcta */
+    justify-content: center;  /* 🎯 Centrar ícono */
     align-items: center;
 }
 
+/* 🖼️ Ajuste del tamaño del ícono */
 .input__logo img {
-    width: 20px; /* Ajusta tamaño según tu ícono */
-    cursor: pointer;
+    width: 20px; /* 📐 Tamaño proporcional */
+    cursor: pointer;  /* 🖱️ Indica interactividad */
 }
-.form-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+/* 🏗️ Contenedor principal del header */
+.form-container {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organizado en fila */
+    align-items: center;  /* 🎯 Centramos verticalmente */
+    justify-content: center;  /* 📌 Aseguramos posición adecuada */
     width: 100%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 30px;  /* 🔵 Bordes suaves */
     text-align: center;
     padding: 10px 30px 10px 0;
-    gap: 80%;
+    gap: 80%;  /* 🔗 Separación entre elementos */
 }
 
+/* ✍️ Estilos del título del header */
 header h1 {
-    font-size: 4rem;
-    color: var(--color-3);
-    font-family: "LeagueSpartan-Bold";
-    margin-left: 20px;
+    font-size: 4rem;  /* 🔤 Tamaño grande */
+    color: var(--color-3);  /* 🎨 Color destacado */
+    font-family: "LeagueSpartan-Bold";  /* 🖋️ Fuente específica */
+    margin-left: 20px;  /* 🛋️ Espaciado a la izquierda */
 }
+
+/* 📝 Estilos del subtítulo */
 header p {
-    font-size: 2rem;
-    color: var(--color-4);
-    font-family: "LeagueSpartan-Medium";
-    margin-left: 20px;
+    font-size: 2rem;  /* 🔡 Tamaño medio */
+    color: var(--color-4);  /* 🎨 Color secundario */
+    font-family: "LeagueSpartan-Medium";  /* 🖋️ Fuente estilizada */
+    margin-left: 20px;  /* 🛋️ Espaciado a la izquierda */
 }
+
 /* 🌍 Contenedor principal - Sección principal de la página */
 main {  
-    display: flex;  /* 🏗️ Diseño flexible para una distribución fluida */  
-    justify-content: center;  /* 📌 Centrado horizontal del contenido */  
-    width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
-    height: auto;  /* 📏 Altura adaptable según el contenido */  
-    background: var(--color-10);  /* 🎨 Color de fondo personalizado */  
-    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */ 
-    padding: 40px;
+    display: flex;  /* 🏗️ Flexbox para una distribución fluida */
+    justify-content: center;  /* 📌 Centrado horizontal del contenido */
+    width: 100%;  /* 📐 Expande al ancho disponible */
+    height: auto;  /* 📏 Ajuste dinámico según el contenido */
+    background: var(--color-10);  /* 🎨 Fondo personalizado */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */
+    padding: 40px;  /* 🛋️ Espaciado interno */
 }
+
+/* 🏗️ Contenedor de contenido principal */
 .content {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: auto;
-    border-radius: 30px;
-    padding: 40px;
-    background: salmon;
-    gap: 60px;
+    display: flex;  /* 🏗️ Flexbox para organizar el contenido */
+    flex-direction: column;  /* 📂 Acomodo vertical */
+    width: 80%;  /* 📐 Tamaño del contenedor */
+    height: auto;  /* 📏 Ajuste automático según elementos internos */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar la estética */
+    padding: 40px;  /* 🛋️ Espaciado interno */
+    gap: 60px;  /* 🔗 Separación entre elementos */
 }
 
+/* 🔍 Contenedor de filtros de búsqueda */
 .filters {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    background: aqua;
-    padding: 30px;
-    gap: 17%;
-}
-.filters a {
-    padding: 10px;
-    border-radius: 20px;
-    background: var(--color-5);
-    transition: all 0.3s ease-in-out;
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-decoration: none;
-}
-.filters a:hover {
-    cursor: pointer;
-    transform: scale(1.1) translateY(-5px) translateX(5px);
-    background-color: var(--color-19);
-    border-radius: 20px;
-}
-.filters a p {
-    font-size: 1.1rem;
-    color: var(--color-6);
-    font-family: "LeagueSpartan-Regular";
+    display: flex;  /* 🏗️ Flexbox para alineación correcta */
+    flex-direction: row;  /* ↔️ Elementos en fila */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: center;  /* 🎯 Alineación horizontal */
+    width: 100%;  /* 📐 Tamaño completo */
+    height: auto;  /* 📏 Altura ajustable */
+    text-align: center;  /* 🖋️ Texto centrado */
+    padding: 30px;  /* 🛋️ Espaciado interno */
+    gap: 17%;  /* 🔗 Separación entre filtros */
 }
 
+/* ✨ Diseño de los botones de filtro */
+.filters a {
+    padding: 10px;  /* 🛋️ Espaciado interno */
+    border-radius: 20px;  /* 🔵 Bordes suaves */
+    background: var(--color-5);  /* 🎨 Fondo de los botones */
+    transition: all 0.3s ease-in-out;  /* ⏳ Animación fluida */
+    width: 10%;  /* 📐 Ajuste de tamaño */
+    display: flex;  /* 📌 Estructura flexible */
+    justify-content: center;  /* 🎯 Centramos el contenido */
+    align-items: center;  /* 📌 Alineamos verticalmente */
+    flex-direction: column;  /* 📂 Elementos en columna */
+    text-decoration: none;  /* 🚫 Sin subrayado */
+}
+
+/* 🚀 Efecto hover en los botones de filtro */
+.filters a:hover {
+    cursor: pointer;  /* 🖱️ Indica interactividad */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🔄 Animación de elevación */
+    background-color: var(--color-19);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 20px;  /* 🔵 Mantener bordes redondeados */
+}
+
+/* 🖋️ Texto dentro de los filtros */
+.filters a p {
+    font-size: 1.1rem;  /* 🔡 Ajuste de tamaño del texto */
+    color: var(--color-6);  /* 🎨 Color personalizado */
+    font-family: "LeagueSpartan-Regular";  /* 🖋️ Tipografía específica */
+}
+
+/* ➖ Línea divisoria entre secciones */
 .underline {
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-14);
+    width: 100%;  /* 📏 Ocupa todo el ancho disponible */
+    height: 2px;  /* 📌 Grosor de la línea */
+    background-color: var(--color-14);  /* 🎨 Color definido */
 }
+
+/* 🛍️ Contenedor de productos más vendidos */
 .best-seller {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
-    padding: 40px;
-    background: var(--color-10);
-    gap: 60px;
+    display: flex;  /* 🏗️ Diseño flexible para una mejor estructura */
+    flex-direction: column;  /* 📂 Organización vertical */
+    width: 100%;  /* 📐 Ocupar todo el ancho */
+    height: auto;  /* 📏 Ajuste dinámico */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+    padding: 40px;  /* 🛋️ Espaciado interno */
+    gap: 60px;  /* 🔗 Separación entre elementos */
 }
+
+/* 📝 Contenedor de la descripción */
 .description {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background: sandybrown;
-    padding: 18px;
+    display: flex;  /* 🏗️ Alineación flexible */
+    flex-direction: row;  /* ↔️ Elementos en fila */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 100%;  /* 📐 Ancho completo */
+    height: auto;  /* 📏 Ajuste automático */
+    padding: 18px;  /* 🛋️ Espaciado interno */
 }
+
+/* ✍️ Título dentro de la descripción */
 .description h2 {
-    width: 100%;
-    font-size: 2rem;
-    color: var(--color-6);
-    font-family: "LeagueSpartan-Medium";
+    width: 100%;  /* 📐 Expandimos el ancho */
+    font-size: 2rem;  /* 🔡 Tamaño de fuente */
+    color: var(--color-6);  /* 🎨 Color definido */
+    font-family: "LeagueSpartan-Medium";  /* 🖋️ Tipo de fuente */
 }
+
+/* 📌 Contenedor del botón 'Ver todo' */
 .all {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    width: 100%;
-    height: auto;
-    gap: 30px;
-    align-items: center;
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* ↔️ Elementos en fila */
+    justify-content: end;  /* 📌 Posición final */
+    width: 100%;  /* 📐 Expande al ancho disponible */
+    height: auto;  /* 📏 Ajuste dinámico */
+    gap: 30px;  /* 🔗 Separación entre elementos */
+    align-items: center;  /* 🎯 Centrado vertical */
 }
+
+/* 📝 Texto del botón */
 .all p {
-    font-size: 1.1rem;
-    color: var(--color-4);
-    font-family: "LeagueSpartan-SemiBold";
+    font-size: 1.1rem;  /* 🔡 Ajuste de tamaño */
+    color: var(--color-4);  /* 🎨 Color definido */
+    font-family: "LeagueSpartan-SemiBold";  /* 🖋️ Tipo de fuente */
 }
+
+/* 🖼️ Icono interactivo dentro del botón */
 .all img {
-    width: 13px;
-    cursor: pointer;
+    width: 13px;  /* 📐 Tamaño proporcional */
+    cursor: pointer;  /* 🖱️ Interactividad activada */
 }
+
+/* 🏗️ Contenedor de tarjetas de productos */
 .card-container-best {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    background: var(--color-2);
-    padding: 20px;
-    gap: 20%;
-    height: 208px;
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Acomodo en fila */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    gap: 20%;  /* 🔗 Separación entre tarjetas */
+    height: 208px;  /* 📏 Altura de las tarjetas */
 }
+
+/* 🎴 Diseño de cada tarjeta */
 .card-container-best .card {
-    display: flex;
-    flex-direction: column;
-    width: 10%;
-    height: auto;
-    padding: 20px;
-    border-radius: 20px;
-    gap: 20px;
-    overflow: hidden;
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 📂 Organización vertical */
+    width: 10%;  /* 📐 Tamaño proporcional */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    border-radius: 20px;  /* 🏵️ Bordes redondeados */
+    gap: 20px;  /* 🔗 Separación entre elementos */
+    overflow: hidden;  /* 🔲 Evitar desbordamiento */
 }
+
+/* 🏷️ Contenedor de contenido dentro de la tarjeta */
 .card-content {
-    padding: 3px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-4);
-    position: absolute;
-    margin-top: 104px;
-    margin-left: 54px;
+    padding: 3px;  /* 🛋️ Espaciado interno */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    display: flex;  /* 🏗️ Flexbox para estructura */
+    justify-content: center;  /* 🎯 Centrar contenido */
+    align-items: center;  /* 📌 Alineación vertical */
+    background: var(--color-4);  /* 🎨 Fondo de la tarjeta */
+    position: absolute;  /* 📍 Posicionamiento relativo */
+    margin-top: 104px;  /* 📏 Ajuste superior */
+    margin-left: 52px;  /* 📌 Ajuste a la izquierda */
 }
+
+/* 📸 Imagen de fondo para la primera tarjeta */
 .card-container-best .card:first-child {
-    background-image: url(../imgs/image1HomePage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../imgs/image1HomePage.png);  /* 🖼️ Configuración de imagen */
+    background-size: cover;  /* 📌 Ajuste para cubrir */
+    background-repeat: no-repeat;  /* 🚫 Evitar repetición */
+    background-position: center;  /* 🎯 Centrado de imagen */
 }
+
+/* 📸 Imagen de fondo para la segunda tarjeta */
 .card-container-best .card:nth-child(2) {
-    background-image: url(../imgs/image2HomePage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../imgs/image2HomePage.png);  /* 🖼️ Configuración de imagen */
+    background-size: cover;  
+    background-repeat: no-repeat;  
     background-position: center;
 }
+
+/* 📸 Imagen de fondo para la tercera tarjeta */
 .card-container-best .card:nth-child(3) {
-    background-image: url(../imgs/image3HomePage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../imgs/image3HomePage.png);  
+    background-size: cover;  
+    background-repeat: no-repeat;  
     background-position: center;
 }
+
+/* 📸 Imagen de fondo para la cuarta tarjeta */
 .card-container-best .card:nth-child(4) {
-    background-image: url(../imgs/image4HomePage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../imgs/image4HomePage.png);  
+    background-size: cover;  
+    background-repeat: no-repeat;  
     background-position: center;
 }
+
+/* 🎴 Contenedor de tarjetas recomendadas */
 .card-container-recommend {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    background: var(--color-10);
-    padding: 20px;
-    gap: 20px;
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organización en fila */
+    width: 100%;  /* 📐 Expandir al ancho total */
+    height: auto;  /* 📏 Ajuste automático */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    gap: 20px;  /* 🔗 Separación entre elementos */
 }
+
+/* 🌟 Sección destacada (Hero) */
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 500px;
-    border-radius: 30px;
-    padding: 10px;
-    background-image: url(../imgs/heroImageHomePage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    gap: 20px;
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 📂 Organización vertical */
+    justify-content: center;  /* 🎯 Centrado del contenido */
+    width: 100%;  /* 📐 Expande a todo el ancho */
+    height: 500px;  /* 📏 Altura definida */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    padding: 10px;  /* 🛋️ Espaciado interno */
+    background-image: url(../imgs/heroImageHomePage.png);  /* 📸 Imagen de fondo */
+    background-size: cover;  /* 📌 Ajuste para cubrir */
+    background-repeat: no-repeat;  /* 🚫 Evitar repetición */
+    background-position: center;  /* 🎯 Centrado */
+    gap: 20px;  /* 🔗 Separación entre elementos */
 }
+
+/* 📝 Estilos del párrafo dentro de la sección hero */
 .hero p {
-    font-size: 2rem;
-    color: var(--color-6);
-    font-family: "LeagueSpartan-Regular";
-    text-align: center;
-    width: 52%;
+    font-size: 2rem;  /* 🔡 Tamaño de fuente para mejor legibilidad */
+    color: var(--color-6);  /* 🎨 Color de texto definido */
+    font-family: "LeagueSpartan-Regular";  /* 🖋️ Tipografía estilizada */
+    text-align: center;  /* 🎯 Centrado del texto */
+    width: 52%;  /* 📏 Ajuste de ancho para una mejor disposición */
 }
+
+/* ✨ Estilos del título dentro de la sección hero */
 .hero h2 {
-    font-size: 3rem;
-    color: var(--color-6);
-    font-family: "LeagueSpartan-Bold";
-    width: 52%;
-    text-align: center;
+    font-size: 3rem;  /* 🔡 Tamaño más grande para destacar */
+    color: var(--color-6);  /* 🎨 Color definido */
+    font-family: "LeagueSpartan-Bold";  /* 🖋️ Fuente en negrita */
+    width: 52%;  /* 📏 Control de ancho */
+    text-align: center;  /* 🎯 Centrado para estética */
 }
+
+/* 🎯 Contenedor de la sección de recomendaciones */
 .recommend {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
-    padding: 40px;
-    background: var(--color-10);
-    gap: 60px;
+    display: flex;  /* 🏗️ Diseño flexible para alineación dinámica */
+    flex-direction: column;  /* 📂 Organización vertical */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    padding: 40px;  /* 🛋️ Espaciado interno */
+    gap: 60px;  /* 🔗 Separación entre elementos */
 }
+
+/* ✍️ Estilos del título de la sección recomendaciones */
 .recommend h2 {
-    width: 100%;
-    font-size: 2rem;
-    color: var(--color-6);
-    font-family: "LeagueSpartan-Medium";
+    width: 100%;  /* 📐 Ajuste de ancho para un mejor impacto visual */
+    font-size: 2rem;  /* 🔡 Tamaño adecuado */
+    color: var(--color-6);  /* 🎨 Color personalizado */
+    font-family: "LeagueSpartan-Medium";  /* 🖋️ Tipografía estilizada */
 }
+
+/* 🎴 Contenedor de tarjetas recomendadas */
 .card-container-recommend {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    background: var(--color-10);
-    padding: 10px;
-    gap: 20%;
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organización en fila */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 10px;  /* 🛋️ Espaciado interno */
+    gap: 15%;  /* 🔗 Separación entre tarjetas */
 }
+
+/* 🎴 Diseño individual de cada tarjeta */
 .card-container-recommend .card {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 200px;
-    padding: 20px;
-    border-radius: 20px;
-    gap: 20px;
-    overflow: hidden;
-    background: var(--color-2);
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 📂 Organización vertical */
+    width: 30%;  /* 📐 Tamaño proporcional */
+    height: 200px;  /* 📏 Ajuste de altura */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    border-radius: 20px;  /* 🔵 Bordes redondeados */
+    gap: 20px;  /* 🔗 Separación interna */
+    overflow: hidden;  /* 🔲 Evitar desbordamiento */
 }
+
+/* 📸 Imagen de fondo para la primera tarjeta */
 .card-container-recommend .card:first-child {
-    background-image: url(../imgs/image6HomePage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../imgs/image6HomePage.png);  /* 🖼️ Configuración de imagen */
+    background-size: cover;  /* 📌 Ajuste para cubrir */
+    background-repeat: no-repeat;  /* 🚫 Evitar repetición */
+    background-position: center;  /* 🎯 Centrado de imagen */
 }
+
+/* 📸 Imagen de fondo para la segunda tarjeta */
 .card-container-recommend .card:nth-child(2) {
-    background-image: url(../imgs/image7HomePage.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../imgs/image7HomePage.png);  
+    background-size: cover;  
+    background-repeat: no-repeat;  
     background-position: center;
 }
+
+/* 🏗️ Contenedor de descripción dentro de la tarjeta */
 .desc1 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    padding: 2px;
-    gap: 20px;
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organización horizontal */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 2px;  /* 🛋️ Espaciado interno */
+    gap: 20px;  /* 🔗 Separación entre elementos */
 }
+
+/* 🖼️ Ícono dentro de la descripción */
 .desc1 > img {
-    width: 20px;
-    cursor: pointer;
+    width: 20px;  /* 📐 Ajuste de tamaño */
+    cursor: pointer;  /* 🖱️ Indica interactividad */
 }
+
+/* 🏗️ Contenedor principal de la primera descripción */
 .first {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    padding: 2px;
-    gap: 20px;
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organización en fila */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 2px;  /* 🛋️ Espaciado interno */
+    gap: 20px;  /* 🔗 Separación entre elementos */
 }
+
+/* 🖼️ Ícono dentro de la primera descripción */
 .first img {
-    width: 13px;
-    cursor: pointer;
+    width: 13px;  /* 📐 Ajuste proporcional */
+    cursor: pointer;  /* 🖱️ Habilita interacción */
 }
+
+/* 📝 Texto dentro de la primera descripción */
 .desc1 .first p {
-    font-size: 1.5rem;
-    color: var(--color-6);
-    font-family: "LeagueSpartan-Regular";
+    font-size: 1.5rem;  /* 🔡 Ajuste de tamaño */
+    color: var(--color-6);  /* 🎨 Color de texto */
+    font-family: "LeagueSpartan-Regular";  /* 🖋️ Fuente personalizada */
 }
+
+/* 🏷️ Contenedor de la segunda descripción */
 .desc2 {
-    padding: 3px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-4);
-    position: absolute;
-    margin-top: 130px;
-    margin-left: 290px;
+    padding: 8px;  /* 🛋️ Espaciado interno */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    display: flex;  /* 🏗️ Flexbox para alineación */
+    justify-content: center;  /* 🎯 Centramos el contenido */
+    align-items: center;  /* 📌 Alineación vertical */
+    background: var(--color-4);  /* 🎨 Color de fondo */
+    position: absolute;  /* 📌 Posición relativa */
+    margin-top: 130px;  /* 📏 Ajuste superior */
+    margin-left: 270px;  /* 📌 Ajuste a la izquierda */
 }
+
+/* 📝 Texto dentro de la segunda descripción */
 .desc2 p {
-    font-size: 1.1rem;
-    color: var(--color-7);
-    font-family: "LeagueSpartan-Regular";
+    font-size: 1.4rem;  /* 🔡 Ajuste de tamaño */
+    color: var(--color-7);  /* 🎨 Color personalizado */
+    font-family: "LeagueSpartan-Regular";  /* 🖋️ Tipografía estilizada */
 }
+
 /* 🔽 Estilos del pie de página */
 footer {  
     display: flex;  /* 🏗️ Diseño flexible para adaptación en distintos dispositivos */
@@ -459,7 +542,7 @@ footer {
     left: 0px;  /* 🏁 Posicionamiento inicial */
     border-radius: 5px;  /* 🏵️ Bordes redondeados */
 }
+
 #moving-bar {
-    /* ... otros estilos ... */
-    transition: transform 0.3s ease, width 0.3s ease; /* Transición para la posición y el ancho */
+    transition: transform 0.3s ease, width 0.3s ease; /* 🎭 Transición para la posición y el ancho */
 }
