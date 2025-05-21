@@ -134,8 +134,278 @@ main {
     border-radius: 30px;
     padding: 40px;
     background: salmon;
+    gap: 60px;
 }
 
+.filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: aqua;
+    padding: 30px;
+    gap: 17%;
+}
+.filters a {
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--color-5);
+    transition: all 0.3s ease-in-out;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.filters a:hover {
+    cursor: pointer;
+    transform: scale(1.1) translateY(-5px) translateX(5px);
+    background-color: var(--color-19);
+    border-radius: 20px;
+}
+.filters a p {
+    font-size: 1.1rem;
+    color: var(--color-6);
+    font-family: "LeagueSpartan-Regular";
+}
+
+.underline {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-14);
+}
+.best-seller {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding: 40px;
+    background: var(--color-10);
+    gap: 60px;
+}
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: sandybrown;
+    padding: 18px;
+}
+.description h2 {
+    width: 100%;
+    font-size: 2rem;
+    color: var(--color-6);
+    font-family: "LeagueSpartan-Medium";
+}
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    align-items: center;
+}
+.all p {
+    font-size: 1.1rem;
+    color: var(--color-4);
+    font-family: "LeagueSpartan-SemiBold";
+}
+.all img {
+    width: 13px;
+    cursor: pointer;
+}
+.card-container-best {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background: var(--color-2);
+    padding: 20px;
+    gap: 20%;
+    height: 208px;
+}
+.card-container-best .card {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    overflow: hidden;
+}
+.card-content {
+    padding: 3px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-4);
+    position: absolute;
+    margin-top: 104px;
+    margin-left: 54px;
+}
+.card-container-best .card:first-child {
+    background-image: url(../imgs/image1HomePage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-container-best .card:nth-child(2) {
+    background-image: url(../imgs/image2HomePage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-container-best .card:nth-child(3) {
+    background-image: url(../imgs/image3HomePage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-container-best .card:nth-child(4) {
+    background-image: url(../imgs/image4HomePage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-container-recommend {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background: var(--color-10);
+    padding: 20px;
+    gap: 20px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    padding: 10px;
+    background-image: url(../imgs/heroImageHomePage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 20px;
+}
+.hero p {
+    font-size: 2rem;
+    color: var(--color-6);
+    font-family: "LeagueSpartan-Regular";
+    text-align: center;
+    width: 52%;
+}
+.hero h2 {
+    font-size: 3rem;
+    color: var(--color-6);
+    font-family: "LeagueSpartan-Bold";
+    width: 52%;
+    text-align: center;
+}
+.recommend {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding: 40px;
+    background: var(--color-10);
+    gap: 60px;
+}
+.recommend h2 {
+    width: 100%;
+    font-size: 2rem;
+    color: var(--color-6);
+    font-family: "LeagueSpartan-Medium";
+}
+.card-container-recommend {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background: var(--color-10);
+    padding: 10px;
+    gap: 20%;
+}
+.card-container-recommend .card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    overflow: hidden;
+    background: var(--color-2);
+}
+.card-container-recommend .card:first-child {
+    background-image: url(../imgs/image6HomePage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-container-recommend .card:nth-child(2) {
+    background-image: url(../imgs/image7HomePage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.desc1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    gap: 20px;
+}
+.desc1 > img {
+    width: 20px;
+    cursor: pointer;
+}
+.first {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    gap: 20px;
+}
+.first img {
+    width: 13px;
+    cursor: pointer;
+}
+.desc1 .first p {
+    font-size: 1.5rem;
+    color: var(--color-6);
+    font-family: "LeagueSpartan-Regular";
+}
+.desc2 {
+    padding: 3px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-4);
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 290px;
+}
+.desc2 p {
+    font-size: 1.1rem;
+    color: var(--color-7);
+    font-family: "LeagueSpartan-Regular";
+}
 /* 🔽 Estilos del pie de página */
 footer {  
     display: flex;  /* 🏗️ Diseño flexible para adaptación en distintos dispositivos */
