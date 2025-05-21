@@ -17,13 +17,12 @@ body {
 header {  
     display: flex;  /* 🏗️ Diseño flexible */
     justify-content: center;  /* 📌 Centrado horizontal */
-    align-items: center;  /* 📌 Centrado vertical */
     padding: 20px;  /* 🛋️ Espaciado interno */
     width: 100%;  /* 📐 Ocupar todo el ancho */
     height: 60vh;  /* 📏 Altura proporcional a la pantalla */
-    background: var(--color-2);  /* 🎨 Color de fondo personalizado */
     border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */
     flex-direction: column;
+    gap: 50px;
 }
 .icons-header {
     display: flex;
@@ -34,11 +33,23 @@ header {
     gap: 20px;
     padding: 10px 40px;
 }
+.icons-header a {
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 30px;
+    background: var(--color-10);
+}
+
+.icons-header a:hover {
+    cursor: pointer;
+    transform: scale(1.1) translateY(-5px) translateX(5px);
+    background-color: var(--color-19);
+    border-radius: 30px;
+}
 form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     width: 100%;
     height: auto;
     background: var(--color-1);
@@ -48,23 +59,32 @@ form {
     margin: 20px;
 }
 .input__logo {
-    padding: 20px;
     background: var(--color-4);
     border-radius: 30px;
     position: relative;
     display: inline-block;
 }
 .search-bar {
-    width: 100%;
-    padding-right: 40px; /* Espacio para el ícono */
+    width: 700%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background: var(--color-7);
+    color: var(--color-1);
+    font-size: 16px;
 }
 
 .input__logo a {
     position: absolute;
-    right: 30px; /* Ajusta según necesidad */
+    right: -470px; /* Ajusta según necesidad */
     top: 50%;
     transform: translateY(-50%);
-    margin-top: 3px;
+    border-radius: 50%;
+    padding: 5px;
+    background: var(--color-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input__logo img {
@@ -78,11 +98,23 @@ form {
     justify-content: center;
     width: 100%;
     height: auto;
-    background: var(--color-10);
     border-radius: 30px;
     text-align: center;
-    padding: 10px;
-    gap: 50%;
+    padding: 10px 30px 10px 0;
+    gap: 80%;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: var(--color-3);
+    font-family: "LeagueSpartan-Bold";
+    margin-left: 20px;
+}
+header p {
+    font-size: 2rem;
+    color: var(--color-4);
+    font-family: "LeagueSpartan-Medium";
+    margin-left: 20px;
 }
 /* 🌍 Contenedor principal - Sección principal de la página */
 main {  
