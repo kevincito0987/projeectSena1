@@ -47,6 +47,30 @@ form {
     gap: 50%;
     margin: 20px;
 }
+.input__logo {
+    padding: 20px;
+    background: var(--color-4);
+    border-radius: 30px;
+    position: relative;
+    display: inline-block;
+}
+.search-bar {
+    width: 100%;
+    padding-right: 40px; /* Espacio para el ícono */
+}
+
+.input__logo a {
+    position: absolute;
+    right: 30px; /* Ajusta según necesidad */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 3px;
+}
+
+.input__logo img {
+    width: 20px; /* Ajusta tamaño según tu ícono */
+    cursor: pointer;
+}
 .form-container{
     display: flex;
     flex-direction: row;
