@@ -123,8 +123,17 @@ main {
     width: 100%;  /* 📐 Ocupar todo el ancho disponible */  
     height: auto;  /* 📏 Altura adaptable según el contenido */  
     background: var(--color-10);  /* 🎨 Color de fondo personalizado */  
-    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */  
-    text-align: center;  /* 📝 Asegurar que el contenido esté centrado textualmente */  
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */ 
+    padding: 40px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    border-radius: 30px;
+    padding: 40px;
+    background: salmon;
 }
 
 /* 🔽 Estilos del pie de página */
