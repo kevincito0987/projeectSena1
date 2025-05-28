@@ -358,7 +358,7 @@ main {
 /* 📝 Estilos del párrafo dentro de la sección hero */
 .hero p {
     font-size: 2rem;  /* 🔡 Tamaño de fuente para mejor legibilidad */
-    color: var(--color-6);  /* 🎨 Color de texto definido */
+    color: var(--color-3);  /* 🎨 Color de texto definido */
     font-family: "LeagueSpartan-Regular";  /* 🖋️ Tipografía estilizada */
     text-align: center;  /* 🎯 Centrado del texto */
     width: 52%;  /* 📏 Ajuste de ancho para una mejor disposición */
@@ -367,7 +367,7 @@ main {
 /* ✨ Estilos del título dentro de la sección hero */
 .hero h2 {
     font-size: 3rem;  /* 🔡 Tamaño más grande para destacar */
-    color: var(--color-6);  /* 🎨 Color definido */
+    color: var(--color-3);  /* 🎨 Color definido */
     font-family: "LeagueSpartan-Bold";  /* 🖋️ Fuente en negrita */
     width: 52%;  /* 📏 Control de ancho */
     text-align: center;  /* 🎯 Centrado para estética */
@@ -617,6 +617,7 @@ footer {
         align-items: center;
         justify-content: center;
         background: sandybrown;
+        padding: 10px;
     }
     .filters {
         display: grid;  /* 🏗️ Activamos Grid */
@@ -645,5 +646,148 @@ footer {
     .filters a:last-child {
         grid-column: span 2;  /* 📌 Ocupar todo el ancho de las 2 columnas */
         justify-self: center;  /* 🎯 Asegurar que esté alineado en el centro */
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .description {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .description h2 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .all {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .all p {
+        font-size: 0.9rem;
+    }
+    .card-container-best {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+    }
+    .card-container-best .card {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        margin:  20px 0;  /* 🛋️ Espaciado vertical */
+    }
+    .card-container-best .card-content {
+        width: 18%;
+        height: 30px;
+        margin-top: 98px;  /* 📏 Ajuste de margen superior */
+        margin-left: 150px;  /* 📌 Ajuste de margen izquierdo */
+    }
+    .hero {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+    .hero p {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .hero h2 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background: sienna;
+    }
+    .recommend h2 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .card-container-recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .card-container-recommend .card {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        margin: 20px 0;  /* 🛋️ Espaciado vertical */
+    }
+    .desc1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .desc1 img {
+        width: 15px;  /* 📐 Ajuste de tamaño */
+    }
+    .desc1 .first p {
+        font-size: 1.2rem;  /* 🔡 Ajuste de tamaño */
+    }
+    .desc2 p {
+        font-size: 1.1rem;  /* 🔡 Ajuste de tamaño */
+        width: 100%;  /* 📏 Ancho completo */
+    }
+    .desc2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .card-container-recommend .card:first-child .desc2 {
+        width: 20%;
+        padding: 5px;
+        right: 180px;
+        margin-top: 97px;
+    }
+    .card-container-recommend .card:nth-child(2) .desc2 {
+        width: 20%;
+        padding: 5px;
+        right: 50px;
+        margin-top: 97px;
+    }
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejor distribución */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
+        margin-left: -20px;
     }
 }
