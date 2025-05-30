@@ -977,3 +977,189 @@ footer {
         margin-left: -10px;
     }
 }
+
+@media screen and (min-width: 391px) and (max-width: 440px) {
+    header {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    header p {
+        font-size: 2rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .input__logo a {
+        margin-right: 480px;
+    }
+    .input__logo a img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    .icons-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        width: 130%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .filters {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 90%;
+        overflow-x: scroll;
+    }
+    .filters a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100px;
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .best-seller .description .all img {
+        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+    }
+    .best-seller .card-container-best {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        overflow-x: scroll;
+        gap: 20px;
+    }
+    .card-container-best {
+        width: 100vw;
+    }
+    .card-container-best .card{
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-best .card:first-child {
+        margin-left: 320px;
+    }
+    .card-container-best .card .card-content {
+        width: 28%;
+        height: 30px;
+        margin-top: 180px;  /* 📏 Ajuste de margen superior */
+        margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
+    }
+    .card-container-recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+    .card-container-recommend .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-recommend .card .desc1 .first {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .card-container-recommend .card .desc1 {
+        margin-top: -190px;
+    }
+    .card-container-recommend .card .desc2 {
+        margin-top: 180px;
+    }
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */ 
+    }
+    /* 🎭 Ajuste del contenedor de íconos */ 
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejor distribución */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
+        margin-left: -10px;
+    }
+}
