@@ -1163,3 +1163,172 @@ footer {
         margin-left: -10px;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 884px) {
+    header {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    header p {
+        font-size: 2rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .input__logo a {
+        margin-right: 480px; 
+    }
+    .input__logo a img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .icons-header {
+        width: 100%;
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: center; 
+    }
+    .content {
+       width: 130%; 
+       display: flex; 
+       flex-direction: column; 
+       align-items: center; 
+       justify-content: center; 
+       padding: 10px; 
+   }
+   .filters {
+       display:flex;  
+       flex-direction :row;  
+       align-items:center;  
+       justify-content:center;  
+       gap :80px;  
+       width :100%;  
+       overflow-x :scroll;  
+   }
+   .filters a {  
+       display :flex;  
+       flex-direction :column;  
+       align-items :center;
+       justify-content : center;
+   }
+    .best-seller {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+     }
+     .best-seller .description .all img {
+          width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+     }
+     .best-seller .card-container-best {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          padding: 10px;
+          overflow-x: scroll;
+          gap: 20px;
+     }
+     .card-container-best {
+          width: 100vw;
+     }
+     .card-container-best .card{
+          min-width: 160px;
+          height: 250px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          padding: 10px;
+          border-radius: 50px;
+          background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+          background-position: center; /* Centra la imagen */
+          position: relative;
+     }
+     .card-container-best .card .card-content {
+          width: 28%;
+          height: 30px;
+          margin-top: 180px;  /* 📏 Ajuste de margen superior */
+          margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
+     }
+     .card-container-recommend {
+         width :100%;  
+         display :flex;  
+         flex-direction :row;  
+         align-items :center;  
+         justify-content :center;  
+         padding :40px;  
+    }
+    .hero {
+         gap: 60px;
+    }
+    .hero p {
+         width: 42%;
+         font-size: 1.8rem;
+         text-align: center;
+    }
+    .hero h2 {
+         width: 42%;
+         font-size: 4.5rem;
+         text-align: center;
+    }
+    .card-container-recommend .card {
+         min-width: 160px;
+         height: 250px;
+         display: flex;
+         align-items: flex-end;
+         justify-content: center;
+         padding: 10px;
+         border-radius: 50px;
+         background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+         background-position: center; /* Centra la imagen */
+         position: relative;
+    }
+}
