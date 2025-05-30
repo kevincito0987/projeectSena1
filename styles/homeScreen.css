@@ -465,7 +465,7 @@ main {
 /* 📝 Texto dentro de la primera descripción */
 .desc1 .first p {
     font-size: 1.5rem;  /* 🔡 Ajuste de tamaño */
-    color: var(--color-6);  /* 🎨 Color de texto */
+    color: var(--color-7);  /* 🎨 Color de texto */
     font-family: "LeagueSpartan-Regular";  /* 🖋️ Fuente personalizada */
 }
 
@@ -1331,7 +1331,19 @@ footer {
          background-position: center; /* Centra la imagen */
          position: relative;
     }
+    .card-container-recommend .card .desc1 .first {
+         width: 100px;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         padding: 10px;
+    }
+    .card-container-recommend .card .desc1 {
+         margin-top: -190px;
+    }
 }
+
 @media screen and (min-width: 885px) and (max-width: 1114px)  {
     .form-container {
         width: 100%;
@@ -1466,4 +1478,158 @@ footer {
         background-position: center; /* Centra la imagen */
         position: relative;
     }
+    .card-container-recommend .card .desc1 .first {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+   }
+   .card-container-recommend .card .desc1 {
+        margin-top: -190px;
+   }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1281px) {
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .input__logo a {
+        margin-right: 480px; 
+    }
+    .input__logo a img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .icons-header {
+        width: 100%;
+        display: flex; 
+        flex-direction: row; 
+        margin-right: 50px;
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .best-seller .description .all img {
+        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+    }
+    .best-seller .card-container-best {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        overflow-x: scroll;
+        gap: 80px;
+    }
+    .card-container-best {
+        width: 100vw;
+    }
+    .card-container-best .card{
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-best .card .card-content {
+        width: 28%;
+        height: 30px;
+        margin-top: 160px;  /* 📏 Ajuste de margen superior */
+        margin-left: 30px;  /* 📌 Ajuste de margen izquierdo */
+    }
+    .hero {
+        width: 90vw;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .recommend {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-right: 20px;
+    }
+    .recommend h2 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .card-container-recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+    }
+    .card-container-recommend .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-recommend .card .desc1 .first {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+   }
+   .card-container-recommend .card .desc1 {
+        margin-top: -190px;
+   }
 }
