@@ -1,0 +1,1867 @@
+@import url(./variables.css);  /* 🔗 Importación de variables para mantener consistencia en el diseño */
+
+/* 🌍 Reset de estilos para evitar inconsistencias en diferentes navegadores */
+* {  
+    margin: 0;  /* 🚫 Eliminamos márgenes predeterminados */
+    padding: 0;  /* 🚫 Eliminamos relleno predeterminado */
+    box-sizing: border-box;  /* 📏 Modelo de caja correcto para evitar desbordes */
+}
+
+/* 🌅 Configuración del fondo del cuerpo */
+body {  
+    background-image: url(../imgs/header.jpg);  /* 🖼️ Establecemos la imagen de fondo */
+    background-size: cover;  /* 📌 Aseguramos que cubra toda la pantalla */
+    background-repeat: no-repeat;  /* 🚫 Evitamos que se repita */
+    background-position: center;  /* 🎯 Centramos correctamente la imagen */
+}
+
+/* 🏗️ Diseño del encabezado */
+header {  
+    display: flex;  /* 🔧 Usamos Flexbox para estructura flexible */
+    justify-content: center;  /* 🎯 Centramos horizontalmente */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    width: 100%;  /* 📏 Ocupa todo el ancho disponible */
+    height: 60vh;  /* 📐 Altura proporcional a la pantalla */
+    border-radius: 30px;  /* 🔵 Bordes redondeados para suavizar el diseño */
+    flex-direction: column;  /* 📂 Organizado en columnas */
+    gap: 50px;  /* 🔗 Espaciado entre elementos */
+}
+
+/* 🔗 Diseño de los íconos dentro del encabezado */
+.icons-header {
+    display: flex;  /* 🏗️ Flexbox para alinearlos correctamente */
+    flex-direction: row;  /* 🔀 Alineación en fila */
+    align-items: center;  /* 🎯 Centrado verticalmente */
+    width: 100%;
+    height: auto;
+    gap: 20px;  /* 🔗 Espaciado entre elementos */
+    padding: 10px 40px;  /* 🖼️ Espaciado interno */
+}
+
+/* ✨ Estilos base de los íconos */
+.icons-header a {
+    transition: all 0.3s ease-in-out;  /* ⏳ Transición fluida */
+    padding: 10px;
+    border-radius: 30px;  /* 🔵 Bordes suaves */
+    background: var(--color-10);  /* 🎨 Color de fondo inicial */
+}
+
+/* 🚀 Efecto hover para los íconos */
+.icons-header a:hover {
+    cursor: pointer;  /* 🖱️ Indica interactividad */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🔄 Efecto de elevación */
+    background-color: var(--color-19);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 30px;  /* 🔵 Mantener suavidad en el diseño */
+}
+
+/* 🏗️ Configuración del formulario de búsqueda */
+form {
+    display: flex;  /* 📌 Flexbox para organización */
+    flex-direction: row;  /* 🔀 Alinear elementos en fila */
+    align-items: center;  /* 🎯 Centrar verticalmente */
+    width: 100%;  /* 📏 Expande al ancho completo */
+    height: auto;  /* 🚀 Se adapta dinámicamente */
+    background: var(--color-1);  /* 🎨 Fondo del formulario */
+    border-radius: 30px;  /* 🔵 Bordes suaves */
+    text-align: center;  /* 📝 Centrado del texto */
+    gap: 50%;  /* 🔗 Espaciado entre elementos */
+    margin: 20px;  /* 🛋️ Separación externa */
+}
+
+/* 🔍 Contenedor del campo de búsqueda */
+.input__logo {
+    background: var(--color-4);  /* 🎨 Fondo del campo */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    position: relative;  /* 📍 Posicionamiento adecuado */
+    display: inline-block;  /* 🏗️ Estructura flexible */
+}
+
+/* ⌨️ Estilos del campo de búsqueda */
+.search-bar {
+    width: 700%;  /* 📏 Ampliado para mejor visibilidad */
+    padding: 10px;  /* 🛋️ Espaciado interno */
+    border: none;  /* 🚫 Sin bordes */
+    border-radius: 30px;  /* 🔵 Bordes suaves */
+    background: var(--color-7);  /* 🎨 Fondo del campo */
+    color: var(--color-1);  /* 🖊️ Color del texto */
+    font-size: 16px;  /* 🔡 Tamaño de fuente */
+}
+
+/* 🎯 Ícono dentro del campo de búsqueda */
+.input__logo a {
+    position: absolute;
+    right: -470px; /* 🚀 Ajuste de posición */
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;  /* 🔵 Bordes circulares */
+    padding: 5px;  /* 🛋️ Espaciado interno */
+    background: var(--color-4);  /* 🎨 Fondo */
+    display: flex;  /* 📌 Alineación correcta */
+    justify-content: center;  /* 🎯 Centrar ícono */
+    align-items: center;
+}
+
+/* 🖼️ Ajuste del tamaño del ícono */
+.input__logo img {
+    width: 20px; /* 📐 Tamaño proporcional */
+    cursor: pointer;  /* 🖱️ Indica interactividad */
+}
+
+/* 🏗️ Contenedor principal del header */
+.form-container {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organizado en fila */
+    align-items: center;  /* 🎯 Centramos verticalmente */
+    justify-content: center;  /* 📌 Aseguramos posición adecuada */
+    width: 100%;
+    height: auto;
+    border-radius: 30px;  /* 🔵 Bordes suaves */
+    text-align: center;
+    padding: 10px 30px 10px 0;
+    gap: 80%;  /* 🔗 Separación entre elementos */
+}
+
+/* ✍️ Estilos del título del header */
+header h1 {
+    font-size: 4rem;  /* 🔤 Tamaño grande */
+    color: var(--color-3);  /* 🎨 Color destacado */
+    font-family: "LeagueSpartan-Bold";  /* 🖋️ Fuente específica */
+    margin-left: 20px;  /* 🛋️ Espaciado a la izquierda */
+}
+
+/* 📝 Estilos del subtítulo */
+header p {
+    font-size: 2rem;  /* 🔡 Tamaño medio */
+    color: var(--color-4);  /* 🎨 Color secundario */
+    font-family: "LeagueSpartan-Medium";  /* 🖋️ Fuente estilizada */
+    margin-left: 20px;  /* 🛋️ Espaciado a la izquierda */
+}
+
+/* 🌍 Contenedor principal - Sección principal de la página */
+main {  
+    display: flex;  /* 🏗️ Flexbox para una distribución fluida */
+    justify-content: center;  /* 📌 Centrado horizontal del contenido */
+    width: 100%;  /* 📐 Expande al ancho disponible */
+    height: auto;  /* 📏 Ajuste dinámico según el contenido */
+    background: var(--color-10);  /* 🎨 Fondo personalizado */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar el diseño */
+    padding: 40px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🏗️ Contenedor de contenido principal */
+.content {
+    display: flex;  /* 🏗️ Flexbox para organizar el contenido */
+    flex-direction: column;  /* 📂 Acomodo vertical */
+    width: 80%;  /* 📐 Tamaño del contenedor */
+    height: auto;  /* 📏 Ajuste automático según elementos internos */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para suavizar la estética */
+    padding: 40px;  /* 🛋️ Espaciado interno */
+    gap: 60px;  /* 🔗 Separación entre elementos */
+}
+
+/* 🔍 Contenedor de filtros de búsqueda */
+.filters {
+    display: flex;  /* 🏗️ Flexbox para alineación correcta */
+    flex-direction: row;  /* ↔️ Elementos en fila */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: center;  /* 🎯 Alineación horizontal */
+    width: 100%;  /* 📐 Tamaño completo */
+    height: auto;  /* 📏 Altura ajustable */
+    text-align: center;  /* 🖋️ Texto centrado */
+    padding: 30px;  /* 🛋️ Espaciado interno */
+    gap: 17%;  /* 🔗 Separación entre filtros */
+}
+
+/* ✨ Diseño de los botones de filtro */
+.filters a {
+    padding: 10px;  /* 🛋️ Espaciado interno */
+    border-radius: 20px;  /* 🔵 Bordes suaves */
+    background: var(--color-5);  /* 🎨 Fondo de los botones */
+    transition: all 0.3s ease-in-out;  /* ⏳ Animación fluida */
+    width: 10%;  /* 📐 Ajuste de tamaño */
+    display: flex;  /* 📌 Estructura flexible */
+    justify-content: center;  /* 🎯 Centramos el contenido */
+    align-items: center;  /* 📌 Alineamos verticalmente */
+    flex-direction: column;  /* 📂 Elementos en columna */
+    text-decoration: none;  /* 🚫 Sin subrayado */
+}
+
+/* 🚀 Efecto hover en los botones de filtro */
+.filters a:hover {
+    cursor: pointer;  /* 🖱️ Indica interactividad */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🔄 Animación de elevación */
+    background-color: var(--color-19);  /* 🎨 Cambio de color al pasar el mouse */
+    border-radius: 20px;  /* 🔵 Mantener bordes redondeados */
+}
+
+/* 🖋️ Texto dentro de los filtros */
+.filters a p {
+    font-size: 1.1rem;  /* 🔡 Ajuste de tamaño del texto */
+    color: var(--color-6);  /* 🎨 Color personalizado */
+    font-family: "LeagueSpartan-Regular";  /* 🖋️ Tipografía específica */
+}
+
+/* ➖ Línea divisoria entre secciones */
+.underline {
+    width: 100%;  /* 📏 Ocupa todo el ancho disponible */
+    height: 2px;  /* 📌 Grosor de la línea */
+    background-color: var(--color-14);  /* 🎨 Color definido */
+}
+
+/* 🛍️ Contenedor de productos más vendidos */
+.best-seller {
+    display: flex;  /* 🏗️ Diseño flexible para una mejor estructura */
+    flex-direction: column;  /* 📂 Organización vertical */
+    width: 100%;  /* 📐 Ocupar todo el ancho */
+    height: auto;  /* 📏 Ajuste dinámico */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+    padding: 40px;  /* 🛋️ Espaciado interno */
+    gap: 60px;  /* 🔗 Separación entre elementos */
+}
+
+/* 📝 Contenedor de la descripción */
+.description {
+    display: flex;  /* 🏗️ Alineación flexible */
+    flex-direction: row;  /* ↔️ Elementos en fila */
+    align-items: center;  /* 📌 Centrado vertical */
+    width: 100%;  /* 📐 Ancho completo */
+    height: auto;  /* 📏 Ajuste automático */
+    padding: 18px;  /* 🛋️ Espaciado interno */
+}
+
+/* ✍️ Título dentro de la descripción */
+.description h2 {
+    width: 100%;  /* 📐 Expandimos el ancho */
+    font-size: 2rem;  /* 🔡 Tamaño de fuente */
+    color: var(--color-6);  /* 🎨 Color definido */
+    font-family: "LeagueSpartan-Medium";  /* 🖋️ Tipo de fuente */
+}
+
+/* 📌 Contenedor del botón 'Ver todo' */
+.all {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* ↔️ Elementos en fila */
+    justify-content: end;  /* 📌 Posición final */
+    width: 100%;  /* 📐 Expande al ancho disponible */
+    height: auto;  /* 📏 Ajuste dinámico */
+    gap: 30px;  /* 🔗 Separación entre elementos */
+    align-items: center;  /* 🎯 Centrado vertical */
+}
+
+/* 📝 Texto del botón */
+.all p {
+    font-size: 1.1rem;  /* 🔡 Ajuste de tamaño */
+    color: var(--color-4);  /* 🎨 Color definido */
+    font-family: "LeagueSpartan-SemiBold";  /* 🖋️ Tipo de fuente */
+}
+
+/* 🖼️ Icono interactivo dentro del botón */
+.all img {
+    width: 13px;  /* 📐 Tamaño proporcional */
+    cursor: pointer;  /* 🖱️ Interactividad activada */
+}
+
+/* 🏗️ Contenedor de tarjetas de productos */
+.card-container-best {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Acomodo en fila */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    gap: 20%;  /* 🔗 Separación entre tarjetas */
+    height: 208px;  /* 📏 Altura de las tarjetas */
+}
+
+/* 🎴 Diseño de cada tarjeta */
+.card-container-best .card {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 📂 Organización vertical */
+    width: 10%;  /* 📐 Tamaño proporcional */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    border-radius: 20px;  /* 🏵️ Bordes redondeados */
+    gap: 20px;  /* 🔗 Separación entre elementos */
+    overflow: hidden;  /* 🔲 Evitar desbordamiento */
+}
+
+/* 🏷️ Contenedor de contenido dentro de la tarjeta */
+.card-content {
+    padding: 3px;  /* 🛋️ Espaciado interno */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    display: flex;  /* 🏗️ Flexbox para estructura */
+    justify-content: center;  /* 🎯 Centrar contenido */
+    align-items: center;  /* 📌 Alineación vertical */
+    background: var(--color-4);  /* 🎨 Fondo de la tarjeta */
+    position: absolute;  /* 📍 Posicionamiento relativo */
+    margin-top: 104px;  /* 📏 Ajuste superior */
+    margin-left: 52px;  /* 📌 Ajuste a la izquierda */
+}
+
+/* 📸 Imagen de fondo para la primera tarjeta */
+.card-container-best .card:first-child {
+    background-image: url(../imgs/image1HomePage.png);  /* 🖼️ Configuración de imagen */
+    background-size: cover;  /* 📌 Ajuste para cubrir */
+    background-repeat: no-repeat;  /* 🚫 Evitar repetición */
+    background-position: center;  /* 🎯 Centrado de imagen */
+}
+
+/* 📸 Imagen de fondo para la segunda tarjeta */
+.card-container-best .card:nth-child(2) {
+    background-image: url(../imgs/image2HomePage.png);  /* 🖼️ Configuración de imagen */
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+/* 📸 Imagen de fondo para la tercera tarjeta */
+.card-container-best .card:nth-child(3) {
+    background-image: url(../imgs/image3HomePage.png);  
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+/* 📸 Imagen de fondo para la cuarta tarjeta */
+.card-container-best .card:nth-child(4) {
+    background-image: url(../imgs/image4HomePage.png);  
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+/* 🎴 Contenedor de tarjetas recomendadas */
+.card-container-recommend {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organización en fila */
+    width: 100%;  /* 📐 Expandir al ancho total */
+    height: auto;  /* 📏 Ajuste automático */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    gap: 20px;  /* 🔗 Separación entre elementos */
+}
+
+/* 🌟 Sección destacada (Hero) */
+.hero {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 📂 Organización vertical */
+    justify-content: center;  /* 🎯 Centrado del contenido */
+    width: 100%;  /* 📐 Expande a todo el ancho */
+    height: 500px;  /* 📏 Altura definida */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    padding: 10px;  /* 🛋️ Espaciado interno */
+    background-image: url(../imgs/heroImageHomePage.png);  /* 📸 Imagen de fondo */
+    background-size: cover;  /* 📌 Ajuste para cubrir */
+    background-repeat: no-repeat;  /* 🚫 Evitar repetición */
+    background-position: center;  /* 🎯 Centrado */
+    gap: 20px;  /* 🔗 Separación entre elementos */
+}
+
+/* 📝 Estilos del párrafo dentro de la sección hero */
+.hero p {
+    font-size: 2rem;  /* 🔡 Tamaño de fuente para mejor legibilidad */
+    color: var(--color-3);  /* 🎨 Color de texto definido */
+    font-family: "LeagueSpartan-Regular";  /* 🖋️ Tipografía estilizada */
+    text-align: center;  /* 🎯 Centrado del texto */
+    width: 52%;  /* 📏 Ajuste de ancho para una mejor disposición */
+}
+
+/* ✨ Estilos del título dentro de la sección hero */
+.hero h2 {
+    font-size: 3rem;  /* 🔡 Tamaño más grande para destacar */
+    color: var(--color-3);  /* 🎨 Color definido */
+    font-family: "LeagueSpartan-Bold";  /* 🖋️ Fuente en negrita */
+    width: 52%;  /* 📏 Control de ancho */
+    text-align: center;  /* 🎯 Centrado para estética */
+}
+
+/* 🎯 Contenedor de la sección de recomendaciones */
+.recommend {
+    display: flex;  /* 🏗️ Diseño flexible para alineación dinámica */
+    flex-direction: column;  /* 📂 Organización vertical */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    padding: 40px;  /* 🛋️ Espaciado interno */
+    gap: 60px;  /* 🔗 Separación entre elementos */
+}
+
+/* ✍️ Estilos del título de la sección recomendaciones */
+.recommend h2 {
+    width: 100%;  /* 📐 Ajuste de ancho para un mejor impacto visual */
+    font-size: 2rem;  /* 🔡 Tamaño adecuado */
+    color: var(--color-6);  /* 🎨 Color personalizado */
+    font-family: "LeagueSpartan-Medium";  /* 🖋️ Tipografía estilizada */
+}
+
+/* 🎴 Contenedor de tarjetas recomendadas */
+.card-container-recommend {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organización en fila */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 10px;  /* 🛋️ Espaciado interno */
+    gap: 15%;  /* 🔗 Separación entre tarjetas */
+}
+
+/* 🎴 Diseño individual de cada tarjeta */
+.card-container-recommend .card {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: column;  /* 📂 Organización vertical */
+    width: 30%;  /* 📐 Tamaño proporcional */
+    height: 200px;  /* 📏 Ajuste de altura */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    border-radius: 20px;  /* 🔵 Bordes redondeados */
+    gap: 20px;  /* 🔗 Separación interna */
+    overflow: hidden;  /* 🔲 Evitar desbordamiento */
+}
+
+/* 📸 Imagen de fondo para la primera tarjeta */
+.card-container-recommend .card:first-child {
+    background-image: url(../imgs/image6HomePage.png);  /* 🖼️ Configuración de imagen */
+    background-size: cover;  /* 📌 Ajuste para cubrir */
+    background-repeat: no-repeat;  /* 🚫 Evitar repetición */
+    background-position: center;  /* 🎯 Centrado de imagen */
+}
+
+/* 📸 Imagen de fondo para la segunda tarjeta */
+.card-container-recommend .card:nth-child(2) {
+    background-image: url(../imgs/image7HomePage.png);  
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+/* 🏗️ Contenedor de descripción dentro de la tarjeta */
+.desc1 {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organización horizontal */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 2px;  /* 🛋️ Espaciado interno */
+    gap: 20px;  /* 🔗 Separación entre elementos */
+}
+
+/* 🖼️ Ícono dentro de la descripción */
+.desc1 > img {
+    width: 20px;  /* 📐 Ajuste de tamaño */
+    cursor: pointer;  /* 🖱️ Indica interactividad */
+}
+
+/* 🏗️ Contenedor principal de la primera descripción */
+.first {
+    display: flex;  /* 🏗️ Diseño flexible */
+    flex-direction: row;  /* 🔀 Organización en fila */
+    width: 100%;  /* 📐 Expande al ancho total */
+    height: auto;  /* 📏 Ajuste dinámico */
+    padding: 2px;  /* 🛋️ Espaciado interno */
+    gap: 20px;  /* 🔗 Separación entre elementos */
+}
+
+/* 🖼️ Ícono dentro de la primera descripción */
+.first img {
+    width: 13px;  /* 📐 Ajuste proporcional */
+    cursor: pointer;  /* 🖱️ Habilita interacción */
+}
+
+/* 📝 Texto dentro de la primera descripción */
+.desc1 .first p {
+    font-size: 1.5rem;  /* 🔡 Ajuste de tamaño */
+    color: var(--color-7);  /* 🎨 Color de texto */
+    font-family: "LeagueSpartan-Regular";  /* 🖋️ Fuente personalizada */
+}
+
+/* 🏷️ Contenedor de la segunda descripción */
+.desc2 {
+    padding: 8px;  /* 🛋️ Espaciado interno */
+    border-radius: 30px;  /* 🔵 Bordes redondeados */
+    display: flex;  /* 🏗️ Flexbox para alineación */
+    justify-content: center;  /* 🎯 Centramos el contenido */
+    align-items: center;  /* 📌 Alineación vertical */
+    background: var(--color-4);  /* 🎨 Color de fondo */
+    position: absolute;  /* 📌 Posición relativa */
+    margin-top: 130px;  /* 📏 Ajuste superior */
+    margin-left: 270px;  /* 📌 Ajuste a la izquierda */
+}
+
+/* 📝 Texto dentro de la segunda descripción */
+.desc2 p {
+    font-size: 1.4rem;  /* 🔡 Ajuste de tamaño */
+    color: var(--color-7);  /* 🎨 Color personalizado */
+    font-family: "LeagueSpartan-Regular";  /* 🖋️ Tipografía estilizada */
+}
+
+/* 🔽 Estilos del pie de página */
+footer {  
+    display: flex;  /* 🏗️ Diseño flexible para adaptación en distintos dispositivos */
+    align-items: center;  /* 📌 Centrado vertical de los elementos */
+    justify-content: center;  /* 📌 Centrado horizontal */
+    width: 100%;  /* 📐 Ocupar todo el ancho disponible */
+    height: auto;  /* 📏 Altura adaptable según el contenido */
+    background: var(--color-2);  /* 🎨 Color de fondo personalizado */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para estética */
+    padding: 20px;  /* 🛋️ Espaciado interno */
+    position: absolute;  /* 📌 Fijación del pie de página */
+    position: sticky;  /* 🔝 Mantener visible al hacer scroll */
+    z-index: 10;  /* 🔢 Prioridad en la capa de visualización */
+    box-shadow: 0px 0px 25px 40px var(--color-14); /* 💡 Efecto de sombra para resaltar el pie */
+}
+
+/* 🎭 Contenedor de íconos sociales o enlaces */
+.icons {  
+    display: flex;  /* 🏗️ Diseño flexible para alineación */
+    align-items: center;  /* 📌 Centrado vertical */
+    justify-content: space-between;  /* ↔️ Distribución equitativa */
+    width: 100%;  /* 📐 Ajuste del ancho */
+    height: auto;  /* 📏 Altura adaptable */
+    gap: 20px;  /* 📌 Separación entre elementos */
+    padding: 10px 40px;  /* 🛋️ Espaciado interno */
+}
+
+/* 🔗 Estilos para los enlaces dentro de los íconos */
+.icons a {  
+    transition: all 0.3s ease-in-out;  /* 🎭 Animación suave para interactividad */
+    padding: 15px;  /* 🛋️ Espaciado interno para clic cómodo */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados para mejor apariencia */
+}
+
+/* ✨ Efecto hover sobre los enlaces de íconos */
+.icons a:hover {  
+    cursor: pointer;  /* 🖱️ Cursor en modo interactivo */
+    transform: scale(1.1) translateY(-5px) translateX(5px);  /* 🎭 Animación de escala y movimiento */
+    background-color: var(--color-19);  /* 🎨 Cambio de color para resaltar interacción */
+    border-radius: 30px;  /* 🏵️ Bordes redondeados */
+}
+
+/* 📌 Barra animada en la parte inferior del footer */
+.moving-bar {  
+    width: 20px;  /* 📏 Tamaño definido */
+    height: 10px;  /* 📏 Altura ajustada */
+    background-color: var(--color-7);  /* 🎨 Color de fondo */
+    position: absolute;  /* 📌 Posición absoluta respecto al footer */
+    bottom: 0;  /* 🎯 Ubicación debajo de los íconos */
+    transition: transform 0.4s ease;  /* 🎭 Animación suave */
+    left: 0px;  /* 🏁 Posicionamiento inicial */
+    border-radius: 5px;  /* 🏵️ Bordes redondeados */
+}
+
+#moving-bar {
+    transition: transform 0.3s ease, width 0.3s ease; /* 🎭 Transición para la posición y el ancho */
+}
+
+@media screen and (max-width: 320px) {
+    /* 📱 Media query: Ajustes para pantallas pequeñas (máx. 320px) */
+    header {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 140vh;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .input__logo a {
+        margin-right: 480px;
+    }
+    .input__logo a img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    .icons-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        width: 130%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .filters {
+        display: grid;  /* 🏗️ Activamos Grid */
+        grid-template-columns: repeat(2, 1fr);  /* 🔳 2 columnas para mejor distribución */
+        gap: 10px;  /* 🔗 Espaciado entre elementos */
+        justify-items: center;  /* 📌 Centrar los elementos en la grid */
+    }
+
+    .filters a {
+        display: flex;  /* 📌 Asegurar alineación */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 🎯 Centrar ítems */
+        text-align: center;  /* 📝 Centrado del texto */
+        width: 100px;  /* 📏 Ajustar ancho */
+    }
+
+    .filters .image {
+        margin-bottom: 5px;  /* 🔽 Espaciado entre imagen y texto */
+    }
+
+    .filters p {
+        font-size: 0.9rem;  /* 🔡 Ajuste de tamaño de fuente */
+    }
+
+    /* 🏗️ Centrar el último elemento en la última fila */
+    .filters a:last-child {
+        grid-column: span 2;  /* 📌 Ocupar todo el ancho de las 2 columnas */
+        justify-self: center;  /* 🎯 Asegurar que esté alineado en el centro */
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .description {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .description h2 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .all {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .all p {
+        font-size: 0.9rem;
+    }
+    .card-container-best {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+    }
+    .card-container-best .card {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        margin:  20px 0;  /* 🛋️ Espaciado vertical */
+    }
+    .card-container-best .card-content {
+        width: 18%;
+        height: 30px;
+        margin-top: 98px;  /* 📏 Ajuste de margen superior */
+        margin-left: 150px;  /* 📌 Ajuste de margen izquierdo */
+    }
+    .hero {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+    .hero p {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .hero h2 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .recommend h2 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .card-container-recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .card-container-recommend .card {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        margin: 20px 0;  /* 🛋️ Espaciado vertical */
+    }
+    .desc1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .desc1 img {
+        width: 15px;  /* 📐 Ajuste de tamaño */
+    }
+    .desc1 .first p {
+        font-size: 1.2rem;  /* 🔡 Ajuste de tamaño */
+    }
+    .desc2 p {
+        font-size: 1.1rem;  /* 🔡 Ajuste de tamaño */
+        width: 100%;  /* 📏 Ancho completo */
+    }
+    .desc2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .card-container-recommend .card:first-child .desc2 {
+        width: 20%;
+        padding: 5px;
+        right: 180px;
+        margin-top: 97px;
+    }
+    .card-container-recommend .card:nth-child(2) .desc2 {
+        width: 20%;
+        padding: 5px;
+        right: 50px;
+        margin-top: 97px;
+    }
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejor distribución */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
+        margin-left: -20px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 390px){
+    header {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+    header h1 {
+        font-size: 2.2rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    header p {
+        font-size: 1.8rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .input__logo a {
+        margin-right: 480px;
+    }
+    .input__logo a img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    .icons-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        width: 130%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .filters {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .filters a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100px;
+    }
+    .filters a:first-child {
+        margin-left: 40px;  /* 🛋️ Espaciado a la izquierda */
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .best-seller .description .all img {
+        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+    }
+    .best-seller .card-container-best {
+        width: 320px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        overflow-x: scroll;
+        gap: 20px;
+    }
+    .card-container-best .card{
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-best .card:first-child {
+        margin-left: 420px;
+    }
+    .card-container-best .card .card-content {
+        width: 28%;
+        height: 30px;
+        margin-top: 180px;  /* 📏 Ajuste de margen superior */
+        margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
+    }
+    .card-container-recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+    .card-container-recommend .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-recommend .card .desc1 .first {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .card-container-recommend .card .desc1 {
+        margin-top: -190px;
+    }
+    .card-container-recommend .card .desc2 {
+        margin-top: 180px;
+    }
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejor distribución */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
+        margin-left: -10px;
+    }
+}
+
+@media screen and (min-width: 391px) and (max-width: 440px) {
+    header {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    header p {
+        font-size: 2rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .input__logo a {
+        margin-right: 480px;
+    }
+    .input__logo a img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    .icons-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        width: 130%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .filters {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 90%;
+        overflow-x: scroll;
+    }
+    .filters a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100px;
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .best-seller .description .all img {
+        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+    }
+    .best-seller .card-container-best {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        overflow-x: scroll;
+        gap: 20px;
+    }
+    .card-container-best {
+        width: 100vw;
+    }
+    .card-container-best .card{
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-best .card:first-child {
+        margin-left: 320px;
+    }
+    .card-container-best .card .card-content {
+        width: 28%;
+        height: 30px;
+        margin-top: 180px;  /* 📏 Ajuste de margen superior */
+        margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
+    }
+    .card-container-recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+    .card-container-recommend .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-recommend .card .desc1 .first {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .card-container-recommend .card .desc1 {
+        margin-top: -190px;
+    }
+    .card-container-recommend .card .desc2 {
+        margin-top: 180px;
+    }
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */ 
+    }
+    /* 🎭 Ajuste del contenedor de íconos */ 
+    .icons {  
+        gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejor distribución */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
+        margin-left: -10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 884px) {
+    header {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    header p {
+        font-size: 2rem;
+        width: 99%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .input__logo a {
+        margin-right: 480px; 
+    }
+    .input__logo a img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .icons-header {
+        width: 100%;
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: center; 
+    }
+    .content {
+       width: 130%; 
+       display: flex; 
+       flex-direction: column; 
+       align-items: center; 
+       justify-content: center; 
+       padding: 10px; 
+   }
+   .filters {
+       display:flex;  
+       flex-direction :row;  
+       align-items:center;  
+       justify-content:center;  
+       gap :80px;  
+       width :100%;  
+       overflow-x :scroll;  
+   }
+   .filters a {  
+       display :flex;  
+       flex-direction :column;  
+       align-items :center;
+       justify-content : center;
+   }
+    .best-seller {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+     }
+     .best-seller .description .all img {
+          width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+     }
+     .best-seller .card-container-best {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          padding: 10px;
+          overflow-x: scroll;
+          gap: 20px;
+     }
+     .card-container-best {
+          width: 100vw;
+     }
+     .card-container-best .card{
+          min-width: 160px;
+          height: 250px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          padding: 10px;
+          border-radius: 50px;
+          background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+          background-position: center; /* Centra la imagen */
+          position: relative;
+     }
+     .card-container-best .card .card-content {
+          width: 28%;
+          height: 30px;
+          margin-top: 180px;  /* 📏 Ajuste de margen superior */
+          margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
+     }
+     .card-container-recommend {
+         width :100%;  
+         display :flex;  
+         flex-direction :row;  
+         align-items :center;  
+         justify-content :center;  
+         padding :40px;  
+    }
+    .hero {
+         gap: 60px;
+    }
+    .hero p {
+         width: 42%;
+         font-size: 1.8rem;
+         text-align: center;
+    }
+    .hero h2 {
+         width: 42%;
+         font-size: 4.5rem;
+         text-align: center;
+    }
+    .card-container-recommend .card {
+         min-width: 160px;
+         height: 250px;
+         display: flex;
+         align-items: flex-end;
+         justify-content: center;
+         padding: 10px;
+         border-radius: 50px;
+         background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+         background-position: center; /* Centra la imagen */
+         position: relative;
+    }
+    .card-container-recommend .card .desc1 .first {
+         width: 100px;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         padding: 10px;
+    }
+    .card-container-recommend .card .desc1 {
+         margin-top: -190px;
+    }
+}
+
+@media screen and (min-width: 885px) and (max-width: 1114px)  {
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .input__logo a {
+        margin-right: 480px; 
+    }
+    .input__logo a img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .icons-header {
+        width: 100%;
+        display: flex; 
+        flex-direction: row; 
+        margin-right: 50px;
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .best-seller .description .all img {
+        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+    }
+    .best-seller .card-container-best {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        overflow-x: scroll;
+        gap: 80px;
+    }
+    .card-container-best {
+        width: 100vw;
+    }
+    .card-container-best .card{
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .hero {
+        width: 90vw;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .hero p {
+        width: 46%;
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .hero h2 {
+        width: 46%;
+        font-size: 6rem;
+        text-align: center;
+    }
+    .recommend {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-right: 20px;
+    }
+    .recommend h2 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .card-container-recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+    }
+    .card-container-recommend .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-recommend .card .desc1 .first {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+   }
+   .card-container-recommend .card .desc1 {
+        margin-top: -190px;
+   }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1281px) {
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .input__logo a {
+        margin-right: 480px; 
+    }
+    .input__logo a img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .icons-header {
+        width: 100%;
+        display: flex; 
+        flex-direction: row; 
+        margin-right: 50px;
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .best-seller .description .all img {
+        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+    }
+    .best-seller .card-container-best {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        overflow-x: scroll;
+        gap: 80px;
+    }
+    .card-container-best {
+        width: 100vw;
+    }
+    .card-container-best .card{
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-best .card .card-content {
+        width: 28%;
+        height: 30px;
+        margin-top: 160px;  /* 📏 Ajuste de margen superior */
+        margin-left: 30px;  /* 📌 Ajuste de margen izquierdo */
+    }
+    .hero {
+        width: 90vw;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .recommend {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-right: 20px;
+    }
+    .recommend h2 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .card-container-recommend {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+    }
+    .card-container-recommend .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-recommend .card .desc1 .first {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+   }
+   .card-container-recommend .card .desc1 {
+        margin-top: -190px;
+   }
+}
+
+@media screen and (min-width: 162px) and (max-width: 319px) {
+    header {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 320vh;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.6rem;
+        width: 100%;
+        margin-right: 20px;
+    }
+    header p {
+        font-size: 1.4rem;
+        width: 100%;
+        margin-right: 20px;
+    }
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+        margin-top: -10px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 0.55rem;
+    }
+    .input__logo a {
+        margin-right: 460px;
+    }
+    .filters {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 90vw;
+        overflow-x: scroll;
+    }
+    .filters a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100px;
+    }
+    .filters a:first-child {
+        margin-left: 260px;  /* 🛋️ Espaciado a la izquierda */
+    }
+    .underline {
+        width: 90vw;
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        gap: 20px;
+    }
+    .best-seller .description .all img {
+        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+    }
+    .description {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .description h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .all {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .all p {
+        font-size: 0.9rem;
+    }
+    .card-container-best {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        overflow-x: scroll;
+        gap: 20px;
+    }
+    .card-container-best .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-best .card-content {
+        width: 28%;
+        height: 30px;
+        margin-top: 180px;  /* 📏 Ajuste de margen superior */
+        margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
+    }
+    .hero {
+        width: 90vw;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .hero p {
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .recommend {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .recommend h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .card-container-recommend {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+    .card-container-recommend .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-recommend .card .desc1 .first {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .card-container-recommend .card .desc1 {
+        margin-top: -190px;
+    }
+    .recommend .card-container-recommend .card .desc2 {
+        width: 38%;
+        padding: 5px;
+        right: 10px;
+        z-index: 2;
+        margin-top: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 5px;  /* 🏁 Espaciado reducido entre íconos para mejorar organización */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior para alineación visual */  
+        margin-left: -5px;
+    }
+
+    /* 🔗 Estilos para los enlaces dentro de los íconos */
+    .icons a {  
+        padding: 0px;  /* 🛋️ Espaciado interno para interacción cómoda y accesible */  
+    }
+}
