@@ -1633,3 +1633,235 @@ footer {
         margin-top: -190px;
    }
 }
+
+@media screen and (min-width: 162px) and (max-width: 319px) {
+    header {
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 320vh;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.6rem;
+        width: 100%;
+        margin-right: 20px;
+    }
+    header p {
+        font-size: 1.4rem;
+        width: 100%;
+        margin-right: 20px;
+    }
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+        margin-top: -10px;
+    }
+    .form__busqueda {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .input__logo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-bar {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 0.55rem;
+    }
+    .input__logo a {
+        margin-right: 460px;
+    }
+    .filters {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 90vw;
+        overflow-x: scroll;
+    }
+    .filters a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100px;
+    }
+    .filters a:first-child {
+        margin-left: 260px;  /* 🛋️ Espaciado a la izquierda */
+    }
+    .underline {
+        width: 90vw;
+    }
+    .best-seller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        gap: 20px;
+    }
+    .best-seller .description .all img {
+        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+    }
+    .description {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .description h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .all {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .all p {
+        font-size: 0.9rem;
+    }
+    .card-container-best {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        overflow-x: scroll;
+        gap: 20px;
+    }
+    .card-container-best .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-best .card-content {
+        width: 28%;
+        height: 30px;
+        margin-top: 180px;  /* 📏 Ajuste de margen superior */
+        margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
+    }
+    .hero {
+        width: 90vw;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .hero p {
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .recommend {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .recommend h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .card-container-recommend {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+    .card-container-recommend .card {
+        min-width: 160px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* Centra la imagen */
+        position: relative;
+    }
+    .card-container-recommend .card .desc1 .first {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .card-container-recommend .card .desc1 {
+        margin-top: -190px;
+    }
+    .recommend .card-container-recommend .card .desc2 {
+        width: 38%;
+        padding: 5px;
+        right: 10px;
+        z-index: 2;
+        margin-top: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    /* 🔽 Ajuste del pie de página */
+    footer {  
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */  
+    }
+
+    /* 🎭 Ajuste del contenedor de íconos */
+    .icons {  
+        gap: 5px;  /* 🏁 Espaciado reducido entre íconos para mejorar organización */  
+        padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior para alineación visual */  
+        margin-left: -5px;
+    }
+
+    /* 🔗 Estilos para los enlaces dentro de los íconos */
+    .icons a {  
+        padding: 0px;  /* 🛋️ Espaciado interno para interacción cómoda y accesible */  
+    }
+}
