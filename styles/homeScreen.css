@@ -1335,474 +1335,629 @@ footer {
     }
 }
 
+/*📱💻 Este media query ajusta los estilos para pantallas entre 768px y 884px de ancho.*/
 @media screen and (min-width: 768px) and (max-width: 884px) {
+    /*🧐 Perfecto para tablets y pantallas intermedias.
+   🔄 Asegúrate de probar la compatibilidad para un diseño fluido. 🚀*/
+    /* 🎭 HEADER PRINCIPAL 🎭 */
     header {
-        padding: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 80vh;
+        padding: 10px; /* 🏗️ Agrega espacio interno alrededor del header */
+        width: 100%; /* 📏 Hace que el header ocupe todo el ancho disponible */
+        display: flex; /* 🔄 Aplica el modelo de Flexbox para distribución */
+        flex-direction: column; /* ↕️ Organiza los elementos en columna */
+        align-items: center; /* 📍 Alinea los elementos al centro horizontalmente */
+        justify-content: center; /* 🏹 Centra los elementos verticalmente */
+        height: 80vh; /* 📐 Ocupa el 80% de la altura del viewport */
     }
+
+    /* 🏆 TÍTULO PRINCIPAL 🏆 */
     header h1 {
-        font-size: 2.5rem;
-        width: 99%;
-        text-align: center;
-        margin-right: 20px;
+        font-size: 2.5rem; /* 🔠 Define un tamaño de fuente grande para destacar */
+        width: 99%; /* 🔳 Usa casi todo el ancho disponible */
+        text-align: center; /* 🎯 Centra el texto horizontalmente */
+        margin-right: 20px; /* 🔄 Agrega espacio a la derecha del título */
     }
+
+    /* 💬 SUBTÍTULO / PÁRRAFO 💬 */
     header p {
-        font-size: 2rem;
-        width: 99%;
-        text-align: center;
-        margin-right: 20px;
+        font-size: 2rem; /* 🆎 Ajusta el tamaño del texto para buena legibilidad */
+        width: 99%; /* 🔳 Usa casi todo el ancho disponible */
+        text-align: center; /* 📌 Centra el texto */
+        margin-right: 20px; /* 🔄 Espaciado adicional a la derecha */
     }
+
+    /* 🔍 CONTENEDOR DEL FORMULARIO 🔍 */
     .form-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 20px;
+        width: 100%; /* 📏 Se expande al ancho completo */
+        display: flex; /* 🔄 Usa Flexbox para distribución */
+        flex-direction: column; /* ↕️ Elementos organizados en columna */
+        align-items: center; /* 📍 Centrado horizontal */
+        justify-content: center; /* 🏹 Centrado vertical */
+        padding: 5px 20px; /* 🔳 Espaciado interno */
     }
+
+    /* 🔎 FORMULARIO DE BÚSQUEDA 🔎 */
     .form__busqueda {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100%; /* 📏 Se expande a todo el ancho disponible */
+        display: flex; /* 🔄 Habilita Flexbox */
+        flex-direction: column; /* ↕️ Organización en columna */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
     }
+
+    /* 🌟 LOGO DEL FORMULARIO 🌟 */
     .input__logo {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100%; /* 📏 Ajusta el ancho al máximo */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
     }
+
+    /* 🖼️ BARRA DE BÚSQUEDA 🖼️ */
     .search-bar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 100%; /* 📏 Se expande completamente */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
     }
+
+    /* 🔗 LOGO CON ENLACE 🔗 */
     .input__logo a {
-        margin-right: 480px; 
+        margin-right: 480px; /* 📏 Espaciado derecho amplio */
     }
+
+    /* 🖼️ IMAGEN DEL LOGO 🖼️ */
     .input__logo a img {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; 
+        width: 100%; /* 📏 Tamaño completo */
+        display: flex; /* 🔄 Habilita Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
     }
+
+    /* 🎭 ICONOS DEL HEADER 🎭 */
     .icons-header {
-        width: 100%;
-        display: flex; 
-        flex-direction: row; 
-        align-items: center; 
-        justify-content: center; 
+        width: 100%; /* 📏 Expansión completa */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: row; /* ↔️ Organiza en fila */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
     }
+
+    /* 📜 CONTENIDO PRINCIPAL 📜 */
     .content {
-       width: 130%; 
-       display: flex; 
-       flex-direction: column; 
-       align-items: center; 
-       justify-content: center; 
-       padding: 10px; 
-   }
-   .filters {
-       display:flex;  
-       flex-direction :row;  
-       align-items:center;  
-       justify-content:center;  
-       gap :80px;  
-       width :100%;  
-       overflow-x :scroll;  
-   }
-   .filters a {  
-       display :flex;  
-       flex-direction :column;  
-       align-items :center;
-       justify-content : center;
-   }
-    .best-seller {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          padding: 10px;
-     }
-     .best-seller .description .all img {
-          width: 10px;  /* 📐 Ajuste de tamaño del ícono */
-     }
-     .best-seller .card-container-best {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          height: auto;
-          padding: 10px;
-          overflow-x: scroll;
-          gap: 20px;
-     }
-     .card-container-best {
-          width: 100vw;
-     }
-     .card-container-best .card{
-          min-width: 160px;
-          height: 250px;
-          display: flex;
-          align-items: flex-end;
-          justify-content: center;
-          padding: 10px;
-          border-radius: 50px;
-          background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-          background-position: center; /* Centra la imagen */
-          position: relative;
-     }
-     .card-container-best .card .card-content {
-          width: 28%;
-          height: 30px;
-          margin-top: 180px;  /* 📏 Ajuste de margen superior */
-          margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
-     }
-     .card-container-recommend {
-         width :100%;  
-         display :flex;  
-         flex-direction :row;  
-         align-items :center;  
-         justify-content :center;  
-         padding :40px;  
+        width: 130%; /* 📐 Ancho extendido */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
     }
-    .hero {
-         gap: 60px;
-    }
-    .hero p {
-         width: 42%;
-         font-size: 1.8rem;
-         text-align: center;
-    }
-    .hero h2 {
-         width: 42%;
-         font-size: 4.5rem;
-         text-align: center;
-    }
-    .card-container-recommend .card {
-         min-width: 160px;
-         height: 250px;
-         display: flex;
-         align-items: flex-end;
-         justify-content: center;
-         padding: 10px;
-         border-radius: 50px;
-         background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-         background-position: center; /* Centra la imagen */
-         position: relative;
-    }
-    .card-container-recommend .card .desc1 .first {
-         width: 100px;
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         justify-content: center;
-         padding: 10px;
-    }
-    .card-container-recommend .card .desc1 {
-         margin-top: -190px;
-    }
-}
 
-@media screen and (min-width: 885px) and (max-width: 1114px)  {
-    .form-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 20px;
+    /* 🎛️ FILTROS INTERACTIVOS 🎛️ */
+    .filters {
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: row; /* ↔️ Organización horizontal */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        gap: 80px; /* 🔳 Espaciado entre filtros */
+        width: 100%; /* 📏 Ajuste total */
+        overflow-x: scroll; /* 🔄 Permite desplazamiento horizontal */
     }
-    .form__busqueda {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .input__logo {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .search-bar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    }
-    .input__logo a {
-        margin-right: 480px; 
-    }
-    .input__logo a img {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; 
-    }
-    .icons-header {
-        width: 100%;
-        display: flex; 
-        flex-direction: row; 
-        margin-right: 50px;
-    }
-    .best-seller {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    }
-    .best-seller .description .all img {
-        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
-    }
-    .best-seller .card-container-best {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        padding: 10px;
-        overflow-x: scroll;
-        gap: 80px;
-    }
-    .card-container-best {
-        width: 100vw;
-    }
-    .card-container-best .card{
-        min-width: 160px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 10px;
-        border-radius: 50px;
-        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-        background-position: center; /* Centra la imagen */
-        position: relative;
-    }
-    .hero {
-        width: 90vw;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-        gap: 20px;
-    }
-    .hero p {
-        width: 46%;
-        font-size: 2.8rem;
-        text-align: center;
-    }
-    .hero h2 {
-        width: 46%;
-        font-size: 6rem;
-        text-align: center;
-    }
-    .recommend {
-        width: 70vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        margin-right: 20px;
-    }
-    .recommend h2 {
-        width: 100%;
-        font-size: 2.5rem;
-    }
-    .card-container-recommend {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 40px;
-    }
-    .card-container-recommend .card {
-        min-width: 160px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 10px;
-        border-radius: 50px;
-        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-        background-position: center; /* Centra la imagen */
-        position: relative;
-    }
-    .card-container-recommend .card .desc1 .first {
-        width: 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-   }
-   .card-container-recommend .card .desc1 {
-        margin-top: -190px;
-   }
-}
 
-@media screen and (min-width: 1280px) and (max-width: 1281px) {
-    .form-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 20px;
+    /* 🎯 ELEMENTOS DEL FILTRO 🎯 */
+    .filters a {
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
     }
-    .form__busqueda {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .input__logo {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .search-bar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    }
-    .input__logo a {
-        margin-right: 480px; 
-    }
-    .input__logo a img {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; 
-    }
-    .icons-header {
-        width: 100%;
-        display: flex; 
-        flex-direction: row; 
-        margin-right: 50px;
-    }
+
+    /* 🔥 SECCIÓN DE BEST SELLER 🔥 */
     .best-seller {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 100%; /* 📏 Ajuste total */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
     }
+    /* 🛍️ IMAGEN DESCRIPTIVA EN BEST SELLER 🛍️ */
     .best-seller .description .all img {
-        width: 10px;  /* 📐 Ajuste de tamaño del ícono */
+        width: 10px; /* 📐 Ajuste de tamaño del ícono */
     }
+
+    /* 🏆 CONTENEDOR DE TARJETAS DE BEST SELLER 🏆 */
     .best-seller .card-container-best {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        padding: 10px;
-        overflow-x: scroll;
-        gap: 80px;
+        display: flex; /* 🔄 Usa Flexbox para estructura adaptable */
+        flex-direction: row; /* ↔️ Elementos organizados en fila */
+        align-items: center; /* 📍 Centrado horizontal */
+        justify-content: center; /* 🏹 Centrado vertical */
+        height: auto; /* 📐 Ajuste dinámico según contenido */
+        padding: 10px; /* 🔳 Espaciado interno */
+        overflow-x: scroll; /* 🔄 Permite desplazamiento horizontal */
+        gap: 20px; /* 📏 Espaciado entre tarjetas */
     }
+
+    /* 🖼️ AJUSTE DE CONTENEDOR PARA TARJETAS 🖼️ */
     .card-container-best {
-        width: 100vw;
+        width: 100vw; /* 📏 Expande el ancho al 100% del viewport */
     }
-    .card-container-best .card{
-        min-width: 160px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 10px;
-        border-radius: 50px;
-        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-        background-position: center; /* Centra la imagen */
-        position: relative;
+
+    /* 🎨 ESTILO DE LAS TARJETAS 🎨 */
+    .card-container-best .card {
+        min-width: 160px; /* 📐 Define el ancho mínimo */
+        height: 250px; /* 📏 Altura fija */
+        display: flex; /* 🔄 Usa Flexbox */
+        align-items: flex-end; /* 📍 Alinea contenido en la parte inferior */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+        border-radius: 50px; /* 🔵 Bordes redondeados */
+        background-size: cover; /* 🖼️ Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* 🎯 Centra la imagen */
+        position: relative; /* 📌 Posicionamiento relativo */
     }
+
+    /* 📜 CONTENIDO DENTRO DE LAS TARJETAS 📜 */
     .card-container-best .card .card-content {
-        width: 28%;
-        height: 30px;
-        margin-top: 160px;  /* 📏 Ajuste de margen superior */
-        margin-left: 30px;  /* 📌 Ajuste de margen izquierdo */
+        width: 28%; /* 📏 Ajusta el ancho del contenido */
+        height: 30px; /* 📐 Altura específica */
+        margin-top: 180px; /* 📌 Espaciado superior */
+        margin-left: 19px; /* 🔄 Espaciado izquierdo */
     }
-    .hero {
-        width: 90vw;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-        gap: 20px;
-    }
-    .recommend {
-        width: 70vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        margin-right: 20px;
-    }
-    .recommend h2 {
-        width: 100%;
-        font-size: 2.5rem;
-    }
+
+    /* 🏗️ CONTENEDOR DE TARJETAS RECOMENDADAS 🏗️ */
     .card-container-recommend {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 40px;
+        width: 100%; /* 📏 Ocupa todo el ancho */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: row; /* ↔️ Organización en fila */
+        align-items: center; /* 📍 Centrado horizontal */
+        justify-content: center; /* 🏹 Centrado vertical */
+        padding: 40px; /* 🔳 Espaciado interno */
     }
+
+    /* 🦸 SECCIÓN HERO 🦸 */
+    .hero {
+        gap: 60px; /* 📏 Espaciado entre elementos */
+    }
+
+    /* 💬 TEXTO EN HERO 💬 */
+    .hero p {
+        width: 42%; /* 📏 Ajuste de ancho */
+        font-size: 1.8rem; /* 🔤 Tamaño del texto */
+        text-align: center; /* 🎯 Centrado del texto */
+    }
+
+    /* 🔥 TÍTULO EN HERO 🔥 */
+    .hero h2 {
+        width: 42%; /* 📏 Ajuste de ancho */
+        font-size: 4.5rem; /* 🔠 Tamaño del título */
+        text-align: center; /* 📍 Centrado */
+    }
+
+    /* 🎨 ESTILO DE LAS TARJETAS RECOMENDADAS 🎨 */
     .card-container-recommend .card {
-        min-width: 160px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 10px;
-        border-radius: 50px;
-        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-        background-position: center; /* Centra la imagen */
-        position: relative;
+        min-width: 160px; /* 📐 Define el ancho mínimo */
+        height: 250px; /* 📏 Altura fija */
+        display: flex; /* 🔄 Usa Flexbox */
+        align-items: flex-end; /* 📍 Alinea contenido en la parte inferior */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+        border-radius: 50px; /* 🔵 Bordes redondeados */
+        background-size: cover; /* 🖼️ Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* 🎯 Centra la imagen */
+        position: relative; /* 📌 Posicionamiento relativo */
     }
+
+    /* 📜 CONTENIDO DE LAS TARJETAS RECOMENDADAS 📜 */
     .card-container-recommend .card .desc1 .first {
-        width: 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-   }
-   .card-container-recommend .card .desc1 {
-        margin-top: -190px;
-   }
+        width: 100px; /* 📏 Ajuste de ancho */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: row; /* ↔️ Organización horizontal */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+    }
+
+    /* 🔄 AJUSTE DE MÁRGENES PARA CONTENIDO 🔄 */
+    .card-container-recommend .card .desc1 {
+        margin-top: -190px; /* 📌 Ajuste de margen superior */
+    }
+}
+
+/* 📱💻 Este media query ajusta los estilos para pantallas entre 885px y 1114px de ancho. 
+   🔹 Optimizado para laptops pequeñas y tablets grandes. */
+@media screen and (min-width: 885px) and (max-width: 1114px)  {
+    /* 🎯 MEDIA QUERY PARA PANTALLAS INTERMEDIAS 📏 
+   🔹 Ajusta estilos para dispositivos entre 885px y 1114px de ancho. 
+   🔹 Ideal para laptops pequeñas y tablets grandes. */
+
+    /* 🔍 CONTENEDOR DEL FORMULARIO 🔍 
+   📌 Espacio para estructurar los elementos de búsqueda */
+    .form-container {
+        width: 100%; /* 📏 Expande al máximo disponible */
+        display: flex; /* 🔄 Usa Flexbox para distribución eficiente */
+        flex-direction: column; /* ↕️ Organiza los elementos en columna */
+        align-items: center; /* 🎯 Centra los elementos horizontalmente */
+        justify-content: center; /* 🏹 Centrado vertical */
+        padding: 5px 20px; /* 🔳 Ajuste del espaciado interno */
+    }
+
+    /* 🔎 FORMULARIO DE BÚSQUEDA 🔎 
+    🔹 Contenedor para el input y botones de búsqueda */
+    .form__busqueda {
+        width: 100%; /* 📏 Ajuste de ancho completo */
+        display: flex; /* 🔄 Diseño flexible */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 🎯 Alineación centrada */
+        justify-content: center; /* 🏹 Centrado vertical */
+    }
+
+    /* 🌟 LOGO INTERACTIVO 🌟 
+    🔹 Contenedor del logo dentro del formulario */
+    .input__logo {
+        width: 100%; /* 📏 Expansión completa */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: column; /* ↕️ Elementos en columna */
+        align-items: center; /* 🎯 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+    }
+
+    /* 🔍 BARRA DE BÚSQUEDA 🔍 
+    📌 Elemento para introducir consultas de búsqueda */
+    .search-bar {
+        width: 100%; /* 📏 Expansión total */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 🎯 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno optimizado */
+    }
+
+    /* 🔗 ENLACE DEL LOGO 🔗 */
+    .input__logo a {
+        margin-right: 480px; /* 📏 Ajuste de espaciado derecho */
+    }
+
+    /* 🖼️ IMAGEN DEL LOGO 🖼️ */
+    .input__logo a img {
+        width: 100%; /* 📏 Expande al tamaño máximo */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 🎯 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+    }
+
+    /* 🎭 ICONOS DEL HEADER 🎭 
+    🔹 Ajuste para elementos interactivos del encabezado */
+    .icons-header {
+        width: 100%; /* 📏 Expansión completa */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: row; /* ↔️ Organización horizontal */
+        margin-right: 50px; /* 🔳 Ajuste de margen derecho */
+    }
+
+    /* 🔥 SECCIÓN DE BEST SELLER 🔥 
+    📌 Contenedor de productos destacados */
+    .best-seller {
+        width: 100%; /* 📏 Ajuste total */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 🎯 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+    }
+    /* 🖼️ AJUSTE DE IMAGEN EN BEST SELLER 🖼️ */
+    .best-seller .description .all img {
+        width: 10px; /* 📐 Ajuste de tamaño del ícono */
+    }
+
+    /* 🏆 CONTENEDOR DE TARJETAS DE BEST SELLER 🏆 */
+    .best-seller .card-container-best {
+        display: flex; /* 🔄 Usa Flexbox para una distribución adaptable */
+        flex-direction: row; /* ↔️ Elementos organizados en fila */
+        align-items: center; /* 📍 Alineación centrada */
+        justify-content: center; /* 🏹 Distribución uniforme */
+        height: auto; /* 📐 Ajuste dinámico según contenido */
+        padding: 10px; /* 🔳 Espaciado interno */
+        overflow-x: scroll; /* 🔄 Permite desplazamiento horizontal */
+        gap: 80px; /* 📏 Espaciado amplio entre tarjetas */
+    }
+
+    /* 🖼️ AJUSTE DEL CONTENEDOR DE TARJETAS 🖼️ */
+    .card-container-best {
+        width: 100vw; /* 📏 Ocupa todo el ancho del viewport */
+    }
+
+    /* 🎨 ESTILO DE LAS TARJETAS 🎨 */
+    .card-container-best .card {
+        min-width: 160px; /* 📐 Define el ancho mínimo */
+        height: 250px; /* 📏 Ajuste de altura */
+        display: flex; /* 🔄 Usa Flexbox */
+        align-items: flex-end; /* 📍 Alinea el contenido en la parte inferior */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+        border-radius: 50px; /* 🔵 Bordes redondeados */
+        background-size: cover; /* 🖼️ Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* 🎯 Centra la imagen */
+        position: relative; /* 📌 Posicionamiento relativo */
+    }
+
+    /* 🦸 SECCIÓN HERO 🦸 */
+    .hero {
+        width: 90vw; /* 📏 Ajuste de ancho */
+        height: 400px; /* 📐 Ajuste de altura */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        background-size: cover; /* 🖼️ Ajuste para cubrir todo */
+        background-position: center; /* 🎯 Centra la imagen */
+        padding: 20px; /* 🔳 Espaciado interno */
+        gap: 20px; /* 📏 Separación entre elementos */
+    }
+
+    /* 💬 TEXTO EN HERO 💬 */
+    .hero p {
+        width: 46%; /* 📏 Ajuste de ancho */
+        font-size: 2.8rem; /* 🔤 Tamaño del texto */
+        text-align: center; /* 🎯 Centrado */
+    }
+
+    /* 🔥 TÍTULO EN HERO 🔥 */
+    .hero h2 {
+        width: 46%; /* 📏 Ajuste de ancho */
+        font-size: 6rem; /* 🔠 Tamaño del título */
+        text-align: center; /* 🎯 Centrado */
+    }
+
+    /* ⭐ SECCIÓN DE RECOMENDACIONES ⭐ */
+    .recommend {
+        width: 70vw; /* 📏 Ajuste de ancho */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+        margin-right: 20px; /* 🔄 Ajuste de margen derecho */
+    }
+
+    /* 🏆 TÍTULO DE RECOMENDACIONES 🏆 */
+    .recommend h2 {
+        width: 100%; /* 📏 Ajuste total */
+        font-size: 2.5rem; /* 🔠 Tamaño del título */
+    }
+
+    /* 🔄 CONTENEDOR DE TARJETAS RECOMENDADAS 🔄 */
+    .card-container-recommend {
+        width: 100%; /* 📏 Expande al ancho completo */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: row; /* ↔️ Organización horizontal */
+        padding: 40px; /* 🔳 Espaciado interno */
+    }
+
+    /* 🎨 ESTILO DE LAS TARJETAS RECOMENDADAS 🎨 */
+    .card-container-recommend .card {
+        min-width: 160px; /* 📐 Define el ancho mínimo */
+        height: 250px; /* 📏 Ajuste de altura */
+        display: flex; /* 🔄 Usa Flexbox */
+        align-items: flex-end; /* 📍 Alinea contenido en la parte inferior */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+        border-radius: 50px; /* 🔵 Bordes redondeados */
+        background-size: cover; /* 🖼️ Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* 🎯 Centra la imagen */
+        position: relative; /* 📌 Posicionamiento relativo */
+    }
+
+    /* 📜 CONTENIDO DE LAS TARJETAS RECOMENDADAS 📜 */
+    .card-container-recommend .card .desc1 .first {
+        width: 100px; /* 📏 Ajuste de ancho */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: row; /* ↔️ Organización horizontal */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+    }
+
+    /* 🔄 AJUSTE DE MÁRGENES PARA CONTENIDO 🔄 */
+    .card-container-recommend .card .desc1 {
+        margin-top: -190px; /* 📌 Ajuste de margen superior */
+    }
+}
+
+/* 📱💻 Este media query ajusta los estilos para pantallas entre 1280px y 1281px de ancho. 
+   🔹 Optimizado para monitores estándar y laptops grandes. */
+@media screen and (min-width: 1280px) and (max-width: 1281px) {
+    /* 🎯 MEDIA QUERY PARA PANTALLAS AMPLIAS 📏 
+   🔹 Ajusta estilos para dispositivos entre 1280px y 1281px de ancho. 
+   🔹 Ideal para escritorios y pantallas de alta resolución. */
+    /* 🔍 CONTENEDOR DEL FORMULARIO 🔍  
+   📌 Sección que encapsula los elementos de búsqueda */
+    .form-container {
+        width: 100%; /* 📏 Expande al ancho completo */
+        display: flex; /* 🔄 Activa Flexbox para distribución óptima */
+        flex-direction: column; /* ↕️ Organización en columna */
+        align-items: center; /* 🎯 Centrado horizontal */
+        justify-content: center; /* 🏹 Centrado vertical */
+        padding: 5px 20px; /* 🔳 Espaciado interno */
+    }
+
+    /* 🔎 FORMULARIO DE BÚSQUEDA 🔎  
+    📌 Sección que agrupa los campos de búsqueda */
+    .form__busqueda {
+        width: 100%; /* 📏 Ajuste de ancho completo */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 🎯 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+    }
+
+    /* 🌟 LOGO INTERACTIVO 🌟  
+    📌 Contenedor del logo dentro del formulario */
+    .input__logo {
+        width: 100%; /* 📏 Expansión completa */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: column; /* ↕️ Elementos en columna */
+        align-items: center; /* 🎯 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+    }
+
+    /* 🔍 BARRA DE BÚSQUEDA 🔍  
+    📌 Elemento donde los usuarios ingresan texto de búsqueda */
+    .search-bar {
+        width: 100%; /* 📏 Expansión total */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 🎯 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno optimizado */
+    }
+
+    /* 🔗 ENLACE DEL LOGO 🔗 */
+    .input__logo a {
+        margin-right: 480px; /* 📏 Espaciado amplio a la derecha */
+    }
+
+    /* 🖼️ IMAGEN DEL LOGO 🖼️  
+    📌 Configuración de estilo para la imagen del logo */
+    .input__logo a img {
+        width: 100%; /* 📏 Expansión total */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 🎯 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+    }
+
+    /* 🎭 ICONOS DEL HEADER 🎭  
+    📌 Sección con elementos interactivos del encabezado */
+    .icons-header {
+        width: 100%; /* 📏 Expansión completa */
+        display: flex; /* 🔄 Activa Flexbox */
+        flex-direction: row; /* ↔️ Organización horizontal */
+        margin-right: 50px; /* 🔳 Ajuste de margen derecho */
+    }
+
+    /* 🔥 SECCIÓN DE BEST SELLER 🔥  
+    📌 Contenedor de los productos más vendidos */
+    .best-seller {
+        width: 100%; /* 📏 Ajuste total */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 🎯 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+    }
+    /* 🖼️ AJUSTE DE IMAGEN EN BEST SELLER 🖼️ */
+    .best-seller .description .all img {
+        width: 10px; /* 📐 Ajuste de tamaño del ícono */
+    }
+
+    /* 🏆 CONTENEDOR DE TARJETAS DE BEST SELLER 🏆 */
+    .best-seller .card-container-best {
+        display: flex; /* 🔄 Usa Flexbox para una distribución adaptable */
+        flex-direction: row; /* ↔️ Elementos organizados en fila */
+        align-items: center; /* 📍 Alineación centrada */
+        justify-content: center; /* 🏹 Distribución uniforme */
+        height: auto; /* 📐 Ajuste dinámico según contenido */
+        padding: 10px; /* 🔳 Espaciado interno */
+        overflow-x: scroll; /* 🔄 Permite desplazamiento horizontal */
+        gap: 80px; /* 📏 Espaciado amplio entre tarjetas */
+    }
+
+    /* 🖼️ AJUSTE DEL CONTENEDOR DE TARJETAS 🖼️ */
+    .card-container-best {
+        width: 100vw; /* 📏 Ocupa todo el ancho del viewport */
+    }
+
+    /* 🎨 ESTILO DE LAS TARJETAS 🎨 */
+    .card-container-best .card {
+        min-width: 160px; /* 📐 Define el ancho mínimo */
+        height: 250px; /* 📏 Ajuste de altura */
+        display: flex; /* 🔄 Usa Flexbox */
+        align-items: flex-end; /* 📍 Alinea el contenido en la parte inferior */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+        border-radius: 50px; /* 🔵 Bordes redondeados */
+        background-size: cover; /* 🖼️ Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* 🎯 Centra la imagen */
+        position: relative; /* 📌 Posicionamiento relativo */
+    }
+
+    /* 📜 CONTENIDO DENTRO DE LAS TARJETAS 📜 */
+    .card-container-best .card .card-content {
+        width: 28%; /* 📏 Ajuste de ancho del contenido */
+        height: 30px; /* 📐 Altura específica */
+        margin-top: 160px; /* 📌 Espaciado superior */
+        margin-left: 30px; /* 🔄 Espaciado izquierdo */
+    }
+
+    /* 🦸 SECCIÓN HERO 🦸 */
+    .hero {
+        width: 90vw; /* 📏 Ajuste de ancho */
+        height: 400px; /* 📐 Ajuste de altura */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        background-size: cover; /* 🖼️ Ajuste para cubrir todo */
+        background-position: center; /* 🎯 Centra la imagen */
+        padding: 20px; /* 🔳 Espaciado interno */
+        gap: 20px; /* 📏 Separación entre elementos */
+    }
+
+    /* ⭐ SECCIÓN DE RECOMENDACIONES ⭐ */
+    .recommend {
+        width: 70vw; /* 📏 Ajuste de ancho */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: column; /* ↕️ Organización vertical */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+        margin-right: 20px; /* 🔄 Ajuste de margen derecho */
+    }
+
+    /* 🏆 TÍTULO DE RECOMENDACIONES 🏆 */
+    .recommend h2 {
+        width: 100%; /* 📏 Ajuste total */
+        font-size: 2.5rem; /* 🔠 Tamaño del título */
+    }
+
+    /* 🔄 CONTENEDOR DE TARJETAS RECOMENDADAS 🔄 */
+    .card-container-recommend {
+        width: 100%; /* 📏 Expande al ancho completo */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: row; /* ↔️ Organización horizontal */
+        padding: 40px; /* 🔳 Espaciado interno */
+    }
+
+    /* 🎨 ESTILO DE LAS TARJETAS RECOMENDADAS 🎨 */
+    .card-container-recommend .card {
+        min-width: 160px; /* 📐 Define el ancho mínimo */
+        height: 250px; /* 📏 Ajuste de altura */
+        display: flex; /* 🔄 Usa Flexbox */
+        align-items: flex-end; /* 📍 Alinea contenido en la parte inferior */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+        border-radius: 50px; /* 🔵 Bordes redondeados */
+        background-size: cover; /* 🖼️ Ajusta la imagen para cubrir toda la tarjeta */
+        background-position: center; /* 🎯 Centra la imagen */
+        position: relative; /* 📌 Posicionamiento relativo */
+    }
+
+    /* 📜 CONTENIDO DE LAS TARJETAS RECOMENDADAS 📜 */
+    .card-container-recommend .card .desc1 .first {
+        width: 100px; /* 📏 Ajuste de ancho */
+        display: flex; /* 🔄 Usa Flexbox */
+        flex-direction: row; /* ↔️ Organización horizontal */
+        align-items: center; /* 📍 Centrado */
+        justify-content: center; /* 🏹 Centrado */
+        padding: 10px; /* 🔳 Espaciado interno */
+    }
+
+    /* 🔄 AJUSTE DE MÁRGENES PARA CONTENIDO 🔄 */
+    .card-container-recommend .card .desc1 {
+        margin-top: -190px; /* 📌 Ajuste de margen superior */
+    }
 }
 
 @media screen and (min-width: 162px) and (max-width: 319px) {
