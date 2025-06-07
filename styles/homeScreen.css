@@ -550,6 +550,7 @@ footer {
 
 /* 📱 Media query: Ajustes para pantallas pequeñas (máx. 320px) */
 @media screen and (max-width: 320px) {
+    /* 🔄 Adaptamos los estilos para dispositivos compactos */
     /* ✨ Estilos del encabezado */
     header {
         padding: 5px;  /* 🛋️ Espaciado interno para evitar que los elementos queden pegados */
@@ -859,377 +860,478 @@ footer {
     }
 }
 
+/* 📱 Media query: Ajustes para pantallas medianas (321px - 390px) */
 @media screen and (min-width: 321px) and (max-width: 390px){
+    /* 🔄 Adaptamos los estilos para dispositivos compactos */
+    /* ✨ Estilos del encabezado principal */
     header {
-        padding: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 80vh;
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar la apariencia */
+        width: 100%;  /* 📐 Ajuste para ocupar todo el ancho disponible */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        height: 80vh;  /* 📏 Ajuste de altura proporcional */
     }
+
+    /* ✍️ Estilos del título dentro del encabezado */
     header h1 {
-        font-size: 2.2rem;
-        width: 99%;
-        text-align: center;
-        margin-right: 20px;
+        font-size: 2.2rem;  /* 🔡 Tamaño grande para destacarlo */
+        width: 99%;  /* 📐 Expande casi al ancho completo */
+        text-align: center;  /* 🎯 Centramos el texto */
+        margin-right: 20px;  /* 🛋️ Espaciado lateral */
     }
+
+    /* 📝 Estilos del subtítulo dentro del encabezado */
     header p {
-        font-size: 1.8rem;
-        width: 99%;
-        text-align: center;
-        margin-right: 20px;
+        font-size: 1.8rem;  /* 🔡 Ajuste de tamaño de fuente */
+        width: 99%;  /* 📐 Expande casi al ancho total */
+        text-align: center;  /* 🎯 Centrado del texto */
+        margin-right: 20px;  /* 🛋️ Espaciado lateral */
     }
+
+    /* 🔍 Contenedor del formulario de búsqueda */
     .form-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 20px;
+        width: 100%;  /* 📐 Expande al ancho completo */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        padding: 5px 20px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 🔎 Estilos del formulario de búsqueda */
     .form__busqueda {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100%;  /* 📏 Expande al ancho total */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización en columna */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
     }
+
+    /* 🖼️ Contenedor del campo de búsqueda */
     .input__logo {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100%;  /* 📐 Expande al ancho disponible */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
     }
+
+    /* ⌨️ Estilos del campo de búsqueda */
     .search-bar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 100%;  /* 📐 Expande al ancho total */
+        display: flex;  /* 🏗️ Flexbox para estructura adaptable */
+        flex-direction: column;  /* 📂 Organización en columna */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        padding: 10px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 🎯 Ajuste del ícono dentro del campo de búsqueda */
     .input__logo a {
-        margin-right: 480px;
+        margin-right: 480px;  /* 📌 Corrección de posición para evitar desajustes */
     }
+
+    /* 🖼️ Ajuste del ícono de búsqueda */
     .input__logo a img {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
+        width: 100%;  /* 📐 Expande al ancho disponible */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los íconos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        z-index: 2;  /* 🏆 Elevamos el ícono sobre otros elementos */
     }
+
+    /* 🏗️ Contenedor de íconos del encabezado */
     .icons-header {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        width: 100%;  /* 📐 Expande al ancho completo */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los íconos */
+        justify-content: center;  /* 🎯 Distribución equitativa */
     }
+    /* 📌 Contenedor principal del contenido */
     .content {
-        width: 130%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 130%;  /* 📐 Expande ligeramente para una mejor disposición */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos buena alineación */
+        padding: 10px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 🔍 Contenedor de filtros de búsqueda */
     .filters {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        width: 100%;
-        overflow-x: scroll;
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Distribución equitativa */
+        gap: 10px;  /* 🔗 Espaciado entre filtros */
+        width: 100%;  /* 📐 Expande al ancho total */
+        overflow-x: scroll;  /* 📜 Activamos desplazamiento horizontal si es necesario */
     }
+
+    /* ✨ Estilos individuales de cada filtro */
     .filters a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100px;
+        display: flex;  /* 📌 Asegurar alineación */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 🎯 Centrar ítems */
+        justify-content: center;  /* 🎯 Asegurar correcta disposición */
+        text-align: center;  /* 📝 Centrado del texto */
+        width: 100px;  /* 📏 Ajustar ancho */
     }
+
+    /* 🔽 Espaciado especial para el primer filtro */
     .filters a:first-child {
         margin-left: 40px;  /* 🛋️ Espaciado a la izquierda */
     }
+
+    /* 🏆 Contenedor de los productos más vendidos */
     .best-seller {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 100%;  /* 📐 Expande al ancho completo */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Distribución equitativa */
+        padding: 10px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 🎯 Ajuste de íconos dentro de "Ver Todo" */
     .best-seller .description .all img {
         width: 10px;  /* 📐 Ajuste de tamaño del ícono */
     }
+
+    /* 🎴 Contenedor de tarjetas de los más vendidos */
     .best-seller .card-container-best {
-        width: 320px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        padding: 10px;
-        overflow-x: scroll;
-        gap: 20px;
+        width: 320px;  /* 📐 Definir tamaño del contenedor */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Distribución equitativa */
+        height: auto;  /* 📏 Ajuste dinámico */
+        padding: 10px;  /* 🛋️ Espaciado interno */
+        overflow-x: scroll;  /* 📜 Activamos desplazamiento horizontal */
+        gap: 20px;  /* 🔗 Espaciado entre tarjetas */
     }
-    .card-container-best .card{
-        min-width: 160px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 10px;
-        border-radius: 50px;
-        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-        background-position: center; /* Centra la imagen */
-        position: relative;
+
+    /* 🎴 Diseño individual de cada tarjeta */
+    .card-container-best .card {
+        min-width: 160px;  /* 📐 Tamaño mínimo de tarjeta */
+        height: 250px;  /* 📏 Altura establecida */
+        display: flex;  /* 🏗️ Diseño flexible */
+        align-items: flex-end;  /* 📌 Alineamos el contenido en la parte inferior */
+        justify-content: center;  /* 🎯 Centramos el contenido */
+        padding: 10px;  /* 🛋️ Espaciado interno */
+        border-radius: 50px;  /* 🔵 Bordes redondeados */
+        background-size: cover;  /* 🖼️ Ajusta la imagen para cubrir la tarjeta */
+        background-position: center;  /* 🎯 Centra la imagen */
+        position: relative;  /* 📌 Posicionamiento relativo */
     }
+
+    /* 🎴 Ajuste especial para la primera tarjeta */
     .card-container-best .card:first-child {
-        margin-left: 420px;
+        margin-left: 420px;  /* 📌 Desplazamiento especial para alineación */
     }
+
+    /* 📌 Ajuste del contenido dentro de la tarjeta */
     .card-container-best .card .card-content {
-        width: 28%;
-        height: 30px;
-        margin-top: 180px;  /* 📏 Ajuste de margen superior */
-        margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
+        width: 28%;  /* 📐 Ajuste proporcional */
+        height: 30px;  /* 📏 Definición de altura */
+        margin-top: 180px;  /* 📏 Ajuste superior */
+        margin-left: 19px;  /* 📌 Ajuste de posición lateral */
     }
+    /* 🎴 Contenedor de tarjetas recomendadas */
     .card-container-recommend {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 40px;
+        width: 100%;  /* 📐 Expande al ancho completo */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        padding: 40px;  /* 🛋️ Espaciado interno amplio */
     }
+
+    /* 🎴 Diseño individual de cada tarjeta */
     .card-container-recommend .card {
-        min-width: 160px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 10px;
-        border-radius: 50px;
-        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-        background-position: center; /* Centra la imagen */
-        position: relative;
+        min-width: 160px;  /* 📐 Tamaño mínimo de tarjeta */
+        height: 250px;  /* 📏 Ajuste de altura */
+        display: flex;  /* 🏗️ Diseño flexible */
+        align-items: flex-end;  /* 📌 Alineamos el contenido en la parte inferior */
+        justify-content: center;  /* 🎯 Centramos el contenido */
+        padding: 10px;  /* 🛋️ Espaciado interno */
+        border-radius: 50px;  /* 🔵 Bordes redondeados */
+        background-size: cover;  /* 🖼️ Ajusta la imagen para cubrir la tarjeta */
+        background-position: center;  /* 🎯 Centra la imagen */
+        position: relative;  /* 📌 Posicionamiento relativo */
     }
+
+    /* 🏗️ Contenedor de la primera descripción dentro de la tarjeta */
     .card-container-recommend .card .desc1 .first {
-        width: 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 100px;  /* 📐 Ajuste del tamaño */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        padding: 10px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 📌 Ajuste de posición de la primera descripción dentro de la tarjeta */
     .card-container-recommend .card .desc1 {
-        margin-top: -190px;
+        margin-top: -190px;  /* 📏 Ajuste superior */
     }
+
+    /* 📌 Ajuste de posición de la segunda descripción dentro de la tarjeta */
     .card-container-recommend .card .desc2 {
-        margin-top: 180px;
+        margin-top: 180px;  /* 📏 Ajuste superior */
     }
+
     /* 🔽 Ajuste del pie de página */
     footer {  
         padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */  
     }
 
-    /* 🎭 Ajuste del contenedor de íconos */
+    /* 🎭 Ajuste del contenedor de íconos en el footer */
     .icons {  
         gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejor distribución */  
         padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
-        margin-left: -10px;
+        margin-left: -10px;  /* 📌 Ajuste lateral */
     }
 }
 
+/* 📱 Media query: Ajustes para pantallas medianas (391px - 440px) */
 @media screen and (min-width: 391px) and (max-width: 440px) {
+    /* 🔄 Adaptamos los estilos para dispositivos que requieren un equilibrio entre espacio visual y accesibilidad */
+    /* ✨ Estilos del encabezado principal */
     header {
-        padding: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 80vh;
+        padding: 10px;  /* 🛋️ Espaciado interno para mejorar la estructura */
+        width: 100%;  /* 📐 Asegurar que ocupe todo el ancho disponible */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centrado vertical de los elementos */
+        justify-content: center;  /* 🎯 Alineación centrada */
+        height: 80vh;  /* 📏 Ajuste proporcional de altura */
     }
+
+    /* ✍️ Estilos del título dentro del encabezado */
     header h1 {
-        font-size: 2.5rem;
-        width: 99%;
-        text-align: center;
-        margin-right: 20px;
+        font-size: 2.5rem;  /* 🔡 Tamaño grande para mejorar visibilidad */
+        width: 99%;  /* 📐 Ajuste de ancho */
+        text-align: center;  /* 🎯 Centrar texto */
+        margin-right: 20px;  /* 🛋️ Espaciado lateral */
     }
+
+    /* 📝 Estilos del subtítulo dentro del encabezado */
     header p {
-        font-size: 2rem;
-        width: 99%;
-        text-align: center;
-        margin-right: 20px;
+        font-size: 2rem;  /* 🔡 Ajuste de tamaño */
+        width: 99%;  /* 📐 Expande al ancho completo */
+        text-align: center;  /* 🎯 Centrado del texto */
+        margin-right: 20px;  /* 🛋️ Espaciado lateral */
     }
+
+    /* 🔍 Contenedor del formulario de búsqueda */
     .form-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 20px;
+        width: 100%;  /* 📐 Expande al ancho completo */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        padding: 5px 20px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 🔎 Estilos del formulario de búsqueda */
     .form__busqueda {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100%;  /* 📏 Expande al ancho total */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización en columna */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
     }
+
+    /* 🖼️ Contenedor del campo de búsqueda */
     .input__logo {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 100%;  /* 📐 Expande al ancho disponible */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
     }
+
+    /* ⌨️ Estilos del campo de búsqueda */
     .search-bar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 100%;  /* 📐 Expande al ancho total */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        padding: 10px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 🎯 Ajuste del ícono dentro del campo de búsqueda */
     .input__logo a {
-        margin-right: 480px;
+        margin-right: 480px;  /* 📌 Corrección de posición para evitar desajustes */
     }
+
+    /* 🖼️ Ajuste del ícono de búsqueda */
     .input__logo a img {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
+        width: 100%;  /* 📐 Expande al ancho disponible */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los íconos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        z-index: 2;  /* 🏆 Elevamos el ícono sobre otros elementos */
     }
+
+    /* 🏗️ Contenedor de íconos del encabezado */
     .icons-header {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        width: 100%;  /* 📐 Expande al ancho completo */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los íconos */
+        justify-content: center;  /* 🎯 Distribución equitativa */
     }
+    /* 🌍 Contenedor principal del contenido */
     .content {
-        width: 130%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 130%;  /* 📐 Expande ligeramente para una mejor disposición */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos buena alineación */
+        padding: 10px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 🔍 Contenedor de filtros de búsqueda */
     .filters {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        width: 90%;
-        overflow-x: scroll;
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Distribución equitativa */
+        gap: 10px;  /* 🔗 Espaciado entre filtros */
+        width: 90%;  /* 📐 Expande para mantener proporción adecuada */
+        overflow-x: scroll;  /* 📜 Activamos desplazamiento horizontal si es necesario */
     }
+
+    /* ✨ Estilos individuales de cada filtro */
     .filters a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100px;
+        display: flex;  /* 📌 Asegurar alineación */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 🎯 Centrar ítems */
+        justify-content: center;  /* 🎯 Asegurar correcta disposición */
+        text-align: center;  /* 📝 Centrado del texto */
+        width: 100px;  /* 📏 Ajustar ancho */
     }
+
+    /* 🏆 Contenedor de los productos más vendidos */
     .best-seller {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 100%;  /* 📐 Expande al ancho completo */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: column;  /* 📂 Organización vertical */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Distribución equitativa */
+        padding: 10px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 🎯 Ajuste de íconos dentro de "Ver Todo" */
     .best-seller .description .all img {
         width: 10px;  /* 📐 Ajuste de tamaño del ícono */
     }
+
+    /* 🎴 Contenedor de tarjetas de los más vendidos */
     .best-seller .card-container-best {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        padding: 10px;
-        overflow-x: scroll;
-        gap: 20px;
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Distribución equitativa */
+        height: auto;  /* 📏 Ajuste dinámico */
+        padding: 10px;  /* 🛋️ Espaciado interno */
+        overflow-x: scroll;  /* 📜 Activamos desplazamiento horizontal */
+        gap: 20px;  /* 🔗 Espaciado entre tarjetas */
     }
+
+    /* 📌 Ajuste del ancho del contenedor principal de tarjetas */
     .card-container-best {
-        width: 100vw;
+        width: 100vw;  /* 📐 Expande al ancho total de la pantalla */
     }
-    .card-container-best .card{
-        min-width: 160px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 10px;
-        border-radius: 50px;
-        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-        background-position: center; /* Centra la imagen */
-        position: relative;
+
+    /* 🎴 Diseño individual de cada tarjeta */
+    .card-container-best .card {
+        min-width: 160px;  /* 📐 Tamaño mínimo de tarjeta */
+        height: 250px;  /* 📏 Ajuste de altura */
+        display: flex;  /* 🏗️ Diseño flexible */
+        align-items: flex-end;  /* 📌 Alineamos el contenido en la parte inferior */
+        justify-content: center;  /* 🎯 Centramos el contenido */
+        padding: 10px;  /* 🛋️ Espaciado interno */
+        border-radius: 50px;  /* 🔵 Bordes redondeados */
+        background-size: cover;  /* 🖼️ Ajusta la imagen para cubrir la tarjeta */
+        background-position: center;  /* 🎯 Centra la imagen */
+        position: relative;  /* 📌 Posicionamiento relativo */
     }
+
+    /* 🎴 Ajuste especial para la primera tarjeta */
     .card-container-best .card:first-child {
-        margin-left: 320px;
+        margin-left: 320px;  /* 📌 Desplazamiento especial para alineación */
     }
+
+    /* 📌 Ajuste del contenido dentro de la tarjeta */
     .card-container-best .card .card-content {
-        width: 28%;
-        height: 30px;
-        margin-top: 180px;  /* 📏 Ajuste de margen superior */
-        margin-left: 19px;  /* 📌 Ajuste de margen izquierdo */
+        width: 28%;  /* 📐 Ajuste proporcional */
+        height: 30px;  /* 📏 Definición de altura */
+        margin-top: 180px;  /* 📏 Ajuste superior */
+        margin-left: 19px;  /* 📌 Ajuste de posición lateral */
     }
+    /* 🎴 Contenedor de tarjetas recomendadas */
     .card-container-recommend {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 40px;
+        width: 100%;  /* 📐 Expande al ancho completo */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Distribución equitativa */
+        padding: 40px;  /* 🛋️ Espaciado interno amplio */
     }
+
+    /* 🎴 Diseño individual de cada tarjeta */
     .card-container-recommend .card {
-        min-width: 160px;
-        height: 250px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding: 10px;
-        border-radius: 50px;
-        background-size: cover; /* Ajusta la imagen para cubrir toda la tarjeta */
-        background-position: center; /* Centra la imagen */
-        position: relative;
+        min-width: 160px;  /* 📐 Tamaño mínimo de tarjeta */
+        height: 250px;  /* 📏 Ajuste de altura */
+        display: flex;  /* 🏗️ Diseño flexible */
+        align-items: flex-end;  /* 📌 Alineamos el contenido en la parte inferior */
+        justify-content: center;  /* 🎯 Centramos el contenido */
+        padding: 10px;  /* 🛋️ Espaciado interno */
+        border-radius: 50px;  /* 🔵 Bordes redondeados */
+        background-size: cover;  /* 🖼️ Ajusta la imagen para cubrir la tarjeta */
+        background-position: center;  /* 🎯 Centra la imagen */
+        position: relative;  /* 📌 Posicionamiento relativo */
     }
+
+    /* 🏗️ Contenedor de la primera descripción dentro de la tarjeta */
     .card-container-recommend .card .desc1 .first {
-        width: 100px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
+        width: 100px;  /* 📐 Ajuste del tamaño */
+        display: flex;  /* 🏗️ Diseño flexible */
+        flex-direction: row;  /* 🔀 Organización en fila */
+        align-items: center;  /* 📌 Centramos los elementos */
+        justify-content: center;  /* 🎯 Aseguramos alineación correcta */
+        padding: 10px;  /* 🛋️ Espaciado interno */
     }
+
+    /* 📌 Ajuste de posición de la primera descripción dentro de la tarjeta */
     .card-container-recommend .card .desc1 {
-        margin-top: -190px;
+        margin-top: -190px;  /* 📏 Ajuste superior */
     }
+
+    /* 📌 Ajuste de posición de la segunda descripción dentro de la tarjeta */
     .card-container-recommend .card .desc2 {
-        margin-top: 180px;
+        margin-top: 180px;  /* 📏 Ajuste superior */
     }
+
     /* 🔽 Ajuste del pie de página */
     footer {  
         padding: 10px;  /* 🛋️ Espaciado interno para mejorar estructura visual y comodidad */ 
     }
-    /* 🎭 Ajuste del contenedor de íconos */ 
+
+    /* 🎭 Ajuste del contenedor de íconos en el footer */ 
     .icons {  
         gap: 10px;  /* 🏁 Espaciado reducido entre íconos para mejor distribución */  
         padding: 10px 0px;  /* 🛋️ Ajuste de padding superior e inferior */  
-        margin-left: -10px;
+        margin-left: -10px;  /* 📌 Ajuste lateral */
     }
 }
 
