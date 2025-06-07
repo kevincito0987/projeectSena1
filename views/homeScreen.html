@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    
+    <!-- 🔖 Favicon del sitio web -->
+    <link rel="shortcut icon" href="../icons/restaurante.svg" type="image/x-icon">
+    
+    <!-- 🎨 Hoja de estilos principal -->
+    <link rel="stylesheet" href="../styles/homeScreen.css">
+    
+    <!-- ⚙️ Módulo del footer (se carga de forma diferida) -->
+    <script type="module" src="../components/footer.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="form-container">
+            <form class="form__busqueda" action="?" method="get">
+                <div class="input__logo">
+                    <!-- 🔎 Barra de búsqueda para encontrar ropa -->
+                    <input type="text" class="search-bar" name="search" placeholder="Search clothes..." autocomplete="off">
+                    <a href=""><img src="../icons/menuIcon.svg" alt="Menu Icon"></a>
+                </div>
+            </form>
+            
+            <!-- 🛒 Iconos del header (carrito, notificaciones, usuario) -->
+            <div class="icons-header">
+                <a href=""><img src="../icons/cartStoreIcon.svg" alt="Cart Icon"></a>
+                <a href=""><img src="../icons/notificationIcon.svg" alt="Notification Icon"></a>
+                <a href=""><img src="../icons/userIcon.svg" alt="User Icon"></a>
+            </div>
+        </div>
+        <h1>Bienvenido al Restaurante Mayorca</h1>
+        <p>Rise and shine! It's breakfast time. 🍽️</p>
+    </header>
+
+    <main>
+        <div class="content">
+            <section class="filters">
+                <!-- 🥨 Sección de filtros de categorías -->
+                <a href=""><div class="image"><img src="../icons/snacksIcon.svg" alt="Snacks Icon"></div><p>Snacks</p></a>
+                <a href=""><div class="image"><img src="../icons/mealsIcon.svg" alt="Meal Icon"></div><p>Meal</p></a>
+                <a href=""><div class="image"><img src="../icons/veganIcon.svg" alt="Vegan Icon"></div><p>Vegan</p></a>
+                <a href=""><div class="image"><img src="../icons/dessertsIcon.svg" alt="Dessert Icon"></div><p>Dessert</p></a>
+                <a href=""><div class="image"><img src="../icons/drinksIcon.svg" alt="Drinks Icon"></div><p>Drinks</p></a>
+            </section>
+
+            <div class="underline"></div>
+
+            <section class="best-seller">
+                <!-- 🌟 Sección de los productos más vendidos -->
+                <div class="description">
+                    <h2>Best Seller</h2>
+                    <div class="all">
+                        <p>View all</p>
+                        <img src="../icons/nextIcon.svg" alt="nextIcon">
+                    </div>
+                </div>
+                
+                <!-- 🏆 Tarjetas de los productos más vendidos -->
+                <div class="card-container-best">
+                    <div class="card"><div class="card-content"><p class="card-text">$103.0</p></div></div>
+                    <div class="card"><div class="card-content"><p class="card-text">$50.0</p></div></div>
+                    <div class="card"><div class="card-content"><p class="card-text">$12.99</p></div></div>
+                    <div class="card"><div class="card-content"><p class="card-text">$8.20</p></div></div>
+                </div>
+
+                <!-- 🎉 Oferta especial -->
+                <div class="hero">
+                    <p>Experience our delicious new dish 🍽️</p>
+                    <h2>30% OFF 🚀</h2>
+                </div>
+            </section>
+
+            <section class="recommend">
+                <!-- 🔥 Sección de recomendaciones -->
+                <h2>Recommend</h2>
+                
+                <!-- 📦 Tarjetas de productos recomendados -->
+                <div class="card-container-recommend">
+                    <div class="card">
+                        <div class="desc1">
+                            <div class="first">
+                                <p>5.0</p>
+                                <img src="../icons/yellowStarIcon.svg" alt="Star yellow Icon">
+                            </div>
+                            <img src="../icons/redHearthIcon.svg" alt="Red Hearth Icon">
+                        </div>
+                        <div class="desc2">
+                            <p>$10.0</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="desc1">
+                            <div class="first">
+                                <p>5.0</p>
+                                <img src="../icons/yellowStarIcon.svg" alt="Star yellow Icon">
+                            </div>
+                            <img src="../icons/redHearthIcon.svg" alt="Red Hearth Icon">
+                        </div>
+                        <div class="desc2">
+                            <p>$25.0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- 🎭 Contenedor de íconos de navegación -->
+        <div class="icons">
+            <a href="" id="home-icon"><img src="../icons/icon1Footer.svg" alt="Home Icon"></a>
+            <a href="" id="plates-icon"><img src="../icons/icon2Footer.svg" alt="Plates Icon"></a>
+            <a href="" id="hearth-icon"><img src="../icons/icon3Footer.svg" alt="Heart Icon"></a>
+            <a href="" id="inventary-icon"><img src="../icons/icon4Footer.svg" alt="Inventory Icon"></a>
+            <a href="" id="support-icon"><img src="../icons/icon5Footer.svg" alt="Support Icon"></a>
+        </div>
+
+        <!-- 🚀 Barra animada para indicar navegación activa -->
+        <div id="moving-bar" class="moving-bar"></div>
+    </footer>
+</body>
+</html>
